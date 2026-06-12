@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+      <title>Nostiqa | AI-Powered Creator Intelligence Platform</title>
+      <meta name="description" content="Nostiqa helps brands, agencies and founders evaluate creators through audience trust, authenticity and influence intelligence." />
+      <meta property="og:title" content="Nostiqa" />
+      <meta property="og:description" content="AI-Powered Creator Intelligence Platform" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://nostiqa-xi.vercel.app/" />
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+         rel="stylesheet" />
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+      <!-- Swiper CSS -->
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+      <!-- Project CSS -->
+      <link rel="stylesheet" href="assets/css/tailwind.css" />
+      <link rel="stylesheet" href="assets/css/custom.css" />
+   </head>
+   <body class="bg-light/30 text-dark overflow-x-hidden antialiased">
+
+      <!-- ========== HEADER ========== -->
+       <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+         <div class="container mx-auto flex items-center px-4 lg:px-8 h-16">
+            <a href="/" class="shrink-0">
+             <img src="assets/images/logo.png" alt="Nostiqa Logo" class="h-6 sm:h-8 md:h-10 w-auto object-contain"/>
+            </a>
+            <nav class="hidden md:flex flex-1 justify-center gap-14">
+               <a href="/" class="nav-link text-sm font-medium text-dark transition">Home</a>
+               <a href="/about" class="nav-link text-sm font-medium text-dark transition">About</a>
+               <a href="/pricing" class="nav-link text-sm font-medium text-dark transition">Pricing</a>
+            </nav>
+            <div class="flex items-center gap-2 shrink-0 ms-auto">
+               <a href="https://www.nostiqa.com/form" class="ml-2 shrink-0 px-3 py-1.5 sm:px-5 sm:py-2 bg-primary text-white rounded-full text-[10px] sm:text-sm font-medium whitespace-nowrap hover:opacity-90 transition">Book Demo</a>
+               <button id="mobile-menu-toggle" class="flex md:hidden items-center justify-center text-dark" aria-label="Toggle Menu">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16"/>
+                  </svg>
+               </button>
+            </div>
+         </div>
+         <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white border-t border-gray/20 shadow-xl">
+            <div class="flex flex-col gap-3 px-6 py-6">
+             <a href="/" class="mobile-nav-link text-base font-medium text-dark hover:text-primary transition">Home</a>
+             <a href="/about" class="mobile-nav-link text-base font-medium text-dark hover:text-primary transition">About</a>
+             <a href="/pricing" class="mobile-nav-link text-base font-medium text-dark hover:text-primary transition">Pricing</a>
+            </div>
+         </div>
+       </header>
+
+      <!-- ========== Page Containt ========== -->
+      <section class="relative overflow-hidden py-8 lg:py-12 mt-12">
+         <div class="container mx-auto flex flex-col gap-6 px-4 lg:px-8">
+            <!-- Top Grid -->
+            <div class="grid grid-cols-1 items-stretch lg:grid-cols-3 gap-4 sm:gap-6">
+               <div class="lg:col-span-2 flex flex-col gap-4">
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                     <div class="flex flex-col justify-around gap-4">
+                        <div class="flex flex-col gap-4 h-full">
+                           <div>
+                              <span
+                                 class="inline-flex items-center rounded-full border border-primary/10 bg-primary/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-primary">Influence
+                              Intelligence</span>
+                           </div>
+                           <div class="space-y-2">
+                              <h1 class="font-semibold text-2xl leading-[1.05] tracking-tight text-dark sm:text-3xl lg:text-3xl xl:text-5xl mb-2.5 heading-home">Followers tell you <br class="hidden sm:block" /> who watches.</h1>
+                              <h1 class="font-semibold text-2xl leading-[1.05] tracking-tight text-dark sm:text-3xl lg:text-3xl xl:text-5xl heading-home">Nostiqa tells you <br class="hidden sm:block" /> who <span class="relative inline-block italic text-primary"> believes.</span></h1>
+                           </div>
+                           <p class="max-w-xl text-base leading-7 text-dark sm:text-lg"> Separating hype from human
+                              signal Influence analysis for intelligent brands
+                           </p>
+                        </div>
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-start gap-2 sm:gap-3 lg:gap-4 w-full">
+                           <a href="#quick-signal" class="w-auto">
+                              <button class="group relative inline-flex items-center justify-center gap-1.5 md:gap-2 overflow-hidden rounded-xl lg:rounded-2xl bg-primary px-3 md:px-4 lg:px-5 py-2 md:py-2.5 text-xs md:text-sm font-medium text-white shadow-premium transition-all duration-300 hover:-translate-y-1 hover:shadow-glow">
+                                 <span class="relative z-10 whitespace-nowrap">Run a Quick Signal</span>
+                                 <i class="fa-solid fa-arrow-right relative z-10 text-[10px] md:text-xs transition-transform duration-300 group-hover:translate-x-1"></i>
+                              </button>
+                           </a>
+                           <a href="/about#methodology" class="hidden sm:block w-auto">
+                              <button class="group flex items-center gap-2 md:gap-3 text-xs md:text-sm font-medium text-dark transition-all duration-300 hover:text-primary">
+                                 <div class="relative flex h-9 w-9 md:h-10 md:w-10 lg:h-11 lg:w-11 items-center justify-center rounded-full border border-gray/30 bg-white shadow-premium transition-all duration-300 group-hover:scale-105">
+                                    <span class="absolute inset-0 rounded-full bg-secondary/10 animate-ping"></span> <i class="fa-solid fa-play relative z-10 text-[10px] md:text-xs text-primary"></i>
+                                 </div>
+                                 <span class="whitespace-nowrap">See how it works</span>
+                              </button>
+                           </a>
+                           <a href="/about#methodology" class="sm:hidden inline-flex items-center gap-2">
+                              <button class="group relative inline-flex items-center justify-center overflow-hidden rounded-xl border border-primary/30 px-3 md:px-4 lg:px-5 py-2 md:py-2.5 text-xs md:text-sm font-medium text-primary transition-all duration-300 hover:-translate-y-1">
+                              <span class="relative z-10 whitespace-nowrap">Book a 15min demo</span>
+                              </button>
+                              <div class="relative flex h-8 w-8 items-center justify-center rounded-full border border-primary bg-white shadow-premium">
+                                 <span class="absolute inset-0 rounded-full bg-secondary/10 animate-ping"></span>
+                                 <i class="fa-solid fa-play relative z-10 text-[10px] text-primary"></i>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="relative flex flex-col gap-3 items-center justify-center">
+                        <div>
+                           <span
+                              class="inline-flex items-center rounded-full border border-gray/20 bg-gray/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-dark">Surface
+                           Signal</span>
+                        </div>
+                        <div
+                           class="absolute inset-0 z-0 flex items-center justify-end pointer-events-none overflow-hidden">
+                           <div
+                              class="absolute right-0 w-full h-full rounded-full bg-gray/30 blur-3xl animate-pulse-glow">
+                           </div>
+                           <img src="assets/images/verticaldots.png" alt="Dots"
+                              class="relative right-0 z-10 rotate-12 object-contain opacity-90 animate-particle-float" />
+                        </div>
+                        <div
+                           class="relative z-10 flex h-full w-full max-w-md flex-col gap-4 overflow-hidden rounded-3xl bg-white/10 p-6 opacity-75 shadow-[-20px_0_40px_rgba(0,0,0,0.08)]">
+                           <div class="flex items-center gap-2.5">
+                              <div class="h-10 w-10 overflow-hidden rounded-full bg-light shrink-0">
+                                 <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200"
+                                    alt="" class="h-full w-full object-cover">
+                              </div>
+                              <div class="flex flex-col gap-1">
+                                 <div class="flex items-center gap-1">
+                                    <h4 class="text-sm font-semibold text-dark">@creatorme</h4>
+                                    <i class="fa-solid fa-certificate"></i>
+                                 </div>
+                                 <!-- <span class="text-xs text-dark"></span> -->
+                              </div>
+                           </div>
+                           <div class="flex items-center justify-start gap-4 md:gap-5">
+                              <div class="flex flex-col gap-0.5">
+                                 <h3 class="text-lg font-bold text-dark font-body">1.5M</h3>
+                                 <p class="text-xs text-dark font-body">Followers</p>
+                              </div>
+                              <div class="flex flex-col gap-0.5">
+                                 <h3 class="text-lg font-bold text-dark font-body">8.2M</h3>
+                                 <p class="text-xs text-dark font-body">Views</p>
+                              </div>
+                              <div class="flex flex-col gap-0.5">
+                                 <h3 class="text-lg font-bold text-dark font-body">128K</h3>
+                                 <p class="text-xs text-dark font-body">Likes</p>
+                              </div>
+                           </div>
+                           <div class="grid grid-cols-3 gap-3">
+                              <div class="relative aspect-[3/4] overflow-hidden rounded-2xl bg-light">
+                                 <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?q=80&w=500"
+                                    class="h-full w-full object-cover" />
+                                 <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent">
+                                 </div>
+                                 <div
+                                    class="absolute bottom-2 right-2 flex h-7 w-7 items-center justify-center rounded-full bg-white/90 backdrop-blur">
+                                    <i class="fa-solid fa-film text-xs text-dark"></i>
+                                 </div>
+                              </div>
+                              <div class="relative aspect-[3/4] overflow-hidden rounded-2xl bg-light">
+                                 <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=500"
+                                    class="h-full w-full object-cover" />
+                                 <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent">
+                                 </div>
+                                 <div
+                                    class="absolute bottom-2 right-2 flex h-7 w-7 items-center justify-center rounded-full bg-white/90 backdrop-blur">
+                                    <i class="fa-solid fa-film text-xs text-dark"></i>
+                                 </div>
+                              </div>
+                              <div class="relative aspect-[3/4] overflow-hidden rounded-2xl bg-light">
+                                 <img src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?q=80&w=500"
+                                    class="h-full w-full object-cover" />
+                                 <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent">
+                                 </div>
+                                 <div
+                                    class="absolute bottom-2 right-2 flex h-7 w-7 items-center justify-center rounded-full bg-white/90 backdrop-blur">
+                                    <i class="fa-solid fa-film text-xs text-dark"></i>
+                                 </div>
+                              </div>
+                              <div class="relative aspect-[3/4] overflow-hidden rounded-2xl bg-light">
+                                 <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop"
+                                    class="h-full w-full object-cover" />
+                                 <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent">
+                                 </div>
+                                 <div
+                                    class="absolute bottom-2 right-2 flex h-7 w-7 items-center justify-center rounded-full bg-white/90 backdrop-blur">
+                                    <i class="fa-solid fa-film text-xs text-dark"></i>
+                                 </div>
+                              </div>
+                              <div class="relative aspect-[3/4] overflow-hidden rounded-2xl bg-light">
+                                 <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=500"
+                                    class="h-full w-full object-cover" />
+                                 <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent">
+                                 </div>
+                                 <div
+                                    class="absolute bottom-2 right-2 flex h-7 w-7 items-center justify-center rounded-full bg-white/90 backdrop-blur">
+                                    <i class="fa-solid fa-film text-xs text-dark"></i>
+                                 </div>
+                              </div>
+                              <div class="relative aspect-[3/4] overflow-hidden rounded-2xl bg-light">
+                                 <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=800&auto=format&fit=crop"
+                                    class="h-full w-full object-cover" />
+                                 <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent">
+                                 </div>
+                                 <div
+                                    class="absolute bottom-2 right-2 flex h-7 w-7 items-center justify-center rounded-full bg-white/90 backdrop-blur">
+                                    <i class="fa-solid fa-film text-xs text-dark"></i>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="absolute -right-0 bottom-15 sm:top-10 z-20 flex flex-col gap-2 lg:flex">
+                           <div class="relative max-w-xs ms-auto">
+                              <div
+                                 class="hidden lg:flex absolute -right-20 top-1/2 h-[2px] w-20 -translate-y-1/2 dotted-line opacity-40">
+                              </div>
+                              <div
+                                 class="max-w-xs flex items-center gap-2 rounded-xl sm:rounded-2xl border border-gray/20 bg-white p-2 sm:p-3 shadow-premium animate-float-delayed">
+                                 <div
+                                    class="h-5 w-5 sm:h-7 sm:w-7 overflow-hidden rounded-full bg-gray-100 shrink-0">
+                                    <img src="https://i.pravatar.cc/40?img=5" alt=""
+                                       class="h-full w-full object-cover" />
+                                 </div>
+                                 <div class="flex items-start gap-2">
+                                    <p class="max-w-40 leading-normal text-[10px] sm:text-xs text-dark">Feels
+                                       like every product is her favourite.
+                                    </p>
+                                    <span class="mt-1 text-[10px] sm:text-xs text-dark shrink-0">2m</span>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="relative max-w-xs ms-auto">
+                              <div
+                                 class="hidden lg:flex absolute -right-20 top-1/2 h-[2px] w-20 -translate-y-1/2 dotted-line opacity-40">
+                              </div>
+                              <div
+                                 class="w-fit max-w-xs flex items-center gap-2 rounded-xl sm:rounded-2xl border border-gray/20 bg-white p-2 sm:p-3 shadow-premium animate-float-delayed">
+                                 <div
+                                    class="h-5 w-5 sm:h-7 sm:w-7 overflow-hidden rounded-full bg-gray-100 shrink-0">
+                                    <img src="https://i.pravatar.cc/40?img=8" alt=""
+                                       class="h-full w-full object-cover" />
+                                 </div>
+                                 <div class="flex items-start gap-2">
+                                    <p class="max-w-40 leading-normal text-[10px] sm:text-xs text-dark">I trust
+                                       her recs more than ads.
+                                    </p>
+                                    <span class="mt-1 text-[10px] sm:text-xs text-dark shrink-0">6m</span>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="relative w-fit max-w-xs ms-auto">
+                              <div
+                                 class="hidden lg:flex absolute -right-20 top-1/2 h-[2px] w-20 -translate-y-1/2 dotted-line opacity-40">
+                              </div>
+                              <div
+                                 class="w-fit max-w-xs flex items-center gap-2 rounded-xl sm:rounded-2xl border border-gray/20 bg-white p-2 sm:p-3 shadow-premium animate-float-delayed">
+                                 <div
+                                    class="h-5 w-5 sm:h-7 sm:w-7 overflow-hidden rounded-full bg-gray-100 shrink-0">
+                                    <img src="https://i.pravatar.cc/40?img=12" alt=""
+                                       class="h-full w-full object-cover" />
+                                 </div>
+                                 <div class="flex items-start gap-2">
+                                    <p class="max-w-40 leading-normal text-[10px] sm:text-xs text-dark">Not
+                                       relatable anymore.
+                                    </p>
+                                    <span class="mt-1 text-[10px] sm:text-xs text-dark shrink-0">9m</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="hidden md:flex flex-col items-start gap-1 sm:gap-4 md:flex-row md:items-center md:justify-between">
+                     <div class="flex min-w-0 items-center gap-3 md:max-w-md">
+                        <img src="assets/images/heroimg1.png" class="h-14 w-14 sm:h-18 sm:w-18 shrink-0 object-contain" alt="Creators" />
+                        <div class="min-w-0 text-sm font-medium leading-normal text-dark">DEBUTED AT WEBSUMMITLISBON, 2025</div>
+                     </div>
+                     <div class="hidden h-10 w-px shrink-0 bg-gray/20 sm:block"></div>
+                     <div class="flex min-w-0 items-center gap-3 md:max-w-md">
+                        <img src="assets/images/heroimg2.png" class="h-14 w-14 sm:h-18 sm:w-18 shrink-0 object-contain" alt="Creators" />
+                        <div class="min-w-0 text-sm font-medium leading-normal text-dark">WORLDS ONLY PATENTEDINFLUENCE ANALYSIS PLATFORM</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="relative flex flex-col gap-3">
+                  <div class="w-full flex justify-center">
+                     <span class="inline-flex items-center rounded-full border border-gray/20 bg-gray/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-dark">Audience Intelligence</span>
+                  </div>
+                  <div
+                     class="flex flex-col gap-2.5 bg-premiumCard p-6 w-full h-full text-white rounded-3xl shadow-glow relative z-40">
+                     <div class="flex gap-2">
+                        <button
+                           class="rounded-full bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-white/60">Objective</button>
+                        <button
+                           class="rounded-full bg-secondary px-4 py-2 text-xs font-semibold uppercase tracking-wider text-white shadow-lg">
+                        Performance</button>
+                     </div>
+                     <div class="flex flex-col gap-5">
+                        <div class="border-b border-white/10 pb-4">
+                           <p class="text-xs font-semibold uppercase tracking-widest text-white/60">Nostiqa
+                              Intelligence
+                           </p>
+                        </div>
+                        <div class="flex items-center justify-between gap-4">
+                           <div class="flex items-center gap-3">
+                              <div
+                                 class="flex h-9 w-9 items-center justify-center rounded-2xl border border-white/10 bg-white/5">
+                                 <i class="fa-regular fa-eye text-sm text-white/70"></i>
+                              </div>
+                              <div class="flex flex-col gap-1">
+                                 <p class="text-sm font-medium">Perceived Authenticity</p>
+                                 <div class="h-1.5 w-28 overflow-hidden rounded-full bg-white/10">
+                                    <div class="h-full w-14 rounded-full bg-white"></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="text-right">
+                              <p class="text-sm font-semibold">2.3 <span class="text-white/50">/5</span></p>
+                              <p class="text-xs font-medium text-red-300">Low</p>
+                           </div>
+                        </div>
+                        <div class="flex items-center justify-between gap-4">
+                           <div class="flex items-center gap-3">
+                              <div
+                                 class="flex h-9 w-9 items-center justify-center rounded-2xl border border-white/10 bg-white/5">
+                                 <i class="fa-solid fa-bullseye text-sm text-white/70"></i>
+                              </div>
+                              <div class="flex flex-col gap-1">
+                                 <p class="text-sm font-medium">Perceived Awareness</p>
+                                 <div class="h-1.5 w-28 overflow-hidden rounded-full bg-white/10">
+                                    <div class="h-full w-12 rounded-full bg-white"></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="text-right">
+                              <p class="text-sm font-semibold">2.2 <span class="text-white/50">/5</span></p>
+                              <p class="text-xs font-medium text-red-300">Low</p>
+                           </div>
+                        </div>
+                        <div class="flex items-center justify-between gap-4">
+                           <div class="flex items-center gap-3">
+                              <div
+                                 class="flex h-9 w-9 items-center justify-center rounded-2xl border border-white/10 bg-white/5">
+                                 <i class="fa-regular fa-gem text-sm text-white/70"></i>
+                              </div>
+                              <div class="flex flex-col gap-1">
+                                 <p class="text-sm font-medium">Aesthetic Resonance</p>
+                                 <div class="h-1.5 w-28 overflow-hidden rounded-full bg-white/10">
+                                    <div class="h-full w-20 rounded-full bg-white"></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="text-right">
+                              <p class="text-sm font-semibold">3.1 <span class="text-white/50">/5</span></p>
+                              <p class="text-xs font-medium text-emerald-300">Good</p>
+                           </div>
+                        </div>
+                        <div class="border-t border-white/10 pt-5">
+                           <div class="grid grid-cols-2 gap-4 border-b border-white/10 pb-5">
+                              <div>
+                                 <p class="text-xs font-semibold uppercase tracking-wider text-white/50">Fit
+                                    Score
+                                 </p>
+                                 <div class="mt-2 flex items-end gap-1">
+                                    <h2 class="font-semibold text-5xl font-bold leading-none">54</h2>
+                                    <span class="pb-1 text-lg font-semibold text-white/50">/100</span>
+                                 </div>
+                              </div>
+                              <div class="border-l border-white/10 pl-4">
+                                 <p class="text-sm font-semibold">Conditional Fit</p>
+                                 <p class="mt-2 text-xs leading-6 text-white/60">Proceed with caution. Some
+                                    signals are weak.
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="relative">
+                              <div class="flex gap-1 items-start animate-float-delayed">
+                                 <div class="shrink-0 pt-1 text-yellow-300"><i
+                                    class="fa-solid fa-triangle-exclamation"></i></div>
+                                 <div class="w-full lg:max-w-sm lg:absolute lg:left-8 lg:top-0 z-20">
+                                    <div class="rounded-2xl border border-gray/20 bg-accent p-4 shadow-2xl">
+                                       <p class="text-xs leading-5 text-white">
+                                          Key dimensions like Authenticity perception among her audience are
+                                          low.
+                                          She performs best when leading with lifestyle; trust-led narratives
+                                          will
+                                          not benefit from her influence style. Mitigate through creative
+                                          strategy
+                                          that positions her in a learning rather than expert role.
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="lg:col-span-3 flex flex-col items-start gap-1 sm:gap-4 md:flex-row md:items-center md:justify-between md:hidden">
+                  <div class="flex min-w-0 items-center gap-3 md:max-w-md">
+                     <img src="assets/images/heroimg1.png" class="h-14 w-14 sm:h-18 sm:w-18 shrink-0 object-contain" alt="Creators" />
+                     <div class="min-w-0 text-sm font-medium leading-normal text-dark">DEBUTED AT WEBSUMMITLISBON, 2025</div>
+                  </div>
+                  <div class="hidden h-10 w-px shrink-0 bg-gray/20 sm:block"></div>
+                  <div class="flex min-w-0 items-center gap-3 md:max-w-md">
+                     <img src="assets/images/heroimg2.png" class="h-14 w-14 sm:h-18 sm:w-18 shrink-0 object-contain" alt="Creators" />
+                     <div class="min-w-0 text-sm font-medium leading-normal text-dark">WORLDS ONLY PATENTEDINFLUENCE ANALYSIS PLATFORM</div>
+                  </div>
+               </div>
+            </div>
+            <!-- Stats Section -->
+            <div class="rounded-3xl border border-gray/20 bg-white p-6 shadow-premium">
+               <div class="mb-4 text-center">
+                  <p class="text-lg font-bold uppercase tracking-widest text-primary">Intelligence Beyond Dashboards
+                  </p>
+               </div>
+               <div class="grid grid-cols-1 overflow-hidden sm:grid-cols-2 xl:grid-cols-5 hidden lg:flex">
+                  <div class="p-4 border-b border-gray/30 sm:border-r xl:border-b-0">
+                     <p class="text-sm leading-relaxed text-dark font-medium">Most creator decisions are still made
+                        using reach, engagement and instinct.
+                     </p>
+                  </div>
+                  <div class="p-4 border-b border-gray/30 xl:border-b-0 sm:border-r">
+                     <div class="mb-1.5 flex items-center gap-3">
+                        <div class="flex items-center justify-center text-primary"><i
+                           class="fa-solid fa-building text-xl"></i></div>
+                        <h4 class="text-sm font-semibold uppercase tracking-widest text-primary font-body">BRANDS
+                        </h4>
+                     </div>
+                     <p class="text-sm leading-relaxed text-dark font-medium">Reduce creator risk before campaign
+                        budgets are committed.
+                     </p>
+                  </div>
+                  <div class="p-4 border-b border-gray/30 sm:border-r xl:border-b-0">
+                     <div class="mb-1.5 flex items-center gap-3">
+                        <div class="flex items-center justify-center text-primary"><i
+                           class="fa-solid fa-users text-xl"></i></div>
+                        <h4 class="text-sm font-semibold uppercase tracking-widest text-primary font-body">AGENCIES
+                        </h4>
+                     </div>
+                     <p class="text-sm leading-relaxed text-dark font-medium">Shortlist and justify creator
+                        recommendations with confidence.
+                     </p>
+                  </div>
+                  <div class="p-4 border-b border-gray/30 xl:border-b-0 sm:border-r">
+                     <div class="mb-1.5 flex items-center gap-3">
+                        <div class="flex items-center justify-center text-primary"><i
+                           class="fa-regular fa-user text-xl"></i></div>
+                        <h4 class="text-sm font-semibold uppercase tracking-widest text-primary font-body">FOUNDERS</h4>
+                     </div>
+                     <p class="text-sm leading-relaxed text-dark font-medium">Make smarter creator decisions withouta dedicated marketing team.</p>
+                  </div>
+                  <div class="p-4">
+                     <p class="text-sm leading-relaxed text-dark font-medium">Audience trust, credibility andresponse potential are rarely visible before a campaign launches.</p>
+                  </div>
+               </div>
+               <div class="grid grid-cols-1 overflow-hidden sm:grid-cols-2 xl:grid-cols-5 flex lg:hidden">
+                  <div class="flex items-center gap-5 border-b border-gray/20 p-4 mb-1.5">
+                     <div class="flex items-center justify-center text-primary shrink-0"><i
+                        class="fa-solid fa-building text-3xl"></i></div>
+                     <div class="w-full">
+                        <h4 class="text-base font-semibold uppercase tracking-widest text-primary font-body mb-0 xs:mb-1.5">BRANDS</h4>
+                        <p class="text-sm leading-none text-dark font-medium">Reduce creator risk before campaignbudgets are committed.</p>
+                     </div>
+                  </div>
+                  <div class="flex items-center gap-5 border-b border-gray/20 p-4 mb-1.5">
+                     <div class="flex items-center justify-center text-primary shrink-0"><i
+                        class="fa-solid fa-users text-3xl"></i></div>
+                     <div class="w-full">
+                        <h4 class="text-base font-semibold uppercase tracking-widest text-primary font-body mb-0 xs:mb-1.5">AGENCIES</h4>
+                        <p class="text-sm leading-none text-dark font-medium">Shortlist and justify creatorrecommendations with confidence.</p>
+                     </div>
+                  </div>
+                  <div class="flex items-center gap-5 p-4 mb-1.5">
+                     <div class="flex items-center justify-center text-primary shrink-0"><i
+                        class="fa-regular fa-user text-3xl"></i></div>
+                     <div class="w-full">
+                        <h4 class="text-base font-semibold uppercase tracking-widest text-primary font-body mb-0 xs:mb-1.5">FOUNDERS</h4>
+                        <p class="text-sm leading-none text-dark font-medium">Make smarter creator decisions withouta dedicated marketing team.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Bottom Grid -->
+            <div class="grid grid-cols-1 gap-5 xl:grid-cols-[minmax(0,2fr)_minmax(320px,1fr)] items-start overflow-hidden"
+               id="quick-signal">
+               <div
+                  class="relative h-full w-full overflow-hidden rounded-3xl text-white bg-premiumGlow shadow-glow min-w-0">
+                  <div class="grid h-full grid-cols-1 lg:grid-cols-3">
+                     <div class="flex flex-col border-b border-white/10 p-6 lg:border-b-0 lg:border-r">
+                        <span
+                           class="mb-3 w-fit inline-flex rounded-full text-xs font-semibold uppercase tracking-wider text-white/80">TRY
+                        NOSTIQA</span>
+                        <h4 class="font-subheading font-semibold text-2xl leading-snug">Run a Quick Signal</h4>
+                        <p class="mt-3 text-sm leading-6 text-white/75">Get a deep diagnostic report on any creator
+                           in under 24 hours.
+                        </p>
+                        <div class="mt-5 space-y-4">
+                           <div class="flex items-center gap-2.5">
+                              <i class="fa-solid fa-circle-check shrink-0 text-base text-white"></i>
+                              <p class="text-sm text-white/90">Objective-specific fit score</p>
+                           </div>
+                           <div class="flex items-center gap-2.5">
+                              <i class="fa-solid fa-circle-check shrink-0 text-base text-white"></i>
+                              <p class="text-sm text-white/90">Audience relationship</p>
+                           </div>
+                           <div class="flex items-center gap-2.5">
+                              <i class="fa-solid fa-circle-check shrink-0 text-base text-white"></i>
+                              <p class="text-sm text-white/90">Audience quotes</p>
+                           </div>
+                           <div class="flex items-center gap-2.5">
+                              <i class="fa-solid fa-circle-check shrink-0 text-base text-white"></i>
+                              <p class="text-sm text-white/90">Before you brief</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="flex min-w-0 flex-col gap-4 p-4 sm:p-6 sm:pb-0 lg:col-span-2">
+                        <h4 class="font-body font-semibold text-2xl text-white text-center mb-2">Single Creator
+                           Signal
+                        </h4>
+                        <div
+                           class="flex w-full h-full max-w-full sm:max-w-md mx-auto flex-col gap-4 rounded-3xl bg-white sm:!rounded-b-none p-4 sm:p-5 shadow-2xl">
+                           <div class="lg:hidden">
+                              <div class="w-full max-w-sm mx-auto px-3 py-4">
+                                 <div class="flex items-center gap-1 mb-5">
+                                    <h3 class="text-sm font-semibold text-[#1E1E1E]">
+                                       Creator Size
+                                    </h3>
+                                    <!-- Info Icon -->
+                                    <button
+                                       class="w-4 h-4 rounded-full border border-[#6C3BFF] text-[#6C3BFF] text-[10px] flex items-center justify-center">
+                                    ?
+                                    </button>
+                                 </div>
+                                 <div class="relative">
+                                    <!-- Line -->
+                                    <div class="absolute top-[7px] left-0 right-0 h-[2px] bg-[#D9D9E3]"></div>
+                                    <!-- Active Line -->
+                                    <div class="absolute top-[7px] left-0 w-[8%] h-[2px] bg-[#5B2EFF]"></div>
+                                    <!-- Items -->
+                                    <div class="relative flex justify-between">
+                                       <!-- NANO -->
+                                       <div class="flex flex-col items-start w-[24%]">
+                                          <div
+                                             class="w-4 h-4 rounded-full bg-[#5B2EFF] border-2 border-[#5B2EFF]">
+                                          </div>
+                                          <h4
+                                             class="mt-3 text-[11px] font-bold uppercase tracking-wide text-[#1E1E1E]">
+                                             NANO
+                                          </h4>
+                                          <p class="text-[11px] text-[#5F5F6B] mt-1 leading-none">
+                                             Under 50K
+                                          </p>
+                                       </div>
+                                       <!-- MICRO -->
+                                       <div class="flex flex-col items-center w-[24%]">
+                                          <div
+                                             class="w-4 h-4 rounded-full bg-white border-2 border-[#D4D4DE]">
+                                          </div>
+                                          <h4
+                                             class="mt-3 text-[11px] font-bold uppercase tracking-wide text-[#1E1E1E]">
+                                             MICRO
+                                          </h4>
+                                          <p class="text-[11px] text-[#5F5F6B] mt-1 leading-none">
+                                             50K–250K
+                                          </p>
+                                       </div>
+                                       <!-- MID -->
+                                       <div class="flex flex-col items-center w-[24%]">
+                                          <div
+                                             class="w-4 h-4 rounded-full bg-white border-2 border-[#D4D4DE]">
+                                          </div>
+                                          <h4
+                                             class="mt-3 text-[11px] font-bold uppercase tracking-wide text-[#1E1E1E]">
+                                             MID
+                                          </h4>
+                                          <p class="text-[11px] text-[#5F5F6B] mt-1 leading-none">
+                                             250K–1M
+                                          </p>
+                                       </div>
+                                       <!-- MACRO -->
+                                       <div class="flex flex-col items-end w-[24%]">
+                                          <div
+                                             class="w-4 h-4 rounded-full bg-white border-2 border-[#D4D4DE]">
+                                          </div>
+                                          <h4
+                                             class="mt-3 text-[11px] font-bold uppercase tracking-wide text-[#1E1E1E]">
+                                             MACRO
+                                          </h4>
+                                          <p class="text-[11px] text-[#5F5F6B] mt-1 leading-none">
+                                             1M+
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="hidden lg:flex flex-col gap-4">
+                              <div class="w-full flex flex-col gap-1.5">
+                                 <label class="block text-xs font-medium text-dark">Creator tier</label>
+                                 <div class="flex flex-wrap gap-2" id="planButtons">
+                                    <button
+                                       class="plan-btn rounded-xl bg-primary px-4 py-2 text-xs font-medium text-white transition"
+                                       data-plan="nano"> Nano</button>
+                                    <button
+                                       class="plan-btn rounded-xl border border-gray/30 px-4 py-2 text-xs font-medium text-dark transition hover:border-secondary hover:text-secondary"
+                                       data-plan="micro"> Micro</button>
+                                    <button
+                                       class="plan-btn rounded-xl border border-gray/30 px-4 py-2 text-xs font-medium text-dark transition hover:border-secondary hover:text-secondary"
+                                       data-plan="mid"> Mid</button>
+                                    <button
+                                       class="plan-btn rounded-xl border border-gray/30 px-4 py-2 text-xs font-medium text-dark transition hover:border-secondary hover:text-secondary"
+                                       data-plan="macro"> Macro</button>
+                                 </div>
+                              </div>
+                              <p class="text-xs text-dark" id="followersText">Under 50K followers</p>
+                              <div
+                                 class="flex flex-col gap-4 rounded-2xl bg-light p-4 md:flex-row md:items-center md:justify-between">
+                                 <div>
+                                    <h4 class="font-subheading text-3xl font-semibold text-dark" id="priceText">
+                                       ₹1,999
+                                    </h4>
+                                    <p class="mt-1 text-[10px] leading-5 text-dark" id="deliveryText">Per
+                                       creator report · Delivered within 24 hours
+                                    </p>
+                                 </div>
+                                 <div class="text-left md:text-right">
+                                    <div
+                                       class="inline-flex whitespace-nowrap rounded-xl bg-[#e8f7d8] px-3 py-2 text-xs font-semibold text-[#4f7b1f]">
+                                       Pay only when ready
+                                    </div>
+                                    <p class="mt-1 text-[10px] leading-5 text-dark">Invoice sent before delivery
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="grid gap-3 lg:grid-cols-1">
+                              <div>
+                                 <label class="mb-2 block text-xs font-medium text-dark">Creator Instagram
+                                 Handle</label>
+                                 <input type="text" placeholder="@creatorhandle"
+                                    class="h-11 w-full rounded-xl border border-gray/30 px-4 text-xs text-dark outline-none transition focus:border-secondary" />
+                              </div>
+                              <div>
+                                 <label class="mb-2 block text-xs font-medium text-dark">Your Brand or Agency
+                                 Email</label>
+                                 <input type="email" placeholder="you@yourbrand.com"
+                                    class="h-11 w-full rounded-xl border border-gray/30 px-4 text-xs text-dark outline-none transition focus:border-secondary" />
+                              </div>
+                              <div class="lg:col-span-1">
+                                 <p class="mb-2 text-xs leading-5 text-dark">We’ll confirm details and send your
+                                    Razorpay invoice here.
+                                 </p>
+                                 <button
+                                    class="mx-auto flex h-8 sm:h-11 w-auto sm:w-full items-center justify-center px-4 sm:px-8 rounded-xl bg-primary text-xs font-semibold text-white transition hover:bg-secondary">
+                                 Generate Signal →</button>
+                              </div>
+                           </div>
+                           <p class="text-center text-xs leading-5 text-dark"><i class="fa-solid fa-lock mr-1"></i>
+                              Secure & confidential. Results are not shared with creators.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div
+                  class="w-full min-w-0 rounded-3xl border border-gray/30 bg-white p-4 sm:p-6 shadow-premium overflow-hidden">
+                  <p class="text-sm text-dark font-medium leading-6">Need to compare <br> multiple creators?</p>
+                  <div class="flex items-start justify-start gap-3 my-3">
+                     <div>
+                        <h3 class="text-xl font-bold text-dark mt-1 leading-none mt-2">Shortlist Signal</h3>
+                     </div>
+                     <span
+                        class="bg-light text-primary text-xs font-bold px-4 py-2 rounded-full whitespace-nowrap">MOST
+                     REQUESTED</span>
+                  </div>
+                  <p class="text-dark text-sm mt-2">Rank and compare up to</p>
+                  <p class="text-dark text-sm">10 creators side-by-side.</p>
+                  <div class="grid grid-cols-2 gap-2.5 my-3">
+                     <div class="flex items-start gap-2">
+                        <div class="flex items-center justify-center shrink-0"><i data-lucide="users"
+                           class="size-4 stroke-[2.5] text-primary"></i></div>
+                        <p class="text-xs sm:text-sm text-dark font-medium">Relative fit scoring</p>
+                     </div>
+                     <div class="flex items-start gap-2">
+                        <div class="flex items-center justify-center shrink-0"><i data-lucide="badge-check"
+                           class="size-4 stroke-[2.5] text-primary"></i></div>
+                        <p class="text-xs sm:text-sm text-dark font-medium">Score comparison</p>
+                     </div>
+                     <div class="flex items-start gap-2">
+                        <div class="flex items-center justify-center shrink-0"><i data-lucide="file-text"
+                           class="size-4 stroke-[2.5] text-primary"></i></div>
+                        <p class="text-xs sm:text-sm text-dark font-medium">Ranked shortlist</p>
+                     </div>
+                     <div class="flex items-start gap-2">
+                        <div class="flex items-center justify-center shrink-0"><i data-lucide="rotate-ccw"
+                           class="size-4 stroke-[2.5] text-primary"></i></div>
+                        <p class="text-xs sm:text-sm text-dark font-medium">Decision guidance</p>
+                     </div>
+                     <div class="flex items-start gap-2">
+                        <div class="flex items-center justify-center shrink-0"><i data-lucide="tag"
+                           class="size-4 stroke-[2.5] text-primary"></i></div>
+                        <p class="text-xs sm:text-sm text-dark font-medium">Exportable report</p>
+                     </div>
+                     <div class="flex items-start gap-2">
+                        <div class="flex items-center justify-center shrink-0"><i data-lucide="triangle-alert"
+                           class="size-4 stroke-[2.5] text-primary"></i></div>
+                        <p class="text-xs sm:text-sm text-dark font-medium">Campaign recommendations</p>
+                     </div>
+                  </div>
+                  <div
+                     class="rounded-2xl border border-light bg-gradient-to-b from-light to-white p-2.5 text-center mb-4">
+                     <h5 class="text-base font-semibold text-dark font-body">Starts At</h5>
+                     <h3 class="font-semibold text-2xl font-bold text-dark">₹9,999</h3>
+                     <p class="text-dark mt-1">for up to 10 creators</p>
+                     <button
+                        class="mx-auto group mt-2.5 flex p-2 px-3 w-auto md:w-fit items-center justify-center gap-3 rounded-lg bg-primary text-sm font-semibold text-white transition-all duration-300 hover:bg-secondary">Compare
+                     Creators <i
+                        class="fa-solid fa-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i></button>
+                  </div>
+                  <div class="swiper shortlistSwiper overflow-hidden">
+                     <div class="swiper-wrapper items-stretch">
+                        <div class="swiper-slide !h-auto flex">
+                           <div
+                              class="w-full h-full flex flex-col gap-0.5 bg-white px-2 py-2 rounded-lg shadow-lg text-center">
+                              <img src="assets/images/profilesimg1.png"
+                                 class="w-full h-24 rounded-xl object-cover mx-auto" />
+                              <p class="font-bold text-sm mt-1">65</p>
+                              <p class="text-xs text-gray-500">Fit Score</p>
+                              <!-- <span class="block w-full rounded-full bg-green-100 px-3 py-1 text-[8px] font-semibold text-green-700 mt-auto">Recommended</span> -->
+                               <span class="block w-full rounded-full bg-green-100 px-3 py-1 text-[8px] font-semibold text-green-700 mt-auto">Recommended</span>
+                           </div>
+                        </div>
+                        <div class="swiper-slide !h-auto flex">
+                           <div
+                              class="w-full h-full flex flex-col gap-0.5 bg-white px-2 py-2 rounded-lg shadow-lg text-center">
+                              <img src="assets/images/profilesimg2.png"
+                                 class="w-full h-24 rounded-xl object-cover mx-auto" />
+                              <p class="font-bold text-sm mt-1">54</p>
+                              <p class="text-xs text-gray-500">Fit Score</p>
+                              <span
+                                 class="block w-full rounded-full bg-secondary/20 px-3 py-1 text-[8px] font-semibold text-primary mt-auto">Conditional</span>
+                           </div>
+                        </div>
+                        <div class="swiper-slide !h-auto flex">
+                           <div
+                              class="w-full h-full flex flex-col gap-0.5 bg-white px-2 py-2 rounded-lg shadow-lg text-center">
+                              <div class="relative">
+                                 <img src="assets/images/profilesimg4.png"
+                                    class="w-full h-24 rounded-xl object-cover border-2 border-primary mx-auto" />
+                                 <div
+                                    class="absolute -top-2 -right-2 bg-primary text-white rounded-full w-7 h-7 flex items-center justify-center shadow-lg">
+                                    <i class="fa-solid fa-crown text-xs"></i>
+                                 </div>
+                              </div>
+                              <p class="font-bold text-sm mt-1">91</p>
+                              <p class="text-xs text-gray-500">Fit Score</p>
+                              <span
+                                 class="block w-full rounded-full bg-green-100 px-3 py-1 text-[8px] font-semibold text-green-700 mt-auto">Recommended</span>
+                           </div>
+                        </div>
+                        <div class="swiper-slide !h-auto flex">
+                           <div
+                              class="w-full h-full flex flex-col gap-0.5 bg-white px-2 py-2 rounded-lg shadow-lg text-center">
+                              <img src="assets/images/profilesimg3.png"
+                                 class="w-full h-24 rounded-xl object-cover mx-auto" />
+                              <p class="font-bold text-sm mt-1">61</p>
+                              <p class="text-xs text-gray-500">Fit Score</p>
+                              <span
+                                 class="block w-full rounded-full bg-secondary/20 px-3 py-1 text-[8px] font-semibold text-primary mt-auto">
+                              Conditional</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-pagination !bottom-0 hidden"></div>
+                  </div>
+               </div>
+            </div>
+            <!-- Report Grid -->
+            <div class="w-full flex flex-col gap-4 bg-gray/5 p-5 md:p-8 rounded-3xl">
+               <h3 class="text-sm sm:text-lg text-center font-body font-semibold leading-tight tracking-widest text-primary">SECTIONS IN EVERY REPORT - SAMPLE FROM REAL REPORT</h3>
+               <div class="hidden lg:grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-6">
+                  <div class="rounded-2xl border border-gray/20 bg-white p-5 group shadow-premium transition-all duration-300 hover:-translate-y-1 hover:shadow-glow hover:border-primary/20">
+                     <h4 class="font-body text-xs font-semibold uppercase tracking-wide text-dark">Objective &Influence Snapshot</h4>
+                     <div class="mt-5 flex flex-col items-center">
+                        <div class="relative flex h-24 w-24 items-center justify-center">
+                           <div class="absolute inset-0 rounded-full border-8 border-light"></div>
+                           <div class="absolute inset-0 rotate-45 rounded-full border-8 border-transparent border-r-primary border-t-primary">
+                           </div>
+                           <div class="relative z-10 text-center">
+                              <h2 class="font-semibold text-2xl font-bold text-dark">65</h2> <span class="text-xs text-dark">Fit Score</span>
+                           </div>
+                        </div>
+                        <div class="mt-4 rounded-lg bg-green-100 px-3 py-1 text-sm font-semibold text-green-700">Recommended</div>
+                     </div>
+                  </div>
+                  <div class="rounded-2xl border border-gray/20 bg-white p-5 group shadow-premium transition-all duration-300 hover:-translate-y-1 hover:shadow-glow hover:border-primary/20">
+                     <h4 class="font-body text-xs font-semibold uppercase tracking-wide text-dark">Audience Relationship</h4>
+                     <div class="mt-4">
+                        <p class="text-sm leading-6 text-dark">Loyal but increasingly sceptical of endorsements.Trust varies by product category.</p>
+                     </div>
+                     <div class="mt-5 flex iteam-centre justify-center gap-0 text-secondary">
+                        <svg version="1.1" width="auto" height="40" viewBox="0 0 24 24" fill="none">
+                           <path d="M18 8.5v7a1.5 1.5 0 0 1-3 0v-7a1.5 1.5 0 0 1 3 0zM11.5 0A1.5 1.5 0 0 0 10 1.5v21a1.5 1.5 0 0 0 3 0v-21A1.5 1.5 0 0 0 11.5 0zm10 4A1.5 1.5 0 0 0 20 5.5v13a1.5 1.5 0 0 0 3 0v-13A1.5 1.5 0 0 0 21.5 4zm-15 1A1.5 1.5 0 0 0 5 6.5v11a1.5 1.5 0 0 0 3 0v-11A1.5 1.5 0 0 0 6.5 5zm-5 4A1.5 1.5 0 0 0 0 10.5v3a1.5 1.5 0 0 0 3 0v-3A1.5 1.5 0 0 0 1.5 9z" fill="currentColor"></path>
+                        </svg>
+                     </div>
+                  </div>
+                  <div class="rounded-2xl border border-gray/20 bg-white p-5 group shadow-premium transition-all duration-300 hover:-translate-y-1 hover:shadow-glow hover:border-primary/20">
+                     <h4 class="font-body text-xs font-semibold uppercase tracking-wide text-dark">Content That Works
+                     </h4>
+                     <div class="mt-4 space-y-3">
+                        <div class="flex items-center gap-2">
+                           <i class="fa-regular fa-circle-check text-sm text-green-600"></i>
+                           <p class="text-sm text-dark">Honest reviews</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                           <i class="fa-regular fa-circle-check text-sm text-green-600"></i>
+                           <p class="text-sm text-dark">Lifestyle content</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                           <i class="fa-regular fa-circle-check text-sm text-green-600"></i>
+                           <p class="text-sm text-dark">Product comparisons</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                           <i class="fa-regular fa-circle-check text-sm text-green-600"></i>
+                           <p class="text-sm text-dark">GRWM / Routines</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="rounded-2xl border border-gray/20 bg-white p-5 group shadow-premium transition-all duration-300 hover:-translate-y-1 hover:shadow-glow hover:border-primary/20">
+                     <h4 class="font-body text-xs font-semibold uppercase tracking-wide text-dark">From The Comments
+                     </h4>
+                     <div class="mt-4 space-y-2.5">
+                        <div class="rounded-lg border border-light bg-gray/10 px-3 py-2">
+                           <p class="text-xs leading-5 text-dark">"Didn't she recommend a different SPF last
+                              month?"
+                           </p>
+                        </div>
+                        <div class="rounded-lg border border-light bg-gray/10 px-3 py-2">
+                           <p class="text-xs leading-5 text-dark">"Feels like every product is her favourite"</p>
+                        </div>
+                        <div class="rounded-lg border border-light bg-gray/10 px-3 py-2">
+                           <p class="text-xs leading-5 text-dark">"Starting to feel repetitive."</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="rounded-2xl border border-gray/20 bg-white p-5 group shadow-premium transition-all duration-300 hover:-translate-y-1 hover:shadow-glow hover:border-primary/20">
+                     <h4 class="font-body text-xs font-semibold uppercase tracking-wide text-dark">Before You Brief
+                     </h4>
+                     <div class="mt-4 space-y-2">
+                        <p class="text-xs leading-6 text-dark font-medium">Play into her lifestyle and aesthetic
+                           strengths where trust still holds.
+                        </p>
+                        <p class="text-xs leading-6 text-dark font-medium">Avoid authority-led or claims-heavy
+                           messaging.
+                        </p>
+                     </div>
+                     <div class="mt-5 flex justify-start"><i
+                        class="fa-solid fa-clipboard-list text-4xl text-violet-600"></i></div>
+                  </div>
+                  <div class="rounded-2xl border border-gray/20 bg-white p-5 group shadow-premium transition-all duration-300 hover:-translate-y-1 hover:shadow-glow hover:border-primary/20">
+                     <h4 class="font-body text-xs font-semibold uppercase tracking-wide text-dark">Influence Imprint
+                     </h4>
+                     <div class="mt-4 flex flex-col items-center">
+                        <h3 class="font-body text-lg font-semibold text-violet-600">Bold & Polarising</h3>
+                        <p class="mt-1 text-center text-sm leading-6 text-dark font-medium">Passionate following,
+                           not universal.
+                        </p>
+                        <div
+                           class="relative mt-6 flex h-24 w-24 items-center justify-center rounded-full border border-gray-300">
+                           <div class="absolute h-16 w-16 rounded-full border border-gray-300"></div>
+                           <div class="absolute h-10 w-10 rounded-full border border-gray-300"></div>
+                           <div class="absolute h-full w-px bg-gray-300"></div>
+                           <div class="absolute h-px w-full bg-gray-300"></div>
+                           <div class="h-5 w-5 rounded-full bg-violet-600"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="lg:hidden overflow-hidden">
+                  <div class="swiper reportSwiper relative overflow-visible !mb-5">
+                     <div class="swiper-wrapper items-stretch">
+                        <div class="swiper-slide !h-auto flex">
+                           <div
+                              class="flex flex-col justify-center w-full rounded-2xl border border-gray/20 bg-white p-5 group shadow-premium transition-all duration-300 hover:-translate-y-1 hover:shadow-glow hover:border-primary/20">
+                              <h4 class="font-body text-xs font-semibold uppercase tracking-wide text-dark">Objective & Influence Snapshot</h4>
+                              <div class="mt-5 flex flex-col items-center">
+                                 <div class="relative flex h-24 w-24 items-center justify-center">
+                                    <div class="absolute inset-0 rounded-full border-8 border-light"></div>
+                                    <div class="absolute inset-0 rotate-45 rounded-full border-8 border-transparent border-r-primary border-t-primary">
+                                    </div>
+                                    <div class="relative z-10 text-center">
+                                       <h2 class="font-semibold text-2xl font-bold text-dark">65</h2>
+                                       <span class="text-xs text-dark">Fit Score</span>
+                                    </div>
+                                 </div>
+                                 <div class="mt-4 rounded-lg bg-green-100 px-3 py-1 text-sm font-semibold text-green-700">Recommended</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide !h-auto flex">
+                           <div
+                              class="flex flex-col justify-center w-full rounded-2xl border border-gray/20 bg-white p-5 group shadow-premium transition-all duration-300 hover:-translate-y-1 hover:shadow-glow hover:border-primary/20">
+                              <h4 class="font-body text-xs font-semibold uppercase tracking-wide text-dark">Audience Relationship</h4>
+                              <div class="mt-4 flex-1">
+                                 <p class="text-sm leading-6 text-dark">Loyal but increasingly skeptical ofendorsements. Trust varies by product category.</p>
+                              </div>
+                              <div class="mt-5 flex iteam-centre justify-center gap-0 text-secondary">
+                                 <svg version="1.1" width="auto" height="40" viewBox="0 0 24 24" fill="none">
+                                    <path d="M18 8.5v7a1.5 1.5 0 0 1-3 0v-7a1.5 1.5 0 0 1 3 0zM11.5 0A1.5 1.5 0 0 0 10 1.5v21a1.5 1.5 0 0 0 3 0v-21A1.5 1.5 0 0 0 11.5 0zm10 4A1.5 1.5 0 0 0 20 5.5v13a1.5 1.5 0 0 0 3 0v-13A1.5 1.5 0 0 0 21.5 4zm-15 1A1.5 1.5 0 0 0 5 6.5v11a1.5 1.5 0 0 0 3 0v-11A1.5 1.5 0 0 0 6.5 5zm-5 4A1.5 1.5 0 0 0 0 10.5v3a1.5 1.5 0 0 0 3 0v-3A1.5 1.5 0 0 0 1.5 9z" fill="currentColor"></path>
+                                 </svg>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide !h-auto flex">
+                           <div
+                              class="flex flex-col justify-center w-full rounded-2xl border border-gray/20 bg-white p-5 group shadow-premium transition-all duration-300 hover:-translate-y-1 hover:shadow-glow hover:border-primary/20">
+                              <h4 class="font-body text-xs font-semibold uppercase tracking-wide text-dark">
+                                 Content That Works
+                              </h4>
+                              <div class="mt-4 space-y-3 flex-1">
+                                 <div class="flex items-center gap-2">
+                                    <i class="fa-regular fa-circle-check text-sm text-green-600"></i>
+                                    <p class="text-sm text-dark">Honest reviews</p>
+                                 </div>
+                                 <div class="flex items-center gap-2">
+                                    <i class="fa-regular fa-circle-check text-sm text-green-600"></i>
+                                    <p class="text-sm text-dark">Lifestyle content</p>
+                                 </div>
+                                 <div class="flex items-center gap-2">
+                                    <i class="fa-regular fa-circle-check text-sm text-green-600"></i>
+                                    <p class="text-sm text-dark">Product comparisons</p>
+                                 </div>
+                                 <div class="flex items-center gap-2">
+                                    <i class="fa-regular fa-circle-check text-sm text-green-600"></i>
+                                    <p class="text-sm text-dark">Routine videos</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide !h-auto flex">
+                           <div
+                              class="flex flex-col justify-center w-full rounded-2xl border border-gray/20 bg-white p-5 group shadow-premium transition-all duration-300 hover:-translate-y-1 hover:shadow-glow hover:border-primary/20">
+                              <h4 class="font-body text-xs font-semibold uppercase tracking-wide text-dark">From
+                                 The Comments
+                              </h4>
+                              <div class="mt-4 space-y-2.5 flex-1">
+                                 <div class="rounded-lg border border-light bg-gray/10 px-3 py-2">
+                                    <p class="text-xs leading-5 text-dark">"Didn't she recommend a different SPF
+                                       last month?"
+                                    </p>
+                                 </div>
+                                 <div class="rounded-lg border border-light bg-gray/10 px-3 py-2">
+                                    <p class="text-xs leading-5 text-dark">"Feels like every product is her
+                                       favourite"
+                                    </p>
+                                 </div>
+                                 <div class="rounded-lg border border-light bg-gray/10 px-3 py-2">
+                                    <p class="text-xs leading-5 text-dark">"Starting to feel repetitive."</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide !h-auto flex">
+                           <div
+                              class="flex flex-col justify-center w-full rounded-2xl border border-gray/20 bg-white p-5 group shadow-premium transition-all duration-300 hover:-translate-y-1 hover:shadow-glow hover:border-primary/20">
+                              <h4 class="font-body text-xs font-semibold uppercase tracking-wide text-dark">Before
+                                 You Brief
+                              </h4>
+                              <div class="mt-4 space-y-2 flex-1">
+                                 <p class="text-xs leading-6 text-dark font-medium">Play into her lifestyle and
+                                    aesthetic strengths where trust still holds.
+                                 </p>
+                                 <p class="text-xs leading-6 text-dark font-medium">Avoid authority-led or
+                                    claims-heavy messaging.
+                                 </p>
+                              </div>
+                              <div class="mt-5 flex justify-start"><i
+                                 class="fa-solid fa-clipboard-list text-4xl text-violet-600"></i></div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide !h-auto flex">
+                           <div
+                              class="flex flex-col justify-center w-full rounded-2xl border border-gray/20 bg-white p-5 group shadow-premium transition-all duration-300 hover:-translate-y-1 hover:shadow-glow hover:border-primary/20">
+                              <h4 class="font-body text-xs font-semibold uppercase tracking-wide text-dark">
+                                 Influence Imprint
+                              </h4>
+                              <div class="mt-4 flex flex-col items-center flex-1">
+                                 <h3 class="font-body text-lg font-semibold text-violet-600">Bold & Polarising
+                                 </h3>
+                                 <p class="mt-1 text-center text-sm leading-6 text-dark font-medium">Passionate
+                                    following, not universal.
+                                 </p>
+                                 <div
+                                    class="relative mt-6 flex h-24 w-24 items-center justify-center rounded-full border border-gray-300">
+                                    <div class="absolute h-16 w-16 rounded-full border border-gray-300"></div>
+                                    <div class="absolute h-10 w-10 rounded-full border border-gray-300"></div>
+                                    <div class="absolute h-full w-px bg-gray-300"></div>
+                                    <div class="absolute h-px w-full bg-gray-300"></div>
+                                    <div class="h-5 w-5 rounded-full bg-violet-600"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="absolute -bottom-1 right-0 z-20 flex items-center gap-2">
+                        <div class="swiper-button-prev report-prev !static !m-0 !flex !h-7 !w-7 !items-center !justify-center rounded-full transition-all duration-300 hover:scale-105">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+
+                        <div class="swiper-button-next report-next !static !m-0 !flex !h-7 !w-7 !items-center !justify-center rounded-full transition-all duration-300 hover:scale-105">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                     <!-- Pagination -->
+                     <div class="swiper-pagination !bottom-0"></div>
+                  </div>
+               </div>
+               <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 items-center rounded-2xl border border-gray/20 bg-white p-4 sm:p-6 shadow-premium transition-all duration-500 hover:border-primary/20 hover:shadow-glow">
+                  <div class="w-full flex flex-col gap-2">
+                     <div>
+                        <p class="font-body text-sm sm:text-base font-semibold uppercase tracking-[0.10em] text-primary mb-1"> BUILT ON SEVEN DIMENSIONS OF INFLUENCE</p>
+                        <p class="text-sm sm:text-sm leading-6 text-dark">Each objective prioritises differentdimensions.</p>
+                     </div>
+                     <div class="my-1 overflow-hidden">
+                        <div class="flex items-end gap-0.5 sm:gap-1 h-10">
+                           <span class="h-2 w-1 rounded-full bg-primary/40"></span>
+                           <span class="h-4 w-1 rounded-full bg-primary/50"></span>
+                           <span class="h-6 w-1 rounded-full bg-primary/70"></span>
+                           <span class="h-3 w-1 rounded-full bg-primary/40"></span>
+                           <span class="h-7 w-1 rounded-full bg-primary"></span>
+                           <span class="h-4 w-1 rounded-full bg-primary/60"></span>
+                           <span class="h-8 w-1 rounded-full bg-primary"></span>
+                           <span class="h-5 w-1 rounded-full bg-primary/60"></span>
+                           <span class="h-3 w-1 rounded-full bg-primary/40"></span>
+                           <span class="h-7 w-1 rounded-full bg-primary"></span>
+                           <span class="h-4 w-1 rounded-full bg-primary/50"></span>
+                           <span class="h-6 w-1 rounded-full bg-primary/80"></span>
+                           <span class="h-2 w-1 rounded-full bg-primary/40"></span>
+                           <span class="h-5 w-1 rounded-full bg-primary/70"></span>
+                           <span class="h-8 w-1 rounded-full bg-primary"></span>
+                           <span class="h-4 w-1 rounded-full bg-primary/50"></span>
+                           <span class="h-6 w-1 rounded-full bg-primary/80"></span>
+                           <span class="h-3 w-1 rounded-full bg-primary/40"></span>
+                           <span class="h-7 w-1 rounded-full bg-primary"></span>
+                           <span class="h-4 w-1 rounded-full bg-primary/60"></span>
+                           <span class="h-8 w-1 rounded-full bg-primary"></span>
+                           <span class="h-5 w-1 rounded-full bg-primary/60"></span>
+                           <span class="h-3 w-1 rounded-full bg-primary/40"></span>
+                           <span class="h-7 w-1 rounded-full bg-primary"></span>
+                           <span class="h-4 w-1 rounded-full bg-primary/50"></span>
+                           <span class="h-6 w-1 rounded-full bg-primary/80"></span>
+                           <span class="h-2 w-1 rounded-full bg-primary/40"></span>
+                           <span class="h-5 w-1 rounded-full bg-primary/70"></span>
+                           <span class="h-8 w-1 rounded-full bg-primary"></span>
+                           <span class="h-4 w-1 rounded-full bg-primary/50"></span>
+                           <span class="h-6 w-1 rounded-full bg-primary"></span>
+                        </div>
+                     </div>
+                     <a href="javascript:void(0)"
+                        class="group mt-1 inline-flex w-fit items-center gap-2 text-sm font-medium text-primary transition-all duration-300 hover:text-primary/80">
+                     Explore methodology <i
+                        class="fa-solid fa-arrow-right text-xs transition-all duration-300 group-hover:translate-x-1"></i></a>
+                  </div>
+                  <div
+                     class="lg:col-span-3 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-7 border border-gray/20 rounded-2xl overflow-hidden bg-white">
+                     <div
+                        class="relative flex h-full flex-col items-center text-center px-3 py-4 gap-1.5 transition-all duration-300 hover:bg-primary/[0.02]">
+                        <div
+                           class="flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-violet-100 to-violet-50">
+                           <i data-lucide="shield-check" class="text-2xl text-violet-600"></i>
+                        </div>
+                        <h3 class="font-body text-xs font-semibold tracking-wide text-dark">Perceived Authenticity
+                        </h3>
+                        <p class="text-xs leading-tight text-dark">How credible and true-to-life this creator reads.
+                        </p>
+                        <span
+                           class="hidden xl:block absolute top-6 right-0 w-px h-[70%] bg-gradient-to-b from-transparent via-gray/20 to-transparent"></span>
+                     </div>
+                     <div class="relative flex h-full flex-col items-center text-center px-3 py-4 gap-1.5 transition-all duration-300 hover:bg-primary/[0.02]">
+                        <div class="flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-100 to-blue-50">
+                           <i data-lucide="users" class="text-2xl text-blue-600"></i>
+                        </div>
+                        <h3 class="font-body text-xs font-semibold tracking-wide text-dark">Perceived Relatability
+                        </h3>
+                        <p class="text-xs leading-tight text-dark">How much the audience sees themselves in them.
+                        </p>
+                        <span class="hidden xl:block absolute top-6 right-0 w-px h-[70%] bg-gradient-to-b from-transparent via-gray/20 to-transparent"></span>
+                     </div>
+                     <div class="relative flex h-full flex-col items-center text-center px-3 py-4 gap-1.5 transition-all duration-300 hover:bg-primary/[0.02]">
+                        <div class="flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-pink-100 to-rose-50">
+                           <i data-lucide="heart" class="text-2xl text-pink-600"></i>
+                        </div>
+                        <h3 class="font-body text-xs font-semibold tracking-wide text-dark">Connection Depth</h3>
+                        <p class="text-xs leading-tight text-dark">The emotional bond and loyalty in the relationship.</p>
+                        <span class="hidden xl:block absolute top-6 right-0 w-px h-[70%] bg-gradient-to-b from-transparent via-gray/20 to-transparent"></span>
+                     </div>
+                     <div class="relative flex h-full flex-col items-center text-center px-3 py-4 gap-1.5 transition-all duration-300 hover:bg-primary/[0.02]">
+                        <div class="flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-yellow-100 to-amber-50">
+                           <i data-lucide="star" class="text-2xl text-yellow-600"></i>
+                        </div>
+                        <h3 class="font-body text-xs font-semibold tracking-wide text-dark">Recognised Skill</h3>
+                        <p class="text-xs leading-tight text-dark">The expertise or talent audiences acknowledge.
+                        </p>
+                        <span class="hidden xl:block absolute top-6 right-0 w-px h-[70%] bg-gradient-to-b from-transparent via-gray/20 to-transparent"></span>
+                     </div>
+                     <div class="relative flex h-full flex-col items-center text-center px-3 py-4 gap-1.5 transition-all duration-300 hover:bg-primary/[0.02]">
+                        <div class="flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-purple-100 to-fuchsia-50"><i data-lucide="diamond" class="text-2xl text-purple-600"></i></div>
+                        <h3 class="font-body text-xs font-semibold tracking-wide text-dark">Uniqueness Signal</h3>
+                        <p class="text-xs leading-tight text-dark">How distinctive and original their voice feels.
+                        </p>
+                        <span
+                           class="hidden xl:block absolute top-6 right-0 w-px h-[70%] bg-gradient-to-b from-transparent via-gray/20 to-transparent"></span>
+                     </div>
+                     <div class="relative flex h-full flex-col items-center text-center px-3 py-4 gap-1.5 transition-all duration-300 hover:bg-primary/[0.02]">
+                        <div class="flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-orange-100 to-orange-50">
+                           <i data-lucide="sun" class="text-2xl text-orange-500"></i>
+                        </div>
+                        <h3 class="font-body text-xs font-semibold tracking-wide text-dark">Perceived Awareness</h3>
+                        <p class="text-xs leading-tight text-dark">How informed and credible they seem.</p>
+                        <span class="hidden xl:block absolute top-6 right-0 w-px h-[70%] bg-gradient-to-b from-transparent via-gray/20 to-transparent"></span>
+                     </div>
+                     <div class="relative flex h-full flex-col items-center text-center px-3 py-4 gap-1.5 transition-all duration-300 hover:bg-primary/[0.02]">
+                        <div class="flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-cyan-100 to-sky-50"><i data-lucide="eye" class="text-2xl text-cyan-600"></i></div>
+                        <h3 class="font-body text-xs font-semibold tracking-wide text-dark">Aesthetic Resonance</h3>
+                        <p class="text-xs leading-tight text-dark">The pull of their visuals, vibe and presentation.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Brand Images Grid -->
+            <div class="mx-auto grid max-w-7xl grid-cols-2 gap-5 sm:grid-cols-2 lg:grid-cols-4 w-full">
+               <div class="group flex min-h-32 sm:min-h-44 items-center justify-center rounded-3xl border border-gray/20 bg-white p-3 shadow-premium transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-glow">
+                  <img src="assets/images/brandimg1.png" alt="Brand" class="h-16 sm:h-24 w-auto object-contain">
+               </div>
+               <div class="group flex min-h-32 sm:min-h-44 items-center justify-center rounded-3xl border border-gray/20 bg-white p-3 shadow-premium transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-glow">
+                  <img src="assets/images/brandimg2.png" alt="Brand" class="h-16 sm:h-24 w-auto object-contain">
+               </div>
+               <div class="group flex min-h-32 sm:min-h-44 items-center justify-center rounded-3xl border border-gray/20 bg-white p-3 shadow-premium transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-glow">
+                  <img src="assets/images/brandimg3.png" alt="Brand" class="h-16 sm:h-24 w-auto object-contain">
+               </div>
+               <div class="group flex min-h-32 sm:min-h-44 items-center justify-center rounded-3xl border border-gray/20 bg-white p-3 shadow-premium transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-glow">
+                  <img src="assets/images/brandimg2.png" alt="Brand" class="h-16 sm:h-24 w-auto object-contain">
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- ========== HEADER ========== -->
+      <footer class="bg-cream py-10">
+         <div class="container mx-auto px-4 lg:px-8 text-center">
+            <p class="text-sm font-medium leading-5 text-dark-500">Nostiqa Ltd. Incorporated in England & Wales •Company No. 16867541</p>
+            <p class="text-sm font-medium leading-5 text-dark-500">In India, operating as Folk Frequency, CINU74999MH2019PTC328228</p>
+            <div class="mx-auto my-5 h-px max-w-4xl bg-gray/30"></div>
+            <p class="text-sm leading-5 text-dark-500"> Disclaimer: Nostiqa is a qualitative analysis layer derived frompublicly shared content in full compliance of GDPR standards.</p>
+            <p class="text-sm leading-5 text-dark-500"> Our reports are interpretations not to be taken as legal adviceor evidence of the career potential or personal qualities of any individual or organisation.</p>
+         </div>
+      </footer>
+
+      <script src="assets/js/swiper-bundle.min.js"></script>
+      <script src="assets/js/lucide.min.js"></script>
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
