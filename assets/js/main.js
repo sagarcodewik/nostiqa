@@ -89,6 +89,50 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // ===== Cards Swiper =====
+  if (
+    typeof Swiper !== "undefined" &&
+    document.querySelector(".cardsSwiper")
+  ) {
+    new Swiper(".cardsSwiper", {
+      spaceBetween: 10,
+      pagination: {
+        el: ".cardsSwiper .swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        0: { slidesPerView: 1 },
+        576: { slidesPerView: 1.1 },
+        768: { slidesPerView: 1.6 },
+        1024: { slidesPerView: 2.2 },
+        1600: { slidesPerView: 3 },
+      },
+    });
+  }
+
+  // ===== Brands Marquee =====
+  if (
+    typeof Swiper !== "undefined" &&
+    document.querySelector(".brandsSwiper")
+  ) {
+    new Swiper(".brandsSwiper", {
+      slidesPerView: "auto",
+      spaceBetween: 80,
+      loop: true,
+      freeMode: false,
+      allowTouchMove: false,
+      grabCursor: false,
+
+      speed: 6000,
+
+      autoplay: {
+        delay: 1,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: false,
+      },
+    });
+  }
+
   // ===== Pricing Switcher =====
   const plans = {
     nano: {

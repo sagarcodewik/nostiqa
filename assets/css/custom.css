@@ -38,6 +38,18 @@ h1, h2, h3, h4, h5, h6, .font-heading {font-family: 'Poppins', sans-serif;}
 @keyframes dash {
   to { stroke-dashoffset: 0;}
 }
+@keyframes arrowFloat {
+  0%,100% {transform: translateX(0);}
+  50% {transform: translateX(6px);}
+}
+@keyframes scroll-brands {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.arrow-float {
+  animation: arrowFloat 1.8s ease-in-out infinite;
+}
 
 .animate-dash { stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: dash 3s ease-in-out forwards;}
 .animate-float-slow { animation: float-slow 7s ease-in-out infinite;}
@@ -68,6 +80,13 @@ h1, h2, h3, h4, h5, h6, .font-heading {font-family: 'Poppins', sans-serif;}
 .swiper .swiper-pagination-bullet{ width: 6px; height: 6px; background: rgba(55, 17, 190, 0.18); opacity: 1; transition: all .3s ease;}
 .swiper .swiper-pagination-bullet-active{ width: 12px; border-radius: 999px; background: #3711BE; box-shadow: 0 0 20px rgba(123, 97, 255, 0.35);}
 .swiper .swiper-pagination-bullet:hover{background: #7B61FF;}
+
+/* Brands Slider Start */
+.brands-slider {overflow: hidden; width: 100%; padding: 1rem 0; mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%); -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);}
+.brands-track {display: flex; align-items: center; gap: 80px; width: max-content; animation: scroll-brands 28s linear infinite;}
+.brands-track:hover {animation-play-state: paused;}
+.brands-track img {height: 40px; width: auto; object-fit: contain; filter: grayscale(1); opacity: 0.65; transition: filter 0.3s ease, opacity 0.3s ease; flex-shrink: 0; display: block;}
+.brands-track img:hover {filter: grayscale(0); opacity: 1;}
 
 /* Mobile Font Size Fix */
 @media (max-width: 767px) {
