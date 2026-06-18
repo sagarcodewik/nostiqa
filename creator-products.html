@@ -123,125 +123,285 @@
             </div>
          </div>
       </div>
-
       <div class="container mx-auto px-4 lg:px-8 grid grid-cols-1 lg:grid-cols-4 gap-6 items-center">
-         <div class="w-full flex flex-col gap-2">
-            <h3 class="text-xl lg:text-4xl font-bold text-dark leading-tight mb-0">Built for decisions that matter.</h3>
-            <p class="text-sm sm:text-sm leading-6 text-dark">Get the clarity you need before committing budget, time or brand equity.</p>
+         <div class="w-full h-full justify-around flex flex-col gap-3">
+            <h5 class="font-body text-sm sm:text-base font-semibold uppercase tracking-[0.10em] text-primary mb-0">What's Included</h5>
+            <ul class="space-y-2.5">
+               <li class="flex items-center gap-1.5"><i data-lucide="badge-check" class="size-5 text-primary"></i> <span>Ranked Creator Shortlist</span></li>
+               <li class="flex items-center gap-1.5"><i data-lucide="badge-check" class="size-5 text-primary"></i> <span>Objective Fit Scoring</span></li>
+               <li class="flex items-center gap-1.5"><i data-lucide="badge-check" class="size-5 text-primary"></i> <span>Audience Intelligence</span></li>
+               <li class="flex items-center gap-1.5"><i data-lucide="badge-check" class="size-5 text-primary"></i> <span>Key Strengths & Risks</span></li>
+               <li class="flex items-center gap-1.5"><i data-lucide="badge-check" class="size-5 text-primary"></i> <span>Campaign Relevance Analysis</span></li>
+               <li class="flex items-center gap-1.5"><i data-lucide="badge-check" class="size-5 text-primary"></i> <span>Recommendation Report</span></li>
+               <li class="flex items-center gap-1.5"><i data-lucide="badge-check" class="size-5 text-primary"></i> <span>PDF Delivery</span></li>
+            </ul>
          </div>
-         <div class="lg:col-span-3 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 border border-gray/20 rounded-2xl overflow-hidden bg-white">
-            <div class="relative flex h-full flex-col items-start justify-start text-start p-6 sm:p-8 gap-1.5 transition-all duration-300 hover:bg-primary/[0.02]">
-               <div class="mb-2 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-light to-light/50 text-primary"><i data-lucide="rocket" class="size-7"></i></div>
-               <h3 class="text-lg font-bold text-dark leading-tight mb-0">New Campaign</h3>
-               <p class="text-xs leading-tight text-dark">Evaluate creator options before you invest.</p>
-               <span class="hidden lg:block absolute top-6 right-0 w-px h-[70%] bg-gradient-to-b from-transparent via-gray/20 to-transparent"></span>
+         <div class="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-3 w-full p-4 relative overflow-hidden rounded-3xl border border-gray/20 bg-white items-stretch">
+            <div class="col-span-full"><h6 class="font-body text-sm sm:text-base font-semibold uppercase tracking-[0.10em] text-primary mb-0">Sample Report Structure</h6></div>
+            <div class="w-full flex flex-col h-full">
+               <div class="group flex flex-col gap-4 h-full rounded-2xl p-4 relative overflow-hidden border border-gray/10 bg-gradient-to-br from-white via-primary/5 to-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-premium">
+                  <div class="flex items-start gap-3">
+                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary text-sm font-semibold text-white">01</div>
+                  <div class="min-w-0">
+                     <p class="text-xs text-gray-500">Page 1</p>
+                     <h3 class="truncate text-base font-semibold text-dark">Ranked Recommendation</h3>
+                  </div>
+               </div>
+               <div class="space-y-2">
+                  <div class="grid grid-cols-[20px_minmax(0,1fr)_45px_45px] items-center gap-2">
+                     <span class="text-xs font-medium">1</span>
+                     <div class="flex min-w-0 items-center gap-2">
+                     <i data-lucide="user-circle-2" class="size-4 shrink-0 text-primary"></i>
+                     <span class="truncate text-xs text-dark">@username</span>
+                     </div>
+                     <span class="text-xs font-medium text-dark text-right">88</span>
+                     <span class="text-xs text-gray-500 text-right">92</span>
+                  </div>
+                  <div class="grid grid-cols-[20px_minmax(0,1fr)_45px_45px] items-center gap-2">
+                     <span class="text-xs font-medium">2</span>
+                     <div class="flex min-w-0 items-center gap-2">
+                     <img src="https://i.pravatar.cc/40?img=2" class="h-5 w-5 shrink-0 rounded-full" />
+                     <span class="truncate text-xs text-dark">@creatorname</span>
+                     </div>
+                     <span class="text-xs font-medium text-dark text-right">88</span>
+                     <span class="text-xs text-gray-500 text-right">92</span>
+                  </div>
+                  <div class="grid grid-cols-[20px_minmax(0,1fr)_45px_45px] items-center gap-2">
+                     <span class="text-xs font-medium">3</span>
+                     <div class="flex min-w-0 items-center gap-2">
+                     <img src="https://i.pravatar.cc/40?img=3" class="h-5 w-5 shrink-0 rounded-full" />
+                     <span class="truncate text-xs text-dark">@creatorname</span>
+                     </div>
+                     <span class="text-xs font-medium text-dark text-right">77</span>
+                     <span class="text-xs text-gray-500 text-right">80</span>
+                  </div>
+                  <a href="#" class="inline-flex text-xs font-medium text-primary">+ 5 more</a>
+               </div>
+               <div class="rounded-xl border border-primary/30 bg-primary/5 p-3">
+                  <div class="flex gap-3">
+                     <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-primary/20"><i data-lucide="star" class="size-4 text-primary"></i></div>
+                     <div class="min-w-0">
+                     <h4 class="text-sm font-semibold text-dark truncate">Top Recommendation</h4>
+                     <p class="mt-1 text-xs leading-relaxed text-gray-600"><span class="font-medium text-dark">@creatorname</span> is the strongest fit for this objective.</p>
+                     </div>
+                  </div>
+               </div>
+               </div>
+               <p class="mt-3 text-xs font-semibold text-dark">Top Creators Ranked Against Your Objective.</p>
             </div>
-            <div class="relative flex h-full flex-col items-start justify-start text-start p-6 sm:p-8 gap-1.5 transition-all duration-300 hover:bg-primary/[0.02]">
-               <div class="mb-2 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-light to-light/50 text-primary"><i data-lucide="badge-check" class="size-7"></i></div>
-               <h3 class="text-lg font-bold text-dark leading-tight mb-0">Agency Recommendation</h3>
-               <p class="text-xs leading-tight text-dark">Back your recommendation with objective intelligence.</p>
-               <span class="hidden lg:block absolute top-6 right-0 w-px h-[70%] bg-gradient-to-b from-transparent via-gray/20 to-transparent"></span>
+            <div class="w-full flex flex-col h-full">
+               <div class="group flex flex-col gap-4 h-full rounded-2xl p-4 relative overflow-hidden border border-gray/10 bg-gradient-to-br from-white via-primary/5 to-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-premium">
+                  <div class="flex items-start gap-2">
+                     <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary text-sm font-semibold text-white">02</div>
+                     <div class="min-w-0">
+                        <p class="text-xs text-gray-500">Page 2</p>
+                        <h3 class="truncate text-base font-semibold text-dark">Creator Profiles</h3>
+                     </div>
+                  </div>
+                  <div class="w-full flex flex-col gap-2 rounded-2xl border border-gray/20 bg-white p-3 shadow-premium">
+                     <div class="flex items-center gap-2">
+                        <img src="https://i.pravatar.cc/80?img=5" alt="profile" class="h-10 w-10 rounded-full object-cover"/>
+                        <div>
+                           <h3 class="text-sm font-semibold text-dark">@thegirlmayra</h3>
+                           <p class="text-xs text-gray-500">930K Followers</p>
+                        </div>
+                     </div>
+                     <div class="w-full flex flex-col gap-1">
+                        <h4 class="text-sm font-semibold uppercase tracking-wide text-primary">Audience Relationship</h4>
+                        <p class="text-xs text-gray-600 line-clamp-3"> Respectful and calm community. Audience appreciates her perspective and personal conversations.</p>
+                     </div>
+                     <div class="w-full flex flex-col gap-1">
+                        <h4 class="text-sm font-semibold uppercase tracking-wide text-primary">Top Strengths</h4>
+                        <div class="flex items-center justify-between gap-3">
+                        <div class="flex items-center gap-2 min-w-0">
+                           <i data-lucide="check-circle-2" class="size-4 text-green-500 shrink-0"></i>
+                           <span class="truncate text-xs text-dark">Perceived Authenticity</span>
+                        </div>
+                        <div class="h-2 w-16 rounded-full bg-green-500"></div>
+                        </div>
+                        <div class="flex items-center justify-between gap-3">
+                        <div class="flex items-center gap-2 min-w-0">
+                           <i data-lucide="check-circle-2" class="size-4 text-green-500 shrink-0"></i>
+                           <span class="truncate text-xs text-dark">Emotional Connection</span>
+                        </div>
+                        <div class="h-2 w-16 rounded-full bg-green-500"></div>
+                        </div>
+                        <div class="flex items-center justify-between gap-3">
+                        <div class="flex items-center gap-2 min-w-0">
+                           <i data-lucide="check-circle-2" class="size-4 text-green-500 shrink-0"></i>
+                           <span class="truncate text-xs text-dark">Community Presence</span>
+                        </div>
+                        <div class="h-2 w-16 rounded-full bg-green-500"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <p class="mt-3 text-xs font-semibold text-dark">Strengths, audience relationships and content fit.</p>
             </div>
-            <div class="relative flex h-full flex-col items-start text-start sm:items-center sm:text-center lg:items-start lg:text-start justify-center p-6 sm:p-8 gap-2 transition-all duration-300 hover:bg-primary/[0.02] sm:col-span-2 lg:col-span-1">
-               <div class="mb-2 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-light to-light/50 text-primary"><i data-lucide="shield-check" class="size-7"></i></div>
-               <h3 class="text-lg font-bold text-dark leading-tight mb-0">Founder-Led Brand</h3>
-               <p class="text-xs leading-5 text-dark sm:max-w-md lg:max-w-none">Make confident decisions without expensive trial and error.</p>
+            <div class="w-full flex flex-col h-full">
+               <div class="group flex flex-col gap-4 h-full rounded-2xl p-4 relative overflow-hidden border border-gray/10 bg-gradient-to-br from-white via-primary/5 to-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-premium">
+                  <div class="flex items-start gap-2">
+                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary text-sm font-semibold text-white">03</div>
+                  <div class="min-w-0">
+                     <p class="text-xs text-gray-500">Page 3</p>
+                     <h3 class="truncate text-base font-semibold text-dark">Campaign Considerations</h3>
+                  </div>
+               </div>
+               <div class="w-full flex flex-col gap-2 rounded-2xl border border-gray/20 bg-white p-3 shadow-premium">
+                  <div class="w-full flex flex-col gap-1">
+                     <h4 class="text-sm font-semibold uppercase tracking-wide text-primary">RISKS TO CONSIDER</h4>
+                     <ul class="flex flex-col gap-1.5">
+                        <li class="flex items-center gap-1.5"><i data-lucide="check-circle-2" class="size-4 text-primary shrink-0"></i><span class="text-xs text-dark">Public controversies emerge over time</span></li>
+                        <li class="flex items-center gap-1.5"><i data-lucide="check-circle-2" class="size-4 text-primary shrink-0"></i><span class="text-xs text-dark">Audience sentiment can shift during high-frequency promotion</span></li>
+                     </ul>
+                  </div>
+                  <div class="w-full flex flex-col gap-1">
+                     <h4 class="text-sm font-semibold uppercase tracking-wide text-primary">OPPORTUNITIES</h4>
+                     <ul class="flex flex-col gap-1.5">
+                        <li class="flex items-center gap-1.5"><i data-lucide="check-circle-2" class="size-4 text-primary shrink-0"></i><span class="text-xs text-dark">Strong skincare category authority</span></li>
+                        <li class="flex items-center gap-1.5"><i data-lucide="check-circle-2" class="size-4 text-primary shrink-0"></i><span class="text-xs text-dark">High save & share potential</span></li>
+                     </ul>
+                  </div>
+               </div>
+               </div>
+               <p class="mt-3 text-xs font-semibold text-dark">Top Creators Ramked Against Your Objective.</p>
+            </div>
+            <div class="w-full flex flex-col h-full">
+               <div class="group flex flex-col gap-4 h-full rounded-2xl p-4 relative overflow-hidden border border-gray/10 bg-gradient-to-br from-white via-primary/5 to-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-premium">
+                 <div class="flex items-start gap-2">
+                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary text-sm font-semibold text-white">04</div>
+                  <div class="min-w-0">
+                     <p class="text-xs text-gray-500">Page 4+</p>
+                     <h3 class="truncate text-base font-semibold text-dark">Full creator breakdowns</h3>
+                  </div>
+               </div>
+               <div class="w-full flex flex-col gap-2 rounded-2xl border border-gray/20 bg-white p-3 shadow-premium">
+                  <div class="flex items-center gap-2">
+                     <img src="https://i.pravatar.cc/80?img=5" alt="profile" class="h-10 w-10 rounded-full object-cover"/>
+                     <div>
+                        <h3 class="text-sm font-semibold text-dark">@glowwithria</h3>
+                        <p class="text-xs text-gray-500">582K Followers</p>
+                     </div>
+                  </div>
+                  <div class="w-full flex flex-col gap-1">
+                     <h4 class="text-sm font-semibold uppercase tracking-wide text-primary">DIMENSION SCORES</h4>
+                     <p class="text-xs text-gray-600 line-clamp-3"> Respectful and calm community. Audience appreciates her perspective and personal conversations.</p>
+                  </div>
+                  <div class="w-full flex flex-col gap-1">
+                    <ul class="space-y-1">
+                     <li class="flex justify-between items-center text-xs text-dark"> <span>Perceived Authenticity</span> <span>4.1</span></li>
+                     <li class="flex justify-between items-center text-xs text-dark"> <span>Emotional Connection</span> <span>3.8</span></li>
+                     <li class="flex justify-between items-center text-xs text-dark"> <span>Connection Depth</span> <span>3.6</span></li>
+                     <li class="flex justify-between items-center text-xs text-dark"> <span>Recognized Skill</span> <span>4.0</span></li>
+                     <!-- <li class="flex justify-between items-center text-xs text-dark"> <span>Uniqueness Signal</span> <span>3.2</span></li>
+                     <li class="flex justify-between items-center text-xs text-dark"> <span>Perceived Awareness</span> <span>2.8</span></li>
+                     <li class="flex justify-between items-center text-xs text-dark"> <span>Aesthetic Resonance</span> <span>3.6</span></li> -->
+                    </ul>
+                  </div>
+               </div>
+               </div>
+               <p class="mt-3 text-xs font-semibold text-dark">Detailed analysis for every creator evaluated.</p>
             </div>
          </div>
       </div>
       <div class="container mx-auto px-4 lg:px-8 grid grid-cols-1 lg:grid-cols-4 gap-6 items-center">
          <div class="flex flex-col gap-2">
-            <h3 class="text-2xl lg:text-4xl font-bold text-dark leading-tight mb-0">What's <span class="inline sm:block">Included</span></h3>
-         </div>
-         <!-- grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-7 border border-gray/20 rounded-2xl overflow-hidden bg-white -->
-         <div class="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
-            <div class="group relative rounded-2xl border border-gray/20 bg-white p-5 text-center transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-lg">
-               <div class="absolute top-4 right-4"><i data-lucide="badge-check" class="size-5 text-green-500"></i></div>
-               <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-light transition-all duration-300 group-hover:bg-primary/10">
-                  <i data-lucide="star" class="size-6 text-primary"></i>
+            <h4 class="font-body text-sm sm:text-base font-semibold uppercase tracking-[0.10em] text-primary mb-0">Who It's For</h4>
+            <div class="space-y-3">
+               <div class="group flex items-start gap-2 rounded-2xl border border-gray/10 bg-white/70 backdrop-blur-xl p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-premium">
+                  <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10"><i data-lucide="users" class="size-5 text-primary"></i></div>
+                  <div class="min-w-0">
+                     <h3 class="text-lg font-semibold text-dark">Agencies</h3>
+                     <p class="mt-0.5 line-clamp-2 text-xs text-gray">Comparing creators across multiple client recommendations.</p>
+                  </div>
                </div>
-               <h4 class="text-sm font-semibold leading-snug text-dark">Best Fit Recommendation</h4>
-            </div>
-            <div class="group relative rounded-2xl border border-gray/20 bg-white p-5 text-center transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-lg">
-               <div class="absolute top-4 right-4"><i data-lucide="badge-check" class="size-5 text-green-500"></i></div>
-               <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-light transition-all duration-300 group-hover:bg-primary/10">
-                  <i data-lucide="target" class="size-6 text-primary"></i>
+               <div class="group flex items-start gap-2 rounded-2xl border border-gray/10 bg-white/70 backdrop-blur-xl p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-premium">
+                  <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10"><i data-lucide="chart-column" class="size-5 text-primary"></i></div>
+                  <div class="min-w-0">
+                     <h3 class="text-lg font-semibold text-dark">Marketing Teams</h3>
+                     <p class="mt-0.5 line-clamp-2 text-xs text-gray">Building campaign shortlists with confidence.</p>
+                  </div>
                </div>
-               <h4 class="text-sm font-semibold leading-snug text-dark">Objective Fit Score</h4>
-            </div>
-            <div class="group relative rounded-2xl border border-gray/20 bg-white p-5 text-center transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-lg">
-               <div class="absolute top-4 right-4"><i data-lucide="badge-check" class="size-5 text-green-500"></i></div>
-               <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-light transition-all duration-300 group-hover:bg-primary/10">
-                  <i data-lucide="bar-chart-3" class="size-6 text-primary"></i>
+               <div class="group flex items-start gap-2 rounded-2xl border border-gray/10 bg-white/70 backdrop-blur-xl p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-premium">
+                  <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10"><i data-lucide="rocket" class="size-5 text-primary"></i></div>
+                  <div class="min-w-0">
+                     <h3 class="text-lg font-semibold text-dark">Growing Brands</h3>
+                     <p class="mt-0.5 line-clamp-2 text-xs text-gray">Reducing creator selection risk before launch.</p>
+                  </div>
                </div>
-               <h4 class="text-sm font-semibold leading-snug text-dark">Dimension Breakdown</h4>
-            </div>
-            <div class="group relative rounded-2xl border border-gray/20 bg-white p-5 text-center transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-lg">
-               <div class="absolute top-4 right-4"><i data-lucide="badge-check" class="size-5 text-green-500"></i></div>
-               <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-light transition-all duration-300 group-hover:bg-primary/10">
-                  <i data-lucide="users" class="size-6 text-primary"></i>
-               </div>
-               <h4 class="text-sm font-semibold leading-snug text-dark">Audience Intelligence</h4>
-            </div>
-            <div class="group relative rounded-2xl border border-gray/20 bg-white p-5 text-center transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-lg">
-               <div class="absolute top-4 right-4"><i data-lucide="badge-check" class="size-5 text-green-500"></i></div>
-               <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-light transition-all duration-300 group-hover:bg-primary/10">
-                  <i data-lucide="shield-check" class="size-6 text-primary"></i>
-               </div>
-               <h4 class="text-sm font-semibold leading-snug text-dark">Brand Safety Flags</h4>
-            </div>
-            <div class="xl:col-span-2 group relative rounded-2xl border border-gray/20 bg-white p-5 text-center transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-lg">
-               <div class="absolute top-4 right-4"><i data-lucide="badge-check" class="size-5 text-green-500"></i></div>
-               <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-light transition-all duration-300 group-hover:bg-primary/10">
-                  <i data-lucide="lightbulb" class="size-6 text-primary"></i>
-               </div>
-               <h4 class="text-sm font-semibold leading-snug text-dark">Campaign Guidance</h4>
-            </div>
-            <div class="group relative rounded-2xl border border-gray/20 bg-white p-5 text-center transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-lg">
-               <div class="absolute top-4 right-4"><i data-lucide="badge-check" class="size-5 text-green-500"></i></div>
-               <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-light transition-all duration-300 group-hover:bg-primary/10">
-                  <i data-lucide="file-text" class="size-6 text-primary"></i>
-               </div>
-               <h4 class="text-sm font-semibold leading-snug text-dark">PDF Report</h4>
             </div>
          </div>
-      </div>
-      <div class="container mx-auto px-4 lg:px-8 grid grid-cols-1 lg:grid-cols-4 gap-6 items-center">
-         <div class="flex flex-col gap-2">
-            <h3 class="text-2xl lg:text-4xl font-bold text-dark leading-tight mb-0">How <span class="inline sm:block">it works</span></h3>
-         </div>
-         <div class="lg:col-span-3 relative overflow-hidden rounded-3xl border border-gray/20 bg-gradient-to-br from-white via-violet-50/40 to-white">
-            <div class="pointer-events-none absolute inset-0 hidden xl:block">
-               <div class="absolute left-[25%] top-1/2 -translate-x-1/2 -translate-y-1/2 z-30">
-                  <div class="arrow-float flex size-10 items-center justify-center rounded-full border border-violet-100 bg-white shadow-lg"><i data-lucide="move-right" class="size-5 text-primary"></i></div>
+         <div class="lg:col-span-3 relative w-full rounded-3xl border border-gray/20 bg-gradient-to-br from-white via-violet-50/40 to-white overflow-hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 p-3 lg:p-6">
+               <div class="flex items-center gap-4">
+                  <div class="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-white shadow-lg border border-violet-100"><i data-lucide="gift" class="size-10 text-primary"></i></div>
+                  <div>
+                     <h3 class="text-2xl font-bold text-dark">Your first report complimentary.</h3>
+                     <p class="mt-2 text-gray leading-relaxed">Once delivered, you'll unlock</p>
+                  </div>
                </div>
-               <div class="absolute left-[50%] top-1/2 -translate-x-1/2 -translate-y-1/2 z-30">
-                  <div class="arrow-float flex size-10 items-center justify-center rounded-full border border-violet-100 bg-white shadow-lg"><i data-lucide="move-right" class="size-5 text-primary"></i></div>
-               </div>
-               <div class="absolute left-[75%] top-1/2 -translate-x-1/2 -translate-y-1/2 z-30">
-                  <div class="arrow-float flex size-10 items-center justify-center rounded-full border border-violet-100 bg-white shadow-lg"><i data-lucide="move-right" class="size-5 text-primary"></i></div>
+               <div class="lg:col-span-2 flex flex-col gap-2">
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                     <div class="rounded-2xl border border-gray/10 bg-white p-5 shadow-sm">
+                        <h4 class="font-semibold text-dark">Face-Off</h4>
+                        <p class="mt-2 text-sm text-gray line-through">₹4,999</p>
+                        <div class="mt-1 text-4xl font-bold text-dark">₹1,999</div>
+                     </div>
+                     <div class="rounded-2xl border border-gray/10 bg-white p-5 shadow-sm">
+                        <h4 class="font-semibold text-dark">Creator Shortlist</h4>
+                        <p class="mt-2 text-sm text-gray line-through">₹9,999</p>
+                        <div class="mt-1 text-4xl font-bold text-dark">₹4,999</div>
+                     </div>
+                  </div>
+                  <p class="text-center text-sm text-gray">30-day pilot pricing after your first report.</p>
                </div>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4">
-               <div class="group relative flex min-h-[260px] flex-col items-center justify-center border-b border-gray/10 p-8 text-center transition-all duration-300 hover:bg-white/80 xl:border-b-0 xl:border-r xl:border-gray/10">
-                  <div class="flex size-16 items-center justify-center rounded-full border border-violet-200 bg-white font-bold text-primary shadow-[0_0_50px_rgba(139,92,246,0.15)] transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_60px_rgba(139,92,246,0.25)]"> 01</div>
-                  <h3 class="mt-3 text-xl font-semibold text-dark"> Choose Objective</h3>
-                  <p class="mt-2 text-sm leading-relaxed text-gray"> Select the outcome that matters most to your campaign.</p>
+            <div class="flex items-center gap-3 mb-3">
+               <div class="flex-1 border-t border-gray/20"></div>
+               <h4 class="shrink-0 text-sm font-semibold uppercase tracking-[0.15em] text-primary">HOW IT WORKS</h4>
+               <div class="flex-1 border-t border-gray/20"></div>
+            </div>
+            <div class="relative w-full border-t border-gray/10">
+               <div class="pointer-events-none absolute inset-0 hidden xl:block">
+                  <div class="absolute left-[20%] top-1/2 -translate-x-1/2 -translate-y-1/2 z-30">
+                     <div class="arrow-float flex size-8 items-center justify-center rounded-full border border-violet-100 bg-white shadow-lg"><i data-lucide="move-right" class="size-5 text-primary"></i></div>
+                  </div>
+                  <div class="absolute left-[40%] top-1/2 -translate-x-1/2 -translate-y-1/2 z-30">
+                     <div class="arrow-float flex size-8 items-center justify-center rounded-full border border-violet-100 bg-white shadow-lg"><i data-lucide="move-right" class="size-5 text-primary"></i></div>
+                  </div>
+                  <div class="absolute left-[60%] top-1/2 -translate-x-1/2 -translate-y-1/2 z-30">
+                     <div class="arrow-float flex size-8 items-center justify-center rounded-full border border-violet-100 bg-white shadow-lg"><i data-lucide="move-right" class="size-5 text-primary"></i></div>
+                  </div>
+                  <div class="absolute left-[80%] top-1/2 -translate-x-1/2 -translate-y-1/2 z-30">
+                     <div class="arrow-float flex size-8 items-center justify-center rounded-full border border-violet-100 bg-white shadow-lg"><i data-lucide="move-right" class="size-5 text-primary"></i></div>
+                  </div>
                </div>
-               <div class="group relative flex min-h-[260px] flex-col items-center justify-center border-b border-gray/10 p-8 text-center transition-all duration-300 hover:bg-white/80 xl:border-b-0 xl:border-r xl:border-gray/10">
-                  <div class="flex size-16 items-center justify-center rounded-full border border-violet-200 bg-white font-bold text-primary shadow-[0_0_50px_rgba(139,92,246,0.15)] transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_60px_rgba(139,92,246,0.25)]"> 02</div>
-                  <h3 class="mt-3 text-xl font-semibold text-dark"> Submit Creators</h3>
-                  <p class="mt-2 text-sm leading-relaxed text-gray"> Share two creator handles and any relevant context.</p>
-               </div>
-               <div class="group relative flex min-h-[260px] flex-col items-center justify-center border-b border-gray/10 p-8 text-center transition-all duration-300 hover:bg-white/80 xl:border-b-0 xl:border-r xl:border-gray/10">
-                  <div class="flex size-16 items-center justify-center rounded-full border border-violet-200 bg-white font-bold text-primary shadow-[0_0_50px_rgba(139,92,246,0.15)] transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_60px_rgba(139,92,246,0.25)]"> 03</div>
-                  <h3 class="mt-3 text-xl font-semibold text-dark"> Receive Report</h3>
-                  <p class="mt-2 text-sm leading-relaxed text-gray"> Our team evaluates both creators and delivers your report.</p>
-               </div>
-               <div class="group relative flex min-h-[260px] flex-col items-center justify-center p-8 text-center transition-all duration-300 hover:bg-white/80">
-                  <div class="flex size-16 items-center justify-center rounded-full border border-violet-200 bg-white font-bold text-primary shadow-[0_0_50px_rgba(139,92,246,0.15)] transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_60px_rgba(139,92,246,0.25)]">04</div>
-                  <h3 class="mt-3 text-xl font-semibold text-dark">Make Decision</h3>
-                  <p class="mt-2 text-sm leading-relaxed text-gray">Use the recommendation and supporting analysis to move forward with confidence.</p>
+               <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5">
+                  <div class="group relative flex flex-col items-center justify-center p-6 text-center border-b border-gray/10 transition-all duration-300 hover:bg-white/80 xl:border-b-0 xl:border-r xl:border-gray/10">
+                     <div class="flex size-16 items-center justify-center rounded-full border border-violet-200 bg-white font-bold text-primary shadow-[0_0_50px_rgba(139,92,246,0.15)] transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_60px_rgba(139,92,246,0.25)]"> 01</div>
+                     <h3 class="mt-3 text-xl font-semibold text-dark"> Apply</h3>
+                     <p class="mt-2 text-sm leading-relaxed text-gray"> Submit a short application.</p>
+                  </div>
+                  <div class="group relative flex flex-col items-center justify-center p-6 text-center border-b border-gray/10 transition-all duration-300 hover:bg-white/80 xl:border-b-0 xl:border-r xl:border-gray/10">
+                     <div class="flex size-16 items-center justify-center rounded-full border border-violet-200 bg-white font-bold text-primary shadow-[0_0_50px_rgba(139,92,246,0.15)] transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_60px_rgba(139,92,246,0.25)]"> 02</div>
+                     <h3 class="mt-3 text-md font-semibold text-dark"> Approved</h3>
+                     <p class="mt-2 text-sm leading-relaxed text-gray"> We'll review and confirm your access.</p>
+                  </div>
+                  <div class="group relative flex flex-col items-center justify-center p-6 text-center border-b border-gray/10 transition-all duration-300 hover:bg-white/80 xl:border-b-0 xl:border-r xl:border-gray/10">
+                     <div class="flex size-16 items-center justify-center rounded-full border border-violet-200 bg-white font-bold text-primary shadow-[0_0_50px_rgba(139,92,246,0.15)] transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_60px_rgba(139,92,246,0.25)]"> 03</div>
+                     <h3 class="mt-3 text-md font-semibold text-dark"> Receive First Report</h3>
+                     <p class="mt-2 text-sm leading-relaxed text-gray"> Get your shortlist delivered.</p>
+                  </div>
+                  <div class="group relative flex flex-col items-center justify-center p-6 text-center border-b border-gray/10 transition-all duration-300 hover:bg-white/80 xl:border-b-0 xl:border-r xl:border-gray/10">
+                     <div class="flex size-16 items-center justify-center rounded-full border border-violet-200 bg-white font-bold text-primary shadow-[0_0_50px_rgba(139,92,246,0.15)] transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_60px_rgba(139,92,246,0.25)]">04</div>
+                     <h3 class="mt-3 text-md font-semibold text-dark">30-Day Pilot Window</h3>
+                     <p class="mt-2 text-sm leading-relaxed text-gray">Access pilot pricing on both reports.</p>
+                  </div>
+                  <div class="group relative flex flex-col items-center justify-center p-6 text-center transition-all duration-300 hover:bg-white/80">
+                     <div class="flex size-16 items-center justify-center rounded-full border border-violet-200 bg-white font-bold text-primary shadow-[0_0_50px_rgba(139,92,246,0.15)] transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_60px_rgba(139,92,246,0.25)]">04</div>
+                     <h3 class="mt-3 text-md font-semibold text-dark">Standard Pricing</h3>
+                     <p class="mt-2 text-sm leading-relaxed text-gray">Continue at regular pricing thereafter.</p>
+                  </div>
                </div>
             </div>
          </div>
@@ -250,60 +410,76 @@
          <div class="grid grid-cols-1 xl:grid-cols-12 gap-8 rounded-3xl border border-gray/10 bg-gray/10 p-6 lg:p-8">
             <div class="xl:col-span-3 flex flex-col justify-around gap-4">
                <div>
-                  <h3 class="text-2xl lg:text-4xl font-bold text-dark leading-tight">Start your comparison</h3>
-                  <p class="text-sm leading-6 text-dark">Complete the details below to generate your Face-Off report.</p>
+                  <h5 class="font-body text-sm sm:text-base font-semibold uppercase tracking-[0.10em] text-primary mb-0">Apply for Pilot Access</h5>
+                  <h3 class="text-2xl lg:text-3xl font-bold text-dark leading-tight">Start your shortlist. <span class="inline sm:block">Make better decisions.</span></h3>
                </div>
-               <ul class="flex flex-col gap-3 text-sm text-gray">
+               <ul class="mt-8 flex flex-col gap-3">
                   <li class="flex items-center gap-2">
-                     <i data-lucide="clock-3" class="size-4 text-green-500 shrink-0"></i> <span>48-Hour Delivery</span>
+                     <i data-lucide="gift" class="size-5 text-primary"></i> <span>First report complimentary</span>
                   </li>
                   <li class="flex items-center gap-2">
-                     <i data-lucide="shield-check" class="size-4 text-green-500 shrink-0"></i> <span>Brand Safety Review Included</span>
+                     <i data-lucide="calendar-days" class="size-5 text-primary"></i> <span>30-day pilot pricing</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                     <i data-lucide="headphones" class="size-5 text-primary"></i> <span>Expert analyst support</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                     <i data-lucide="badge-check" class="size-5 text-primary"></i> <span>Limited partner slots available</span>
                   </li>
                </ul>
             </div>
             <div class="xl:col-span-6">
-               <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
-                  <div class="col-span-full">
-                     <label class="block text-sm font-semibold text-dark mb-3">Select Your Objective <span class="text-red-600">*</span></label>
-                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                        <label class="cursor-pointer">
-                           <input type="radio" name="objective" class="peer sr-only">
-                           <div class="h-full rounded-2xl border border-primary bg-primary/10 p-5 transition-all duration-300 peer-checked:border-primary peer-checked:bg-primary/5 peer-checked:shadow-lg">
-                              <h4 class="font-semibold text-primary">Perspective</h4>
-                              <p class="mt-1 text-sm text-primary">Measures credibility, trust and audience belief.</p>
-                           </div>
-                        </label>
-                        <label class="cursor-pointer">
-                           <input type="radio" name="objective" class="peer sr-only">
-                           <div class="h-full rounded-2xl border border-gray/10 bg-white p-5 transition-all duration-300 hover:border-primary/30 hover:bg-primary/5 peer-checked:border-primary peer-checked:bg-primary/5 peer-checked:shadow-lg">
-                              <h4 class="font-semibold text-dark">Presence</h4>
-                              <p class="mt-1 text-sm text-gray">Measures emotional connection and audience closeness.</p>
-                           </div>
-                        </label>
-                        <label class="cursor-pointer">
-                           <input type="radio" name="objective" class="peer sr-only">
-                           <div class="h-full rounded-2xl border border-gray/10 bg-white p-5 transition-all duration-300 hover:border-primary/30 hover:bg-primary/5 peer-checked:border-primary peer-checked:bg-primary/5 peer-checked:shadow-lg">
-                              <h4 class="font-semibold text-dark">Performance</h4>
-                              <p class="mt-1 text-sm text-gray">Measures action, consideration and purchase influence.</p>
-                           </div>
-                        </label>
+               <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 gap-4">
+                  <div>
+                     <label class="mb-2 block text-sm font-semibold text-dark">Brand Name <span class="text-red-600">*</span></label>
+                     <input type="text" placeholder="Your brand name" class="h-12 w-full rounded-xl border border-gray/10 bg-white px-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10">
+                  </div>
+                  <div>
+                     <label class="mb-2 block text-sm font-semibold text-dark">Website <span class="text-red-600">*</span></label>
+                     <input type="text" placeholder="https://yourbrand.com" class="h-12 w-full rounded-xl border border-gray/10 bg-white px-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10">
+                  </div>
+                  <div>
+                     <label class="mb-2 block text-sm font-semibold text-dark">Campaign Objective <span class="text-red-500">*</span></label>
+                     <div class="relative">
+                        <select class="h-12 w-full appearance-none rounded-xl border border-gray/10 bg-white px-4 pr-10 text-sm text-dark outline-none transition-all duration-300 focus:border-primary focus:ring-4 focus:ring-primary/10">
+                           <option selected disabled>Select primary objective</option>
+                           <option>Brand Awareness</option>
+                           <option>Engagement</option>
+                           <option>Consideration</option>
+                           <option>Conversions</option>
+                           <option>Sales</option>
+                        </select>
+                        <i data-lucide="chevron-down"class="pointer-events-none absolute right-4 top-1/2 size-4 -translate-y-1/2 text-gray"></i>
                      </div>
                   </div>
                   <div>
-                     <label class="mb-2 block text-sm font-semibold text-dark">Instagram Handle <span class="text-red-600">*</span></label>
-                     <input type="text" placeholder="@creatorname" class="h-12 w-full rounded-xl border border-gray/10 bg-white px-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10">
-                  </div>
-                  <div>
-                     <label class="mb-2 block text-sm font-semibold text-dark">Instagram Handle <span class="text-red-600">*</span></label>
-                     <input type="text" placeholder="@creatorname" class="h-12 w-full rounded-xl border border-gray/10 bg-white px-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10">
-                  </div>
-                  <div>
-                     <label class="mb-2 block text-sm font-semibold text-dark">Brand Name <span class="text-red-600">*</span></label>
-                     <input type="text" placeholder="Your Brand Name" class="h-12 w-full rounded-xl border border-gray/10 bg-white px-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10">
+                     <label class="mb-2 block text-sm font-semibold text-dark">Approximate Creator Budget</label>
+                     <div class="relative">
+                        <select class="h-12 w-full appearance-none rounded-xl border border-gray/10 bg-white px-4 pr-10 text-sm text-dark outline-none transition-all duration-300 focus:border-primary focus:ring-4 focus:ring-primary/10">
+                           <option selected disabled>Select budget range</option>
+                           <option>₹10,000 - ₹50,000</option>
+                           <option>₹50,000 - ₹1 Lakh</option>
+                           <option>₹1 Lakh - ₹5 Lakh</option>
+                           <option>₹5 Lakh+</option>
+                        </select>
+                        <i data-lucide="chevron-down"class="pointer-events-none absolute right-4 top-1/2 size-4 -translate-y-1/2 text-gray"></i>
+                     </div>
                   </div>
                   <div class="col-span-full">
-                     <label class="mb-2 block text-sm font-semibold text-dark">Campaign Context</label>
+                     <label class="mb-2 block text-sm font-semibold text-dark">How many creators are you evaluating?</label>
+                     <div class="relative">
+                        <select class="h-12 w-full appearance-none rounded-xl border border-gray/10 bg-white px-4 pr-10 text-sm text-dark outline-none transition-all duration-300 focus:border-primary focus:ring-4 focus:ring-primary/10">
+                           <option selected disabled>Select number of creators</option>
+                           <option>1 - 5</option>
+                           <option>6 - 10</option>
+                           <option>11 - 25</option>
+                           <option>25+</option>
+                        </select>
+                        <i data-lucide="chevron-down" class="pointer-events-none absolute right-4 top-1/2 size-4 -translate-y-1/2 text-gray"></i>
+                     </div>
+                  </div>
+                  <div class="col-span-full">
+                     <label class="mb-2 block text-sm font-semibold text-dark">Tell us about your campaign</label>
                      <textarea rows="5" placeholder="Tell us about your campaign goals, audience or creator challenge. " class="w-full resize-none rounded-2xl border border-gray/10 bg-white p-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10"></textarea>
                   </div>
                </div>
@@ -311,30 +487,26 @@
             <div class="xl:col-span-3">
                <div class="sticky top-6 flex h-full flex-col overflow-hidden rounded-3xl border border-violet-100 bg-gradient-to-br from-white via-violet-50/30 to-white p-6 shadow-[0_20px_60px_rgba(55,17,190,0.08)]">
                   <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary via-secondary to-primary"></div>
-                  <p class="text-sm font-semibold uppercase tracking-wider text-primary">Face-Off Report</p>
-                  <h3 class="mt-2 text-5xl font-bold tracking-tight text-dark">₹4,999</h3>
-                  <p class="text-sm text-gray"> One-time payment. <span class="inline sm:block">No subscription required.</span></p>
-                  <div class="mt-6 space-y-3">
-                     <div class="flex items-center gap-2 text-sm text-dark">
+                  <p class="text-sm font-semibold uppercase tracking-wider text-primary">Creator Shortlist Report</p>
+                  <h3 class="my-2 text-2xl font-bold leading-tight text-dark">First report complimentary</h3>
+                  <p class="text-sm text-gray"> Then ₹4,999 for 30 days <span class="inline sm:block">(instead of ₹9,999)</span></p>
+                  <div class="mt-3 space-y-2">
+                     <div class="flex items-center gap-1.5 text-sm text-dark">
                         <i data-lucide="check-circle-2" class="size-4 text-green-500"></i> <span>Audience Intelligence</span>
                      </div>
-                     <div class="flex items-center gap-2 text-sm text-dark">
+                     <div class="flex items-center gap-1.5 text-sm text-dark">
                         <i data-lucide="check-circle-2" class="size-4 text-green-500"></i> <span>Brand Safety Review</span>
                      </div>
-                     <div class="flex items-center gap-2 text-sm text-dark">
+                     <div class="flex items-center gap-1.5 text-sm text-dark">
                         <i data-lucide="check-circle-2" class="size-4 text-green-500"></i> <span>Fit Score Breakdown</span>
                      </div>
-                     <div class="flex items-center gap-2 text-sm text-dark">
+                     <div class="flex items-center gap-1.5 text-sm text-dark">
                         <i data-lucide="check-circle-2" class="size-4 text-green-500"></i> <span>PDF Report Included</span>
                      </div>
                   </div>
                   <div class="mt-auto pt-6">
-                     <a href="#" class="flex h-14 w-full items-center justify-center gap-2 rounded-xl bg-primary text-base font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_30px_rgba(55,17,190,0.25)]">
-                        Continue to Payment <i data-lucide="arrow-right" class="size-5"></i>
-                     </a>
-                     <div class="mt-4 flex items-center justify-center gap-2 text-sm text-gray">
-                        <i data-lucide="shield-check" class="size-4 text-green-500"></i> <span>Secure Checkout</span>
-                     </div>
+                     <a href="#" class="flex h-14 w-full items-center justify-center gap-2 rounded-xl bg-primary text-base font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_30px_rgba(55,17,190,0.25)]">Apply for Pilot <i data-lucide="arrow-right" class="size-5"></i></a>
+                     <div class="mt-4 flex items-center justify-center gap-2 text-sm text-dark"><i data-lucide="lock" class="size-4 text-dark"></i> <span>Secure & confidential</span></div>
                   </div>
                </div>
             </div>

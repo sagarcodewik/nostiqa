@@ -23,6 +23,9 @@ body {font-family: 'Poppins', sans-serif;}
 
 h1, h2, h3, h4, h5, h6, .font-heading {font-family: 'Poppins', sans-serif;}
 
+select { -webkit-appearance: none; -moz-appearance: none; appearance: none;}
+select::-ms-expand { display: none;}
+
 /* Pulse/Float Keyframes */
 @keyframes float-slow { 
   0%, 100% { transform: translateY(0px) rotate(0deg);} 50% {transform: translateY(-10px) rotate(0.5deg);}

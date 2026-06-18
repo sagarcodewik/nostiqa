@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+      <title>Submission | Nostiqa | AI-Powered Creator Intelligence Platform</title>
+      <meta name="description" content="Nostiqa helps brands, agencies and founders evaluate creators through audience trust, authenticity and influence intelligence." />
+      <meta property="og:title" content="Nostiqa" />
+      <meta property="og:description" content="AI-Powered Creator Intelligence Platform" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://nostiqa-xi.vercel.app/" />
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+         rel="stylesheet" />
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+      <!-- Swiper CSS -->
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+      <!-- Project CSS -->
+      <link rel="stylesheet" href="assets/css/tailwind.css" />
+      <!-- <link rel="stylesheet" href="assets/css/custom.css" /> -->
+   </head>
+   <body class="bg-light/30 text-dark overflow-x-hidden antialiased">
+      <!-- ========== Header ========== -->
+      <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+         <div class="container mx-auto flex items-center px-4 lg:px-8 h-16">
+            <a href="/" class="shrink-0">
+            <img src="assets/images/logo.png" alt="Nostiqa Logo" class="h-6 sm:h-8 md:h-10 w-auto object-contain" />
+            </a>
+            <nav class="hidden md:flex flex-1 justify-center items-center gap-14">
+               <a href="/" class="nav-link text-sm font-medium text-dark transition hover:text-primary">Home</a>
+               <div class="relative" id="products-dropdown-wrapper">
+                  <button id="products-dropdown-btn" class="flex items-center gap-1 text-sm font-medium text-dark transition hover:text-primary" aria-haspopup="true" aria-expanded="false">Products <i data-lucide="chevron-down" class="h-4 w-4 transition-transform duration-300" id="products-chevron"></i></button>
+                  <div id="products-dropdown-menu" class="absolute left-0 top-full mt-2 w-56 bg-white shadow-lg rounded-lg border border-gray/20 opacity-0 invisible transition-all duration-200 z-50">
+                     <a href="/products" class="block px-5 py-3 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-colors">Intelligence Products</a>
+                     <a href="/face-off" class="block px-5 py-3 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-colors">Face-Off</a>
+                     <a href="/creator-shortlist" class="block px-5 py-3 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-colors">Creator Shortlist</a>
+                     <a href="/deep-dive" class="block px-5 py-3 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-colors">Deep Dive</a>
+                     <a href="/compare-creators"  class="block px-5 py-3 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-colors">Compare Creators</a>
+                  </div>
+               </div>
+               <a href="/about" class="nav-link text-sm font-medium text-dark transition hover:text-primary">About</a>
+               <a href="/pricing" class="nav-link text-sm font-medium text-dark transition hover:text-primary">Pricing</a>
+            </nav>
+            <div class="flex items-center gap-2 shrink-0 ms-auto">
+               <a href="https://www.nostiqa.com/form" class="ml-2 shrink-0 px-3 py-1.5 sm:px-5 sm:py-2 bg-primary text-white rounded-full text-[10px] sm:text-sm font-medium whitespace-nowrap hover:opacity-90 transition">Book Demo</a>
+               <button id="mobile-menu-toggle" class="flex md:hidden items-center justify-center text-dark" aria-label="Toggle Menu">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+               </button>
+            </div>
+         </div>
+         <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white border-t border-gray/20 shadow-xl">
+            <div class="flex flex-col gap-3 px-6 py-6">
+               <a href="/" class="mobile-nav-link text-base font-medium text-dark hover:text-primary transition">Home</a>
+               <div class="w-full">
+                  <button id="mobile-products-btn" class="flex items-center justify-between w-full text-base font-medium text-dark hover:text-primary transition"> Products <i data-lucide="chevron-down" class="h-4 w-4 transition-transform duration-300" id="mobile-products-chevron"></i>
+                  </button>
+                  <div id="mobile-products-menu" class="hidden flex-col gap-1 mt-2 pl-4 border-l border-gray/20">
+                     <a href="/products" class="mobile-nav-link py-1.5 text-sm text-gray-600 hover:text-primary transition">Intelligence Products</a>
+                     <a href="/face-off" class="mobile-nav-link py-1.5 text-sm text-gray-600 hover:text-primary transition">Face-Off</a>
+                     <a href="/creator-shortlist" class="mobile-nav-link py-1.5 text-sm text-gray-600 hover:text-primary transition">Creator Shortlist</a>
+                     <a href="/deep-dive" class="mobile-nav-link py-1.5 text-sm text-gray-600 hover:text-primary transition">Deep Dive</a>
+                     <a href="/compare-creators"  class="mobile-nav-link py-1.5 text-sm text-gray-600 hover:text-primary transition">Compare Creators</a>
+                  </div>
+               </div>
+               <a href="/about" class="mobile-nav-link text-base font-medium text-dark hover:text-primary transition">About</a>
+               <a href="/pricing"class="mobile-nav-link text-base font-medium text-dark hover:text-primary transition">Pricing</a>
+            </div>
+         </div>
+      </header>
+
+      <!-- ========== Two Creator Page Start ========== -->
+      <section class="relative overflow-hidden py-10 lg:py-16 bg-gradient-to-br from-light via-white to-light">
+         <div class="container mx-auto px-4 lg:px-8 mt-12">
+            <nav class="inline-flex items-center gap-2 px-4 py-3 bg-white/60 border border-gray/20 rounded-xl shadow-sm mb-6">
+                <a href="#" class="text-gray hover:text-primary transition-colors duration-300">Home</a>
+                <i data-lucide="chevron-right" class="w-4 h-4 text-gray-300"></i>
+                <a href="#" class="text-gray hover:text-primary transition-colors duration-300">Face-Off Report</a>
+                <i data-lucide="chevron-right" class="w-4 h-4 text-gray-300"></i>
+                <span class="font-semibold text-primary relative">Checkout <span class="absolute left-0 -bottom-1 w-full h-0.5 bg-primary rounded-full"></span></span>
+            </nav>
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 lg:gap-8 items-start">
+                <div class="lg:col-span-3">
+                    <div class="flex flex-col gap-6 p-6 lg:p-8 rounded-3xl border border-gray/10 bg-white shadow-premium">
+                        <div class="relative flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 w-full pb-6">
+                            <div class="pr-4">
+                                <h1 class="text-xl lg:text-3xl font-bold text-dark leading-tight mb-1">Compare Two Creators</h1>
+                                <p class="text-sm text-gray leading-6">Receive your recommendation within 48 hours.</p>
+                            </div>
+                            <div class="text-left sm:text-right flex-shrink-0">
+                                <h3 class="text-2xl lg:text-3xl font-bold text-dark leading-none">₹4,999</h3>
+                                <p class="text-sm text-gray mt-1">incl. taxes</p>
+                            </div>
+                            <span class="absolute left-0 right-0 bottom-0 h-px bg-gradient-to-r from-transparent via-gray/20 to-transparent"></span>
+                        </div>
+                        <div class="w-full relative grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
+                            <div class="lg:col-span-full flex items-center gap-2">
+                                <div class="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-primary text-white font-semibold shadow-sm">1</div>
+                                <div>
+                                    <h2 class="text-md font-bold text-dark leading-tight">Objective</h2>
+                                    <p class="text-sm text-gray leading-6">Which objective matters most?</p>
+                                </div>
+                            </div>
+                            <div class="group flex flex-col gap-4 relative rounded-2xl border border-primary bg-primary/5 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-xl cursor-pointer">
+                                <div class="flex items-start gap-4">
+                                    <div class="flex items-center justify-center w-12 h-12 rounded-xl bg-primary border border-primary text-white"><i data-lucide="sparkles" class="w-6 h-6"></i></div>
+                                    <div>
+                                        <h3 class="text-lg font-bold text-dark leading-tight">Presence</h3>
+                                        <span class="inline-flex mt-0.5 text-sm font-medium text-primary">Emotional Dominance</span>
+                                    </div>
+                                </div>
+                                <p class="text-sm leading-tight text-gray">This campaign aims to own emotional territory and create lasting brand affinity.</p>
+                                <ul class="space-y-2">
+                                    <li class="flex items-center gap-3 text-sm text-dark">
+                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-primary flex-shrink-0"></i> Build desire
+                                    </li>
+                                    <li class="flex items-center gap-3 text-sm text-dark">
+                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-primary flex-shrink-0"></i> Deepen attachment
+                                    </li>
+                                    <li class="flex items-center gap-3 text-sm text-dark">
+                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-primary flex-shrink-0"></i> Expand familiarity
+                                    </li>
+                                    <li class="flex items-center gap-3 text-sm text-dark">
+                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-primary flex-shrink-0"></i> Strengthen brand gravity
+                                    </li>
+                                </ul>
+                                <div class="border-t border-gray/10 pt-3 mt-auto">
+                                    <p class="text-xs italic text-gray">Best suited for brands seeking long-term emotional connection and market presence.</p>
+                                </div>
+                            </div>
+                            <div class="group flex flex-col gap-4 relative rounded-2xl border border-gray/20 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-xl cursor-pointer">
+                                <div class="flex items-start gap-4">
+                                    <div class="flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary"><i data-lucide="sparkles" class="w-6 h-6"></i></div>
+                                    <div>
+                                        <h3 class="text-lg font-bold text-dark leading-tight">Perspective</h3>
+                                        <span class="inline-flex mt-0.5 text-sm font-medium text-primary">Idea Leadership</span>
+                                    </div>
+                                </div>
+                                <p class="text-sm leading-tight text-gray">This campaign aims to shape how people think.</p>
+                                <ul class="space-y-2">
+                                    <li class="flex items-center gap-3 text-sm text-dark">
+                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-primary flex-shrink-0"></i> Reframe the category
+                                    </li>
+                                    <li class="flex items-center gap-3 text-sm text-dark">
+                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-primary flex-shrink-0"></i> Reframe the category
+                                    </li>
+                                    <li class="flex items-center gap-3 text-sm text-dark">
+                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-primary flex-shrink-0"></i> Spark discourse
+                                    </li>
+                                    <li class="flex items-center gap-3 text-sm text-dark">
+                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-primary flex-shrink-0"></i> Shift perception
+                                    </li>
+                                    <li class="flex items-center gap-3 text-sm text-dark">
+                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-primary flex-shrink-0"></i> Establish authority
+                                    </li>
+                                </ul>
+                                <div class="border-t border-gray/10 pt-3 mt-auto">
+                                    <p class="text-xs italic text-gray">Best suited for brands seeking long-term emotional connection and market presence.</p>
+                                </div>
+                            </div>
+                            <div class="group flex flex-col gap-4 relative rounded-2xl border border-gray/20 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-xl cursor-pointer">
+                                <div class="flex items-start gap-4">
+                                    <div class="flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary"><i data-lucide="sparkles" class="w-6 h-6"></i></div>
+                                    <div>
+                                        <h3 class="text-lg font-bold text-dark leading-tight">Performance</h3>
+                                        <span class="inline-flex mt-0.5 text-sm font-medium text-primary">Decision Movement</span>
+                                    </div>
+                                </div>
+                                <p class="text-sm leading-tight text-gray">This campaign aims to sell.</p>
+                                <ul class="space-y-2">
+                                    <li class="flex items-center gap-3 text-sm text-dark">
+                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-primary flex-shrink-0"></i> Drive clicks
+                                    </li>
+                                    <li class="flex items-center gap-3 text-sm text-dark">
+                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-primary flex-shrink-0"></i> Trigger sign-ups
+                                    </li>
+                                    <li class="flex items-center gap-3 text-sm text-dark">
+                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-primary flex-shrink-0"></i> Convert sales
+                                    </li>
+                                    <li class="flex items-center gap-3 text-sm text-dark">
+                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-primary flex-shrink-0"></i> Prompt measurable action
+                                    </li>
+                                </ul>
+                                <div class="border-t border-gray/10 pt-3 mt-auto">
+                                    <p class="text-xs italic text-gray">Optimized for intent and activation.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full relative grid grid-cols-1 gap-4">
+                            <div class="flex items-center gap-2">
+                                <div class="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-primary text-white font-semibold shadow-sm">2</div>
+                                <h2 class="text-md font-bold text-dark leading-tight">CREATOR A</h2>
+                            </div>
+                            <div>
+                                <label class="mb-2 block text-sm font-semibold text-dark">Instagram Profile URL <span class="text-red-600">*</span></label>
+                                <div class="relative">
+                                    <div class="absolute left-3 top-1/2 -translate-y-1/2 flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10 text-primary"><i data-lucide="link" class="w-4 h-4"></i></div>
+                                    <input type="url" placeholder="https://www.instagram.com/creatorname" class="h-14 w-full rounded-xl border border-gray/10 bg-white pl-14 pr-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10">
+                                </div>
+                                <p class="text-xs italic text-gray mt-2">Enter the Instagram profile URL of the first creator.</p>
+                            </div>
+                        </div>
+                        <div class="w-full relative grid grid-cols-1 gap-4">
+                            <div class="flex items-center gap-2">
+                                <div class="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-primary text-white font-semibold shadow-sm">3</div>
+                                <h2 class="text-md font-bold text-dark leading-tight">CREATOR B</h2>
+                            </div>
+
+                            <div>
+                                <label class="mb-2 block text-sm font-semibold text-dark">
+                                    Instagram Profile URL <span class="text-red-600">*</span>
+                                </label>
+
+                                <div class="relative">
+                                    <div class="absolute left-3 top-1/2 -translate-y-1/2 flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                                        <i data-lucide="link" class="w-4 h-4"></i>
+                                    </div>
+
+                                    <input
+                                        type="url"
+                                        placeholder="https://www.instagram.com/creatorname"
+                                        class="h-14 w-full rounded-xl border border-gray/10 bg-white pl-14 pr-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10"
+                                    />
+                                </div>
+
+                                <p class="text-xs italic text-gray mt-2">
+                                    Enter the Instagram profile URL of the second creator.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="w-full relative grid grid-cols-1 xl:grid-cols-2 gap-4">
+                            <div class="xl:col-span-full flex items-center gap-2">
+                                <div class="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-primary text-white font-semibold shadow-sm">4</div>
+                                <h2 class="text-md font-bold text-dark leading-tight">BRAND INFORMATION</h2>
+                            </div>
+
+                            <div>
+                                <label class="mb-2 block text-sm font-semibold text-dark/20">Brand Name <span class="text-red-600">*</span></label>
+                                <div class="relative">
+                                    <div class="absolute left-3 top-1/2 -translate-y-1/2 flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10 text-primary"><i data-lucide="building-2" class="w-4 h-4"></i></div>
+                                    <input type="text" placeholder="Your brand name" class="h-14 w-full rounded-xl border border-gray/10 bg-white pl-14 pr-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10"/>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="mb-2 block text-sm font-semibold text-dark">Work Email <span class="text-red-600">*</span></label>
+                                <div class="relative">
+                                    <div class="absolute left-3 top-1/2 -translate-y-1/2 flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10 text-primary"><i data-lucide="mail" class="w-4 h-4"></i></div>
+                                    <input type="email" placeholder="you@company.com" class="h-14 w-full rounded-xl border border-gray/10 bg-white pl-14 pr-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-full relative grid grid-cols-1 gap-4">
+                            <div class="flex items-center gap-2">
+                                <div class="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-primary text-white font-semibold shadow-sm">5</div>
+                                <h2 class="text-md font-bold text-dark leading-tight">CAMPAIGN CONTEXT <span class="text-gray text-sm font-medium">(OPTIONAL)</span></h2>
+                            </div>
+                            <div>
+                                <label class="mb-2 block text-sm font-semibold text-dark">Tell us anything that may help us understand the decision you're trying to make.</label>
+                                <textarea rows="7" placeholder="Examples: • Product launch • Brand ambassador search • Creator replacement • Category expansion • Campaign planning • Competitor response • Retail activation • New market entry" class="w-full rounded-xl border border-gray/10 bg-white p-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10 resize-none"></textarea>
+                            </div>
+                        </div>
+                        <div class="w-full relative grid grid-cols-1 gap-5">
+                            <div class="flex items-center gap-2">
+                                <div class="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-primary text-white font-semibold shadow-sm">6</div>
+                                <h2 class="text-md font-bold text-dark leading-tight">IMPORTANT NOTES</h2>
+                            </div>
+                            <div class="space-y-4">
+                                <label class="flex items-start gap-3 cursor-pointer">
+                                    <input type="checkbox" class="h-5 w-5 rounded border-gray/30 text-primary focus:ring-primary flex-shrink-0"/>
+                                    <span class="text-sm text-gray-700">I confirm that both creator profiles are publicly accessible.
+                                    </span>
+                                </label>
+                                <label class="flex items-start gap-3 cursor-pointer">
+                                    <input type="checkbox" class="h-5 w-5 rounded border-gray/30 text-primary focus:ring-primary flex-shrink-0"/>
+                                    <span class="text-sm text-gray-700">I understand that Nostiqa reports are directional decision-support tools and should not be relied upon as the sole basis for commercial decisions.</span>
+                                </label>
+                                <label class="flex items-start gap-3 cursor-pointer">
+                                    <input type="checkbox" class="h-5 w-5 rounded border-gray/30 text-primary focus:ring-primary flex-shrink-0"/>
+                                    <span class="text-sm text-gray-700">I'd like to receive updates about future Nostiqa products and research.</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:sticky lg:top-6">
+                    <div class="flex flex-col gap-4 rounded-3xl border border-gray/10 bg-white p-6 lg:p-8 shadow-premium">Right Side</div>
+                </div>
+            </div>
+         </div>
+      </section>
+
+      <main class="max-w-5xl mx-auto px-6 py-6 grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-8 items-start">
+      
+          <!-- LEFT COLUMN: Form -->
+          <div class="space-y-7">
+      
+          <!-- Page Title -->
+      
+          <!-- SECTION 1: OBJECTIVE -->
+          <section>
+              <div class="flex items-center gap-3 mb-3">
+               <div class="step-circle">1</div>
+               <div>
+                   <h2 class="font-bold text-sm uppercase tracking-wider text-dark">Objective</h2>
+                   <p class="text-sm text-gray-500 mb-4 ml-[38px]">Which objective matters most?</p>
+               </div>
+              </div>
+      
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+      
+              <!-- Presence -->
+              <label class="obj-card selected" onclick="selectCard(this)">
+                  <div class="flex items-center justify-between mb-2">
+                  <div class="radio-dot checked" id="dot-0"></div>
+                  <span class="text-2xl">🧑‍🤝‍🧑</span>
+                  </div>
+                  <div class="font-semibold text-sm text-dark mb-0.5">Presence</div>
+                  <div class="text-xs text-primary font-medium mb-2">(Emotional Dominance)</div>
+                  <p class="text-xs text-gray-500 mb-2">This campaign aims to own emotional territory.</p>
+                  <ul class="text-xs text-gray-600 space-y-0.5 mb-3">
+                  <li>• Build desire</li>
+                  <li>• Deepen attachment</li>
+                  <li>• Expand familiarity</li>
+                  <li>• Strengthen brand gravity</li>
+                  </ul>
+                  <p class="text-xs text-gray-400 italic">Optimized for scale, warmth, and cultural saturation.</p>
+              </label>
+      
+              <!-- Perspective -->
+              <label class="obj-card" onclick="selectCard(this)">
+                  <div class="flex items-center justify-between mb-2">
+                  <div class="radio-dot" id="dot-1"></div>
+                  <span class="text-2xl">🎯</span>
+                  </div>
+                  <div class="font-semibold text-sm text-dark mb-0.5">Perspective</div>
+                  <div class="text-xs text-primary font-medium mb-2">(Idea Leadership)</div>
+                  <p class="text-xs text-gray-500 mb-2">This campaign aims to shape how people think.</p>
+                  <ul class="text-xs text-gray-600 space-y-0.5 mb-3">
+                  <li>• Reframe the category</li>
+                  <li>• Spark discourse</li>
+                  <li>• Shift perception</li>
+                  <li>• Establish authority</li>
+                  </ul>
+                  <p class="text-xs text-gray-400 italic">Optimized for differentiation and narrative control.</p>
+              </label>
+      
+              <!-- Performance -->
+              <label class="obj-card" onclick="selectCard(this)">
+                  <div class="flex items-center justify-between mb-2">
+                  <div class="radio-dot" id="dot-2"></div>
+                  <span class="text-2xl">📈</span>
+                  </div>
+                  <div class="font-semibold text-sm text-dark mb-0.5">Performance</div>
+                  <div class="text-xs text-primary font-medium mb-2">(Decision Movement)</div>
+                  <p class="text-xs text-gray-500 mb-2">This campaign aims to sell.</p>
+                  <ul class="text-xs text-gray-600 space-y-0.5 mb-3">
+                  <li>• Drive clicks</li>
+                  <li>• Trigger sign-ups</li>
+                  <li>• Convert sales</li>
+                  <li>• Prompt measurable action</li>
+                  </ul>
+                  <p class="text-xs text-gray-400 italic">Optimized for intent and activation.</p>
+              </label>
+      
+              </div>
+          </section>
+      
+          <!-- SECTION 2: CREATOR A -->
+          <section>
+              <div class="flex items-center gap-3 mb-4">
+              <div class="step-circle">2</div>
+              <h2 class="font-bold text-sm uppercase tracking-wider text-dark">Creator A</h2>
+              </div>
+              <div class="ml-[38px]">
+              <label class="block text-sm font-medium text-dark mb-1">Instagram Profile URL<span class="text-red-500">*</span></label>
+              <div class="relative">
+                  <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
+                  <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07L11 5.93"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07L13 18.07"/></svg>
+                  </span>
+                  <input type="url" class="form-input" placeholder="https://www.instagram.com/username" />
+              </div>
+              <p class="text-xs text-gray-400 mt-1.5">Enter the Instagram profile URL of the first creator.</p>
+              </div>
+          </section>
+      
+          <!-- SECTION 3: CREATOR B -->
+          <section>
+              <div class="flex items-center gap-3 mb-4">
+              <div class="step-circle">3</div>
+              <h2 class="font-bold text-sm uppercase tracking-wider text-dark">Creator B</h2>
+              </div>
+              <div class="ml-[38px]">
+              <label class="block text-sm font-medium text-dark mb-1">Instagram Profile URL<span class="text-red-500">*</span></label>
+              <div class="relative">
+                  <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
+                  <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07L11 5.93"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07L13 18.07"/></svg>
+                  </span>
+                  <input type="url" class="form-input" placeholder="https://www.instagram.com/username" />
+              </div>
+              <p class="text-xs text-gray-400 mt-1.5">Enter the Instagram profile URL of the second creator.</p>
+              </div>
+          </section>
+      
+          <!-- SECTION 4: BRAND INFORMATION -->
+          <section>
+              <div class="flex items-center gap-3 mb-4">
+              <div class="step-circle">4</div>
+              <h2 class="font-bold text-sm uppercase tracking-wider text-dark">Brand Information</h2>
+              </div>
+              <div class="ml-[38px] grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                  <label class="block text-sm font-medium text-dark mb-1">Brand Name<span class="text-red-500">*</span></label>
+                  <input type="text" class="form-input-plain" placeholder="Your brand name" />
+              </div>
+              <div>
+                  <label class="block text-sm font-medium text-dark mb-1">Work Email<span class="text-red-500">*</span></label>
+                  <input type="email" class="form-input-plain" placeholder="you@company.com" />
+              </div>
+              </div>
+          </section>
+      
+          <!-- SECTION 5: CAMPAIGN CONTEXT -->
+          <section>
+              <div class="flex items-center gap-3 mb-4">
+              <div class="step-circle" style="background:#d1d5db; color:#6b7280;">5</div>
+              <h2 class="font-bold text-sm uppercase tracking-wider text-dark">
+                  Campaign Context <span class="font-normal text-gray-400 normal-case text-xs">(Optional)</span>
+              </h2>
+              </div>
+              <div class="ml-[38px]">
+              <label class="block text-sm text-gray-500 mb-2">Tell us anything that may help us understand the decision you're trying to make.</label>
+              <textarea class="form-input-plain" placeholder="Examples: Product launch, brand ambassador search, creator replacement, category expansion, campaign planning, etc."></textarea>
+              </div>
+          </section>
+      
+          <!-- SECTION 6: IMPORTANT NOTES -->
+          <section>
+              <div class="flex items-center gap-3 mb-4">
+              <div class="step-circle">6</div>
+              <h2 class="font-bold text-sm uppercase tracking-wider text-dark">Important Notes</h2>
+              </div>
+              <div class="ml-[38px] space-y-3">
+              <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-0.5" />
+                  <span class="text-sm text-gray-600">I confirm that both creator profiles are publicly accessible.</span>
+              </label>
+              <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-0.5" />
+                  <span class="text-sm text-gray-600">I understand that Nostiqa reports are directional decision-support tools and should not be relied upon as the sole basis for commercial decisions.</span>
+              </label>
+              <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-0.5" checked />
+                  <span class="text-sm text-gray-600">I'd like to receive updates about future Nostiqa products and research.</span>
+              </label>
+              </div>
+          </section>
+      
+          </div>
+      
+          <!-- RIGHT COLUMN: Order Summary -->
+          <aside class="space-y-4 sticky top-6">
+      
+          <!-- Order Summary Header -->
+          <div class="border border-gray-200 rounded-xl overflow-hidden shadow-premium">
+      
+              <!-- Order Summary label -->
+              <div class="px-5 py-3 border-b border-gray-100">
+              <p class="text-xs font-semibold uppercase tracking-widest text-gray-400">Order Summary</p>
+              </div>
+      
+              <!-- Dark card -->
+              <div class="order-dark mx-4 my-4">
+              <p class="text-xs font-semibold uppercase tracking-widest text-blue-200 mb-2">Face-Off Report</p>
+              <div class="text-3xl font-bold text-white mb-3">₹4,999</div>
+              <div class="flex items-center gap-2 text-sm text-blue-100">
+                  <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="text-blue-300">
+                  <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+                  </svg>
+                  <span>48 Hour Delivery</span>
+              </div>
+              </div>
+      
+              <!-- Includes -->
+              <div class="px-5 pb-1">
+              <p class="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">Includes</p>
+              <div class="space-y-0.5">
+                  <div class="check-item">
+                  <svg width="15" height="15" viewBox="0 0 20 20" fill="none">
+                      <path d="M4 10l4.5 4.5L16 6" stroke="#3711BE" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Best Fit Recommendation
+                  </div>
+                  <div class="check-item">
+                  <svg width="15" height="15" viewBox="0 0 20 20" fill="none">
+                      <path d="M4 10l4.5 4.5L16 6" stroke="#3711BE" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Objective Fit Score
+                  </div>
+                  <div class="check-item">
+                  <svg width="15" height="15" viewBox="0 0 20 20" fill="none">
+                      <path d="M4 10l4.5 4.5L16 6" stroke="#3711BE" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Dimension Breakdown
+                  </div>
+                  <div class="check-item">
+                  <svg width="15" height="15" viewBox="0 0 20 20" fill="none">
+                      <path d="M4 10l4.5 4.5L16 6" stroke="#3711BE" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Audience Intelligence
+                  </div>
+                  <div class="check-item">
+                  <svg width="15" height="15" viewBox="0 0 20 20" fill="none">
+                      <path d="M4 10l4.5 4.5L16 6" stroke="#3711BE" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Brand Safety Flags
+                  </div>
+                  <div class="check-item">
+                  <svg width="15" height="15" viewBox="0 0 20 20" fill="none">
+                      <path d="M4 10l4.5 4.5L16 6" stroke="#3711BE" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Campaign Guidance
+                  </div>
+                  <div class="check-item">
+                  <svg width="15" height="15" viewBox="0 0 20 20" fill="none">
+                      <path d="M4 10l4.5 4.5L16 6" stroke="#3711BE" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  PDF Report
+                  </div>
+              </div>
+              </div>
+      
+              <hr class="divider mx-5" />
+      
+              <!-- What Happens Next -->
+              <div class="px-5 pb-4">
+              <p class="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">What Happens Next?</p>
+              <div class="space-y-1">
+      
+                  <div class="next-item">
+                  <div class="next-icon">
+                      <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="#3711BE" stroke-width="2">
+                      <path d="M9 19V6l12-3v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="15" r="3"/>
+                      </svg>
+                  </div>
+                  <p>We'll analyse both creators against your selected objective.</p>
+                  </div>
+      
+                  <div class="next-item">
+                  <div class="next-icon">
+                      <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="#3711BE" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+                      </svg>
+                  </div>
+                  <p>You'll receive your Face-Off report within 48 hours.</p>
+                  </div>
+      
+                  <div class="next-item">
+                  <div class="next-icon">
+                      <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="#3711BE" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                      </svg>
+                  </div>
+                  <p>You'll get an email when your report is ready to download.</p>
+                  </div>
+      
+              </div>
+              </div>
+      
+              <hr class="divider mx-5" />
+      
+              <!-- Total + CTA -->
+              <div class="px-5 pb-5">
+              <div class="flex items-center justify-between mb-4">
+                  <span class="text-sm text-gray-500">TOTAL <span class="text-xs">(incl. taxes)</span></span>
+                  <span class="text-xl font-bold text-dark">₹4,999</span>
+              </div>
+      
+              <button class="btn-primary">
+                  Continue To Payment
+                  <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+              </button>
+      
+              <div class="flex items-center justify-center gap-2 mt-3 text-xs text-gray-400">
+                  <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/>
+                  </svg>
+                  Secure &amp; Encrypted Payment
+              </div>
+              </div>
+      
+          </div>
+          </aside>
+      
+      </main>
+
+      
+      <!-- ========== Footer ========== -->
+      <footer class="bg-navy text-white">
+         <div class="container mx-auto px-4 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 py-6">
+               <div class="flex items-center gap-6">
+                  <img src="assets/images/logo.png" alt="Nostiqa" class="h-7 w-auto brightness-0 invert">
+                  <p class="text-xs text-white/70">© 2025 Nostiqa. All rights reserved.</p>
+               </div>
+               <nav class="flex flex-wrap items-center justify-center gap-6 lg:gap-10">
+                  <a href="javascript:void(0)" class="text-sm text-white/80 hover:text-white transition">Privacy Policy</a>
+                  <a href="javascript:void(0)" class="text-sm text-white/80 hover:text-white transition">Terms of Use</a>
+                  <a href="javascript:void(0)" class="text-sm text-white/80 hover:text-white transition">Contact</a>
+               </nav>
+            </div>
+         </div>
+      </footer>
+
+      <script src="assets/js/swiper-bundle.min.js"></script>
+      <script src="assets/js/lucide.min.js"></script>
+      <script src="assets/js/main.js"></script>
+      <script>
+        const cards = document.querySelectorAll('.obj-card');
+        const dots = document.querySelectorAll('.radio-dot');
+
+        function selectCard(clicked) {
+        cards.forEach((c, i) => {
+            c.classList.remove('selected');
+            dots[i].classList.remove('checked');
+        });
+        clicked.classList.add('selected');
+        const idx = Array.from(cards).indexOf(clicked);
+        dots[idx].classList.add('checked');
+        }
+    </script>
+   </body>
+</html>

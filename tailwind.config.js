@@ -15,6 +15,11 @@ module.exports = {
         gray: "#666666",
         cream: "#FCF9F1",
         navy: "#020D2D",
+        gold: "#B07D2B",
+        darkNavy: "#050B1F",
+        deepNavy: "#091638",
+        indigo: "#151E5E",
+        purpleAccent: "#5B22FF",
       },
 
       fontSize: {
@@ -22,14 +27,11 @@ module.exports = {
       },
 
       backgroundImage: {
-        premiumCard:
-          "radial-gradient(circle at top left, rgba(255,255,255,0.08), transparent 28%), linear-gradient(180deg,#2417A8 0%,#1A1288 45%,#12095F 100%)",
-
-        premiumNote:
-          "linear-gradient(180deg,#5B22FF 0%,#3D13C9 100%)",
-
-        premiumGlow:
-          "radial-gradient(circle at top right, rgba(255,255,255,0.28), transparent 32%), linear-gradient(90deg,#2a16b8 0%,#3d27c9 22%,#5d46df 48%,#8a75f3 72%,#c9bbff 100%)",
+        premiumCard: "radial-gradient(circle at top left, rgba(255,255,255,0.08), transparent 28%), linear-gradient(180deg,#2417A8 0%,#1A1288 45%,#12095F 100%)",
+        premiumNote: "linear-gradient(180deg,#5B22FF 0%,#3D13C9 100%)",
+        premiumGlow: "radial-gradient(circle at top right, rgba(255,255,255,0.28), transparent 32%), linear-gradient(90deg,#2a16b8 0%,#3d27c9 22%,#5d46df 48%,#8a75f3 72%,#c9bbff 100%)",
+        statusCard: "radial-gradient(circle at top right, rgba(91,34,255,.25), transparent 35%), linear-gradient(135deg,#050B1F 0%,#091638 45%,#151E5E 100%)",
+        foundingBanner: 'linear-gradient(90deg, rgba(21,30,94,.03) 0%, rgba(91,34,255,.08) 100%)',
       },
 
       boxShadow: {

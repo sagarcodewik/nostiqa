@@ -1,40 +1,78 @@
 document.addEventListener("DOMContentLoaded", () => {
   // ===== Header =====
-  const header = document.getElementById("main-header");
-  const toggleBtn = document.getElementById("mobile-menu-toggle");
-  const mobileMenu = document.getElementById("mobile-menu");
+  const header      = document.getElementById("main-header");
+  const toggleBtn   = document.getElementById("mobile-menu-toggle");
+  const mobileMenu  = document.getElementById("mobile-menu");
   const mobileLinks = document.querySelectorAll(".mobile-nav-link");
 
-  // Mobile Menu Toggle
-  toggleBtn?.addEventListener("click", (e) => { e.stopPropagation(); mobileMenu?.classList.toggle("hidden");});
+  // ===== Desktop Dropdown =====
+  const dropdownBtn     = document.getElementById("products-dropdown-btn");
+  const dropdownMenu    = document.getElementById("products-dropdown-menu");
+  const dropdownChevron = document.getElementById("products-chevron");
+  let dropdownOpen = false;
+  // Hover open/close on the wrapper (desktop only)
+  const dropdownWrapper = document.getElementById("products-dropdown-wrapper");
+  dropdownWrapper?.addEventListener("mouseenter", () => { if (window.innerWidth >= 768) openDropdown(); });
+  dropdownWrapper?.addEventListener("mouseleave", () => { if (window.innerWidth >= 768) closeDropdown(); });
 
-  // Close menu when clicking nav links
-  mobileLinks.forEach((link) => { link.addEventListener("click", () => {   mobileMenu?.classList.add("hidden"); });});
+  function openDropdown() { dropdownOpen = true; dropdownMenu.classList.remove("opacity-0", "invisible"); dropdownMenu.classList.add("opacity-100", "visible"); dropdownChevron.classList.add("rotate-180"); dropdownBtn.setAttribute("aria-expanded", "true");}
+  function closeDropdown() { dropdownOpen = false; dropdownMenu.classList.add("opacity-0", "invisible"); dropdownMenu.classList.remove("opacity-100", "visible"); dropdownChevron.classList.remove("rotate-180"); dropdownBtn.setAttribute("aria-expanded", "false");}
 
-  // Close menu when clicking outside header
-  document.addEventListener("click", (e) => { if (mobileMenu && header && !mobileMenu.classList.contains("hidden") && !header.contains(e.target) ) {mobileMenu.classList.add("hidden"); }});
-  // Close menu on scroll
-  window.addEventListener("scroll", () => {mobileMenu?.classList.add("hidden");});
-  // Close menu on desktop resize
-  window.addEventListener("resize", () => {if (window.innerWidth >= 768) {mobileMenu?.classList.add("hidden");}});
+  dropdownBtn?.addEventListener("click", (e) => { e.stopPropagation(); dropdownOpen ? closeDropdown() : openDropdown();});
+  // Close dropdown when clicking outside
+  document.addEventListener("click", (e) => { if (dropdownOpen && !document.getElementById("products-dropdown-wrapper").contains(e.target)) {closeDropdown(); }
+  });
 
-  // Header Scroll Effect
+  // Close dropdown on Escape key
+  document.addEventListener("keydown", (e) => {if (e.key === "Escape") closeDropdown();});
+
+  // Close dropdown when a dropdown link is clicked
+  dropdownMenu?.querySelectorAll("a").forEach((link) => {link.addEventListener("click", closeDropdown);});
+
+  // ===== Mobile Menu Toggle =====
+  toggleBtn?.addEventListener("click", (e) => {e.stopPropagation(); mobileMenu?.classList.toggle("hidden");});
+
+  // Close mobile menu when clicking nav links
+  mobileLinks.forEach((link) => {link.addEventListener("click", () => mobileMenu?.classList.add("hidden"));});
+
+  // Close mobile menu when clicking outside header
+  document.addEventListener("click", (e) => {
+    if (mobileMenu && header && !mobileMenu.classList.contains("hidden") && !header.contains(e.target)) {mobileMenu.classList.add("hidden");}
+  });
+
+  // Close on scroll / resize
+  window.addEventListener("scroll", () => mobileMenu?.classList.add("hidden"));
+  window.addEventListener("resize", () => { if (window.innerWidth >= 768) mobileMenu?.classList.add("hidden"); });
+
+  // ===== Mobile Products Accordion =====
+  const mobileProdBtn     = document.getElementById("mobile-products-btn");
+  const mobileProdMenu    = document.getElementById("mobile-products-menu");
+  const mobileProdChevron = document.getElementById("mobile-products-chevron");
+
+  mobileProdBtn?.addEventListener("click", () => {
+    const isOpen = !mobileProdMenu.classList.contains("hidden");
+    mobileProdMenu.classList.toggle("hidden", isOpen);
+    mobileProdMenu.classList.toggle("flex", !isOpen);
+    mobileProdChevron.classList.toggle("rotate-180", !isOpen);
+  });
+
+  // ===== Header Scroll Effect =====
   const handleScroll = () => {
     if (!header) return;
     const scrolled = window.scrollY > 30;
-    header.classList.toggle("bg-transparent", !scrolled);
-    header.classList.toggle("bg-white/95", scrolled);
-    header.classList.toggle("backdrop-blur-xl", scrolled);
+    header.classList.toggle("bg-transparent",                      !scrolled);
+    header.classList.toggle("bg-white/95",                          scrolled);
+    header.classList.toggle("backdrop-blur-xl",                     scrolled);
     header.classList.toggle("shadow-[0_10px_40px_rgba(0,0,0,0.08)]", scrolled);
-    header.classList.toggle("border-b", scrolled);
-    header.classList.toggle("border-primary/10", scrolled);
+    header.classList.toggle("border-b",                             scrolled);
+    header.classList.toggle("border-primary/10",                    scrolled);
   };
   handleScroll();
   window.addEventListener("scroll", handleScroll);
 
   // ===== Active Menu Highlight =====
   const normalizePath = (path) => path.replace(/\/+$/, "") || "/";
-  const currentPath = normalizePath(window.location.pathname);
+  const currentPath   = normalizePath(window.location.pathname);
   document.querySelectorAll("a[href]").forEach((link) => {
     const href = link.getAttribute("href");
     if (!href || href.startsWith("http") || href.startsWith("#")) return;
