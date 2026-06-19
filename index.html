@@ -25,33 +25,52 @@
    <body class="bg-light/30 text-dark overflow-x-hidden antialiased">
 
       <!-- ========== HEADER ========== -->
-       <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+      <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
          <div class="container mx-auto flex items-center px-4 lg:px-8 h-16">
-            <a href="/" class="shrink-0">
-             <img src="assets/images/logo.png" alt="Nostiqa Logo" class="h-6 sm:h-8 md:h-10 w-auto object-contain"/>
-            </a>
-            <nav class="hidden md:flex flex-1 justify-center gap-14">
-               <a href="/" class="nav-link text-sm font-medium text-dark transition">Home</a>
-               <a href="/about" class="nav-link text-sm font-medium text-dark transition">About</a>
-               <a href="/pricing" class="nav-link text-sm font-medium text-dark transition">Pricing</a>
+            <a href="/" class="shrink-0"><img src="assets/images/logo.png" alt="Nostiqa Logo" class="h-6 sm:h-8 md:h-10 w-auto object-contain" /></a>
+            <nav class="hidden md:flex flex-1 justify-center items-center gap-14">
+               <a href="/" class="nav-link text-sm font-medium text-dark transition hover:text-primary">Home</a>
+               <div class="relative" id="products-dropdown-wrapper">
+                  <button id="products-dropdown-btn" class="flex items-center gap-1 text-sm font-medium text-dark transition hover:text-primary" aria-haspopup="true" aria-expanded="false">Products <i data-lucide="chevron-down" class="h-4 w-4 transition-transform duration-300" id="products-chevron"></i></button>
+                  <div id="products-dropdown-menu" class="absolute left-0 top-full mt-2 w-56 bg-white shadow-lg rounded-lg border border-gray/20 opacity-0 invisible transition-all duration-200 z-50">
+                     <a href="/product" class="block px-5 py-3 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-colors">Intelligence Products</a>
+                     <a href="/creator-products" class="block px-5 py-3 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-colors">Creator Products</a>
+                     <a href="/creator-two" class="block px-5 py-3 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-colors">Creator Two</a>
+                     <a href="/drive-products" class="block px-5 py-3 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-colors">Drive Products</a>
+                     <a href="/submission"  class="block px-5 py-3 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-colors">Submission</a>
+                  </div>
+               </div>
+               <a href="/about" class="nav-link text-sm font-medium text-dark transition hover:text-primary">About</a>
+               <a href="/pricing" class="nav-link text-sm font-medium text-dark transition hover:text-primary">Pricing</a>
             </nav>
             <div class="flex items-center gap-2 shrink-0 ms-auto">
                <a href="https://www.nostiqa.com/form" class="ml-2 shrink-0 px-3 py-1.5 sm:px-5 sm:py-2 bg-primary text-white rounded-full text-[10px] sm:text-sm font-medium whitespace-nowrap hover:opacity-90 transition">Book Demo</a>
                <button id="mobile-menu-toggle" class="flex md:hidden items-center justify-center text-dark" aria-label="Toggle Menu">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16"/>
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16" />
                   </svg>
                </button>
             </div>
          </div>
          <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white border-t border-gray/20 shadow-xl">
             <div class="flex flex-col gap-3 px-6 py-6">
-             <a href="/" class="mobile-nav-link text-base font-medium text-dark hover:text-primary transition">Home</a>
-             <a href="/about" class="mobile-nav-link text-base font-medium text-dark hover:text-primary transition">About</a>
-             <a href="/pricing" class="mobile-nav-link text-base font-medium text-dark hover:text-primary transition">Pricing</a>
+               <a href="/" class="mobile-nav-link text-base font-medium text-dark hover:text-primary transition">Home</a>
+               <div class="w-full">
+                  <button id="mobile-products-btn" class="flex items-center justify-between w-full text-base font-medium text-dark hover:text-primary transition"> Products <i data-lucide="chevron-down" class="h-4 w-4 transition-transform duration-300" id="mobile-products-chevron"></i>
+                  </button>
+                  <div id="mobile-products-menu" class="hidden flex-col gap-1 mt-2 pl-4 border-l border-gray/20">
+                     <a href="/product" class="mobile-nav-link py-1.5 text-sm text-gray-600 hover:text-primary transition">Intelligence Products</a>
+                     <a href="/creator-products" class="mobile-nav-link py-1.5 text-sm text-gray-600 hover:text-primary transition">Creator Products</a>
+                     <a href="/creator-two" class="mobile-nav-link py-1.5 text-sm text-gray-600 hover:text-primary transition">Creator Two</a>
+                     <a href="/drive-products" class="mobile-nav-link py-1.5 text-sm text-gray-600 hover:text-primary transition">Drive Products</a>
+                     <a href="/submission"  class="mobile-nav-link py-1.5 text-sm text-gray-600 hover:text-primary transition">Submission</a>
+                  </div>
+               </div>
+               <a href="/about" class="mobile-nav-link text-base font-medium text-dark hover:text-primary transition">About</a>
+               <a href="/pricing"class="mobile-nav-link text-base font-medium text-dark hover:text-primary transition">Pricing</a>
             </div>
          </div>
-       </header>
+      </header>
 
       <!-- ========== Page Containt ========== -->
       <section class="relative overflow-hidden py-8 lg:py-12 mt-12">
