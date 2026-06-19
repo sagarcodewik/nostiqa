@@ -157,5 +157,5 @@ select::-ms-expand { display: none;}
 
 /* dark Page Start */
 .hero-bg {
-  background: radial-gradient(ellipse 80% 60% at 70% 30%, rgba(91, 34, 255, .25) 0%, transparent 60%), linear-gradient(160deg, #020D2D 0%, #050B1F 40%, #091638 100%);
+  background: radial-gradient(ellipse 80% 60% at 70% 30%, rgba(91, 34, 255, .25) 0%, transparent 60%), linear-gradient(160deg, #000 0%, #000 40%, #000 100%);
 }

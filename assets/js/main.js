@@ -57,16 +57,29 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // ===== Header Scroll Effect =====
+  // const handleScroll = () => {
+  //   if (!header) return;
+  //   const scrolled = window.scrollY > 30;
+  //   header.classList.toggle("bg-transparent",                      !scrolled);
+  //   header.classList.toggle("bg-white/95",                          scrolled);
+  //   header.classList.toggle("backdrop-blur-xl",                     scrolled);
+  //   header.classList.toggle("shadow-[0_10px_40px_rgba(0,0,0,0.08)]", scrolled);
+  //   header.classList.toggle("border-b",                             scrolled);
+  //   header.classList.toggle("border-primary/10",                    scrolled);
+  // };
   const handleScroll = () => {
-    if (!header) return;
-    const scrolled = window.scrollY > 30;
-    header.classList.toggle("bg-transparent",                      !scrolled);
-    header.classList.toggle("bg-white/95",                          scrolled);
-    header.classList.toggle("backdrop-blur-xl",                     scrolled);
-    header.classList.toggle("shadow-[0_10px_40px_rgba(0,0,0,0.08)]", scrolled);
-    header.classList.toggle("border-b",                             scrolled);
-    header.classList.toggle("border-primary/10",                    scrolled);
-  };
+  if (!header) return;
+  const scrolled = window.scrollY > 30;
+  header.classList.add("bg-dark");
+  if (scrolled) {
+    header.classList.add( "backdrop-blur-xl", "shadow-[0_10px_40px_rgba(0,0,0,0.25)]", "border-b", "border-white/10");
+  } else {
+    header.classList.remove( "backdrop-blur-xl", "shadow-[0_10px_40px_rgba(0,0,0,0.25)]", "border-b", "border-white/10");
+  }
+};
+
+handleScroll();
+window.addEventListener("scroll", handleScroll);
   handleScroll();
   window.addEventListener("scroll", handleScroll);
 

@@ -20,6 +20,7 @@ module.exports = {
         deepNavy: "#091638",
         indigo: "#151E5E",
         purpleAccent: "#5B22FF",
+        midnight: "#060C18",
       },
 
       fontSize: {
