@@ -79,8 +79,8 @@
    <section class="relative overflow-hidden py-10 lg:py-16 mt-12">
       <div class="container mx-auto px-4 lg:px-8 grid lg:grid-cols-5 gap-6 lg:gap-10 items-center">
          <div class="lg:col-span-2">
-            <div class="inline-flex gap-1.5 w-fit items-center whitespace-nowrap rounded-full border border-green-700 bg-green-100 px-2 py-1 text-xs font-semibold text-green-700 mb-3">
-               <span class="h-2 w-2 rounded-full bg-green-500"></span> Live Now
+            <div class="uppercase inline-flex items-center gap-2 rounded-full border border-green-700 bg-green-100 px-3 py-1 text-xs font-semibold text-green-700">
+               <span class="h-2 w-2 rounded-full bg-green-500 animate-pulse"></span> Live Now
             </div>
             <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-dark leading-tight mb-4">Compare two creators. Get a recommendation.</h1>
             <p class="text-gray text-base lg:text-lg leading-relaxed max-w-xl mb-6">Understand which creator is the stronger fit for your objective in as little as 48 hours.</p>
@@ -106,7 +106,7 @@
          </div>
          <!-- Card -->
          <div class="lg:col-span-3 bg-dark/20 aspect-video rounded-2xl overflow-hidden border border-gray/5 shadow-premium">
-          <img src="assets/images/product_heroimg.png" alt="Product Hero Image" class="rounded-2xl w-full h-full object-cover"/>
+          <img src="assets/images/pricingcardimg1.png" alt="Product Hero Image" class="rounded-2xl w-full h-full object-cover"/>
          </div>
       </div>
    </section>
@@ -115,17 +115,56 @@
       <div class="container mx-auto px-4 lg:px-8 grid grid-cols-1 lg:grid-cols-4 gap-6 items-center">
          <div class="w-full flex flex-col gap-2">
             <h3 class="text-xl lg:text-4xl font-bold text-dark leading-tight mb-0">What your report includes</h3>
-            <p class="text-sm sm:text-sm leading-6 text-dark">Every Face Offreported to help you decide</p>
+            <p class="text-sm sm:text-sm leading-6 text-dark">Every Face-Off report is structured to help you decide with confidence.</p>
          </div>
          <div class="lg:col-span-3 w-full overflow-hidden">
             <div class="swiper cardsSwiper overflow-hidden">
                <div class="swiper-wrapper items-stretch">
                   <div class="swiper-slide !h-auto flex">
                      <div class="group flex h-full flex-col rounded-2xl border border-gray/20 bg-white p-4 shadow-premium transition-all duration-300 hover:border-primary/20 hover:shadow-glow">
-                        <!-- Header -->
                         <div class="flex items-start justify-between gap-4">
                            <div class="flex min-w-0 items-center gap-3">
                               <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-green-600 font-bold text-white">01</div>
+                              <div class="min-w-0">
+                                 <h3 class="truncate text-base font-bold text-dark">Best Fit Recommendation</h3>
+                                 <!-- <p class="truncate text-sm text-gray"></p> -->
+                              </div>
+                           </div>
+                           <!-- <div class="shrink-0 text-right">
+                              <p class="text-lg font-bold text-dark">381K</p>
+                              <p class="text-xs text-gray">Followers</p>
+                           </div> -->
+                        </div>
+                        <div class="my-4 border-t border-gray/20"></div>
+                        <div class="flex-1">
+                           <div class="mb-2 flex items-center gap-2">
+                              <i data-lucide="users" class="h-4 w-4 text-primary"></i> <span class="text-xs font-bold uppercase tracking-wide text-primary">Audience Relationship</span>
+                           </div>
+                           <p class="text-sm leading-relaxed text-gray">A clear recommendation supported by objective fit scoring and dimension-level analysis.</p>
+                           <div class="my-4 border-t border-gray/20"></div>
+                           <div class="aspect-[16/9] w-full rounded-2xl overflow-hidden border border-gray/20 shadow-premium">
+                              <img src="assets/images/pricingcardimg1.png" alt="Pricing Card" class="w-full h-full object-cover"/>
+                           </div>
+                        </div>
+                        <div class="my-4 border-t border-gray/20"></div>
+                        <div class="mt-auto">
+                           <div class="mb-2 flex items-center gap-2">
+                              <i data-lucide="sparkles" class="h-4 w-4 text-primary"></i> <span class="text-xs font-bold uppercase tracking-wide text-primary">Content Types That Resonate</span>
+                           </div>
+                           <div class="flex flex-wrap gap-2">
+                              <span class="rounded-full border border-primary/15 bg-primary/5 px-3 py-1 text-xs font-medium text-primary"> Best Fit card</span>
+                              <span class="rounded-full border border-primary/15 bg-primary/5 px-3 py-1 text-xs font-medium text-primary"> Objective Fit Score</span>
+                              <span class="rounded-full border border-primary/15 bg-primary/5 px-3 py-1 text-xs font-medium text-primary"> Dimension scoring table</span>
+                              <span class="rounded-full border border-primary/15 bg-primary/5 px-3 py-1 text-xs font-medium text-primary"> Brand Safety Review flag</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide !h-auto flex">
+                     <div class="group flex h-full flex-col rounded-2xl border border-gray/20 bg-white p-4 shadow-premium transition-all duration-300 hover:border-primary/20 hover:shadow-glow">
+                        <div class="flex items-start justify-between gap-4">
+                           <div class="flex min-w-0 items-center gap-3">
+                              <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-green-600 font-bold text-white">02</div>
                               <div class="min-w-0">
                                  <h3 class="truncate text-base font-bold text-dark">Rohan Mehta</h3>
                                  <p class="truncate text-sm text-gray">@rohanverse</p>
@@ -136,18 +175,52 @@
                               <p class="text-xs text-gray">Followers</p>
                            </div>
                         </div>
-                        <!-- Divider -->
                         <div class="my-4 border-t border-gray/20"></div>
-                        <!-- Audience Relationship -->
                         <div class="flex-1">
                            <div class="mb-2 flex items-center gap-2">
                               <i data-lucide="users" class="h-4 w-4 text-primary"></i> <span class="text-xs font-bold uppercase tracking-wide text-primary">Audience Relationship</span>
                            </div>
                            <p class="text-sm leading-relaxed text-gray">Highly engaged and trusting. Audience members actively participate in conversations, share personal stories, and seek Rohan's recommendations.</p>
+                           <div class="my-4 border-t border-gray/20"></div>
+                           <div class="w-full flex flex-col gap-2">
+                              <div class="mb-2 flex items-center gap-2"><span class="text-xs font-bold uppercase tracking-wide text-primary">Top 3 Strengths for This objective <span class="text-dark/60 font-normal">(with audiance quotes)</span></div>
+                              <div class="w-full space-y-3">
+                                 <div class="flex gap-2">
+                                    <div class="flex-shrink-0">
+                                          <div class="w-7 h-7 rounded-full bg-green-600 text-white text-xs font-semibold flex items-center justify-center">1</div>
+                                    </div>
+                                    <div class="flex-1">
+                                          <div class="flex items-center justify-between mb-1">
+                                             <h3 class="text-green-600 font-semibold text-sm">Perceived Authenticity</h3>
+                                             <i data-lucide="trophy" class="w-4 h-4 text-amber-500"></i>
+                                          </div>
+                                          <div class="flex gap-2 mb-1">
+                                             <i data-lucide="quote" class="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5"></i>
+                                             <p class="text-sm font-medium text-dark leading-tight">"He's the only creator I trust when it comes to skincare."</p>
+                                          </div>
+                                          <p class="text-xs text-gray leading-tight">Perceived Authenticity reflects how audiences see the creator as genuine and trustworthy within their category.</p>
+                                    </div>
+                                 </div>
+                                 <div class="border-t border-gray/10"></div>
+                                 <div class="flex gap-2">
+                                    <div class="flex-shrink-0">
+                                          <div class="w-7 h-7 rounded-full bg-green-600 text-white text-xs font-semibold flex items-center justify-center">2</div>
+                                    </div>
+                                    <div class="flex-1">
+                                          <div class="flex items-center justify-between mb-1">
+                                             <h3 class="text-green-600 font-semibold text-sm">Emotional Connection</h3> <i data-lucide="trophy" class="w-4 h-4 text-amber-500"></i>
+                                          </div>
+                                          <div class="flex gap-2 mb-1">
+                                             <i data-lucide="quote" class="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5"></i>
+                                             <p class="text-sm font-medium text-dark leading-tight">"His content just feels real and personal."</p>
+                                          </div>
+                                          <p class="text-xs text-gray leading-tight">Emotional Connection reflects the depth of bond and relatability audiences feel.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
-                        <!-- Divider -->
                         <div class="my-4 border-t border-gray/20"></div>
-                        <!-- Content Types -->
                         <div class="mt-auto">
                            <div class="mb-2 flex items-center gap-2">
                               <i data-lucide="sparkles" class="h-4 w-4 text-primary"></i> <span class="text-xs font-bold uppercase tracking-wide text-primary">Content Types That Resonate</span>
@@ -165,10 +238,9 @@
                   </div>
                   <div class="swiper-slide !h-auto flex">
                      <div class="group flex h-full flex-col rounded-2xl border border-gray/20 bg-white p-4 shadow-premium transition-all duration-300 hover:border-primary/20 hover:shadow-glow">
-                        <!-- Header -->
                         <div class="flex items-start justify-between gap-4">
                            <div class="flex min-w-0 items-center gap-3">
-                              <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-green-600 font-bold text-white">02</div>
+                              <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-green-600 font-bold text-white">03</div>
                               <div class="min-w-0">
                                  <h3 class="truncate text-base font-bold text-dark">Arjun Malhotra</h3>
                                  <p class="truncate text-sm text-gray">@thecalmcommuter</p>
@@ -179,14 +251,50 @@
                               <p class="text-xs text-gray">Followers</p>
                            </div>
                         </div>
-                        <!-- Divider -->
                         <div class="my-4 border-t border-gray/20"></div>
-                        <!-- Audience Relationship -->
                         <div class="flex-1">
                            <div class="mb-2 flex items-center gap-2">
                               <i data-lucide="users" class="h-4 w-4 text-primary"></i> <span class="text-xs font-bold uppercase tracking-wide text-primary">Audience Relationship</span>
                            </div>
                            <p class="text-sm leading-relaxed text-gray">Audience appreciates Arjun's perspective but engages less in deeper or personal conversations.</p>
+                          <div class="my-4 border-t border-gray/20"></div>
+                           <div class="w-full flex flex-col gap-2">
+                              <div class="mb-2 flex items-center gap-2"><span class="text-xs font-bold uppercase tracking-wide text-primary">Top 3 Strengths for This objective <span class="text-dark/60 font-normal">(with audiance quotes)</span></div>
+                              <div class="w-full space-y-3">
+                                 <div class="flex gap-2">
+                                    <div class="flex-shrink-0">
+                                          <div class="w-7 h-7 rounded-full bg-dark text-white text-xs font-semibold flex items-center justify-center">1</div>
+                                    </div>
+                                    <div class="flex-1">
+                                          <div class="flex items-center justify-between mb-1">
+                                             <h3 class="text-dark font-semibold text-sm">Emotional Connection</h3>
+                                             <i data-lucide="star" class="w-4 h-4 text-dark"></i>
+                                          </div>
+                                          <div class="flex gap-2 mb-1">
+                                             <i data-lucide="quote" class="w-4 h-4 text-dark flex-shrink-0 mt-0.5"></i>
+                                             <p class="text-sm font-medium text-dark leading-tight">“Arjun’s content feels calming, genuine, and relatable.”</p>
+                                          </div>
+                                          <p class="text-xs text-gray leading-tight">Emotional Connection reflects how strongly audiences connect with a creator on a personal level and how relatable they find their content.</p>
+                                    </div>
+                                 </div>
+                                 <div class="border-t border-gray/10"></div>
+                                 <div class="flex gap-2">
+                                    <div class="flex-shrink-0">
+                                          <div class="w-7 h-7 rounded-full bg-red-600 text-white text-xs font-semibold flex items-center justify-center">2</div>
+                                    </div>
+                                    <div class="flex-1">
+                                          <div class="flex items-center justify-between mb-1">
+                                             <h3 class="text-red font-semibold text-sm text-red-600">Perceived Skill</h3> <i data-lucide="triangle-alert" class="w-4 h-4 text-red-600"></i>
+                                          </div>
+                                          <div class="flex gap-2 mb-1">
+                                             <i data-lucide="quote" class="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5"></i>
+                                             <p class="text-sm font-medium text-dark leading-tight">“I enjoy his minimal-living tips, but they don't always feel expert-led.”</p>
+                                          </div>
+                                          <p class="text-xs text-gray leading-tight">Perceived Skill reflects how audiences evaluate a creator’s expertise, knowledge, and credibility compared to others in the same category.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
                         <!-- Divider -->
                         <div class="my-4 border-t border-gray/20"></div>
@@ -216,13 +324,13 @@
             <p class="text-sm sm:text-sm leading-6 text-dark">Get the clarity you need before committing budget, time or brand equity.</p>
          </div>
          <div class="lg:col-span-3 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 border border-gray/20 rounded-2xl overflow-hidden bg-white">
-            <div class="relative flex h-full flex-col items-start justify-start text-start p-6 sm:p-8 gap-1.5 transition-all duration-300 hover:bg-primary/[0.02]">
+            <div class="relative flex h-full flex-col items-start justify-start text-start p-6 sm:p-8 gap-1.5 border-b border-gray/20 sm:border-b-0 transition-all duration-300 hover:bg-primary/[0.02]">
                <div class="mb-2 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-light to-light/50 text-primary"><i data-lucide="rocket" class="size-7"></i></div>
                <h3 class="text-lg font-bold text-dark leading-tight mb-0">New Campaign</h3>
                <p class="text-xs leading-tight text-dark">Evaluate creator options before you invest.</p>
                <span class="hidden lg:block absolute top-6 right-0 w-px h-[70%] bg-gradient-to-b from-transparent via-gray/20 to-transparent"></span>
             </div>
-            <div class="relative flex h-full flex-col items-start justify-start text-start p-6 sm:p-8 gap-1.5 transition-all duration-300 hover:bg-primary/[0.02]">
+            <div class="relative flex h-full flex-col items-start justify-start text-start p-6 sm:p-8 gap-1.5 border-b border-gray/20 sm:border-b-0 transition-all duration-300 hover:bg-primary/[0.02]">
                <div class="mb-2 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-light to-light/50 text-primary"><i data-lucide="badge-check" class="size-7"></i></div>
                <h3 class="text-lg font-bold text-dark leading-tight mb-0">Agency Recommendation</h3>
                <p class="text-xs leading-tight text-dark">Back your recommendation with objective intelligence.</p>
@@ -240,7 +348,7 @@
             <h3 class="text-2xl lg:text-4xl font-bold text-dark leading-tight mb-0">What's <span class="inline sm:block">Included</span></h3>
          </div>
          <!-- grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-7 border border-gray/20 rounded-2xl overflow-hidden bg-white -->
-         <div class="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
+         <div class="lg:col-span-3 grid grid-cols-2 sm:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-7 gap-4">
             <div class="group relative rounded-2xl border border-gray/20 bg-white p-5 text-center transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-lg">
                <div class="absolute top-4 right-4"><i data-lucide="badge-check" class="size-5 text-green-500"></i></div>
                <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-light transition-all duration-300 group-hover:bg-primary/10">
@@ -276,14 +384,14 @@
                </div>
                <h4 class="text-sm font-semibold leading-snug text-dark">Brand Safety Flags</h4>
             </div>
-            <div class="xl:col-span-2 group relative rounded-2xl border border-gray/20 bg-white p-5 text-center transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-lg">
+            <div class="xl:col-span-2 2xl:col-span-1 group relative rounded-2xl border border-gray/20 bg-white p-5 text-center transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-lg">
                <div class="absolute top-4 right-4"><i data-lucide="badge-check" class="size-5 text-green-500"></i></div>
                <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-light transition-all duration-300 group-hover:bg-primary/10">
                   <i data-lucide="lightbulb" class="size-6 text-primary"></i>
                </div>
                <h4 class="text-sm font-semibold leading-snug text-dark">Campaign Guidance</h4>
             </div>
-            <div class="group relative rounded-2xl border border-gray/20 bg-white p-5 text-center transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-lg">
+            <div class="col-span-2 xl:col-span-1 group relative rounded-2xl border border-gray/20 bg-white p-5 text-center transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-lg">
                <div class="absolute top-4 right-4"><i data-lucide="badge-check" class="size-5 text-green-500"></i></div>
                <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-light transition-all duration-300 group-hover:bg-primary/10">
                   <i data-lucide="file-text" class="size-6 text-primary"></i>
@@ -309,22 +417,22 @@
                </div>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4">
-               <div class="group relative flex min-h-[260px] flex-col items-center justify-center border-b border-gray/10 p-8 text-center transition-all duration-300 hover:bg-white/80 xl:border-b-0 xl:border-r xl:border-gray/10">
+               <div class="group relative flex sm:min-h-[260px] flex-col items-center justify-center border-b border-gray/10 p-8 text-center transition-all duration-300 hover:bg-white/80 xl:border-b-0 xl:border-r xl:border-gray/10">
                   <div class="flex size-16 items-center justify-center rounded-full border border-violet-200 bg-white font-bold text-primary shadow-[0_0_50px_rgba(139,92,246,0.15)] transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_60px_rgba(139,92,246,0.25)]"> 01</div>
                   <h3 class="mt-3 text-xl font-semibold text-dark"> Choose Objective</h3>
                   <p class="mt-2 text-sm leading-relaxed text-gray"> Select the outcome that matters most to your campaign.</p>
                </div>
-               <div class="group relative flex min-h-[260px] flex-col items-center justify-center border-b border-gray/10 p-8 text-center transition-all duration-300 hover:bg-white/80 xl:border-b-0 xl:border-r xl:border-gray/10">
+               <div class="group relative flex sm:min-h-[260px] flex-col items-center justify-center border-b border-gray/10 p-8 text-center transition-all duration-300 hover:bg-white/80 xl:border-b-0 xl:border-r xl:border-gray/10">
                   <div class="flex size-16 items-center justify-center rounded-full border border-violet-200 bg-white font-bold text-primary shadow-[0_0_50px_rgba(139,92,246,0.15)] transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_60px_rgba(139,92,246,0.25)]"> 02</div>
                   <h3 class="mt-3 text-xl font-semibold text-dark"> Submit Creators</h3>
                   <p class="mt-2 text-sm leading-relaxed text-gray"> Share two creator handles and any relevant context.</p>
                </div>
-               <div class="group relative flex min-h-[260px] flex-col items-center justify-center border-b border-gray/10 p-8 text-center transition-all duration-300 hover:bg-white/80 xl:border-b-0 xl:border-r xl:border-gray/10">
+               <div class="group relative flex sm:min-h-[260px] flex-col items-center justify-center border-b border-gray/10 p-8 text-center transition-all duration-300 hover:bg-white/80 xl:border-b-0 xl:border-r xl:border-gray/10">
                   <div class="flex size-16 items-center justify-center rounded-full border border-violet-200 bg-white font-bold text-primary shadow-[0_0_50px_rgba(139,92,246,0.15)] transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_60px_rgba(139,92,246,0.25)]"> 03</div>
                   <h3 class="mt-3 text-xl font-semibold text-dark"> Receive Report</h3>
                   <p class="mt-2 text-sm leading-relaxed text-gray"> Our team evaluates both creators and delivers your report.</p>
                </div>
-               <div class="group relative flex min-h-[260px] flex-col items-center justify-center p-8 text-center transition-all duration-300 hover:bg-white/80">
+               <div class="group relative flex sm:min-h-[260px] flex-col items-center justify-center p-8 text-center transition-all duration-300 hover:bg-white/80">
                   <div class="flex size-16 items-center justify-center rounded-full border border-violet-200 bg-white font-bold text-primary shadow-[0_0_50px_rgba(139,92,246,0.15)] transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_60px_rgba(139,92,246,0.25)]">04</div>
                   <h3 class="mt-3 text-xl font-semibold text-dark">Make Decision</h3>
                   <p class="mt-2 text-sm leading-relaxed text-gray">Use the recommendation and supporting analysis to move forward with confidence.</p>
@@ -399,19 +507,19 @@
                   <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary via-secondary to-primary"></div>
                   <p class="text-sm font-semibold uppercase tracking-wider text-primary">Face-Off Report</p>
                   <h3 class="mt-2 text-5xl font-bold tracking-tight text-dark">₹4,999</h3>
-                  <p class="text-sm text-gray"> One-time payment. <span class="inline sm:block">No subscription required.</span></p>
+                  <!-- <p class="text-sm text-gray"> One-time payment. <span class="inline sm:block">No subscription required.</span></p> -->
                   <div class="mt-6 space-y-3">
                      <div class="flex items-center gap-2 text-sm text-dark">
-                        <i data-lucide="check-circle-2" class="size-4 text-green-500"></i> <span>Audience Intelligence</span>
+                        <i data-lucide="check-circle-2" class="size-4 text-green-500"></i> <span>Delivered in 48 Hours</span>
                      </div>
                      <div class="flex items-center gap-2 text-sm text-dark">
-                        <i data-lucide="check-circle-2" class="size-4 text-green-500"></i> <span>Brand Safety Review</span>
+                        <i data-lucide="check-circle-2" class="size-4 text-green-500"></i> <span>PDF Report</span>
                      </div>
                      <div class="flex items-center gap-2 text-sm text-dark">
-                        <i data-lucide="check-circle-2" class="size-4 text-green-500"></i> <span>Fit Score Breakdown</span>
+                        <i data-lucide="check-circle-2" class="size-4 text-green-500"></i> <span>Brand Safety Flags</span>
                      </div>
                      <div class="flex items-center gap-2 text-sm text-dark">
-                        <i data-lucide="check-circle-2" class="size-4 text-green-500"></i> <span>PDF Report Included</span>
+                        <i data-lucide="check-circle-2" class="size-4 text-green-500"></i> <span>Recommendation Included</span>
                      </div>
                   </div>
                   <div class="mt-auto pt-6">
@@ -440,7 +548,7 @@
             <img src="assets/images/brand_logo1.png" alt="Mamaearth">
             <img src="assets/images/brand_logo2.png" alt="Dot & Key">
             <img src="assets/images/brand_logo3.png" alt="SUGAR">
-            <img src="assets/images/brand_logo4.png." alt="boAt">
+            <img src="assets/images/brand_logo4.png" alt="boAt">
             <img src="assets/images/brand_logo5.png" alt="The Man Company">
             <img src="assets/images/brand_logo6.png" alt="The Man Company">
             <img src="assets/images/brand_logo7.png" alt="The Man Company">
@@ -455,7 +563,7 @@
          <div class="flex flex-col md:flex-row items-center justify-between gap-6 py-6">
             <div class="flex items-center gap-6">
                <img src="assets/images/logo.png" alt="Nostiqa" class="h-7 w-auto brightness-0 invert">
-               <p class="text-xs text-white/70">© 2025 Nostiqa. All rights reserved.</p>
+               <p class="text-xs text-white/70">© Nostiqa. All rights reserved.</p>
             </div>
             <nav class="flex flex-wrap items-center justify-center gap-6 lg:gap-10">
                <a href="javascript:void(0)" class="text-sm text-white/80 hover:text-white transition">Privacy Policy</a>
