@@ -25,6 +25,7 @@ module.exports = {
 
       fontSize: {
         "4.5": "46px",
+        "xs-9": "9px",
       },
 
       backgroundImage: {

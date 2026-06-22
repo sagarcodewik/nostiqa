@@ -70,6 +70,7 @@
                   <a href="/submission"  class="mobile-nav-link py-1.5 text-sm text-gray-600 hover:text-primary transition">Submission</a>
                </div>
             </div>
+            <a href="/deep-product" class="mobile-nav-link text-base font-medium text-dark hover:text-primary transition">Deep Product</a>
             <a href="/about" class="mobile-nav-link text-base font-medium text-dark hover:text-primary transition">About</a>
             <a href="/pricing"class="mobile-nav-link text-base font-medium text-dark hover:text-primary transition">Pricing</a>
          </div>
@@ -346,16 +347,20 @@
       </div>
       <div class="container mx-auto px-4 lg:px-8 grid grid-cols-1 lg:grid-cols-4 gap-6 items-center">
          <div class="flex flex-col gap-2">
-            <h3 class="text-2xl lg:text-4xl font-bold text-dark leading-tight mb-0">What's <span class="inline sm:block">Included</span></h3>
+            <h3 class="text-2xl lg:text-4xl font-bold text-dark leading-tight mb-0">What's <span class="inline sm:block">included</span></h3>
          </div>
          <!-- grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-7 border border-gray/20 rounded-2xl overflow-hidden bg-white -->
          <div class="lg:col-span-3 grid grid-cols-2 sm:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-7 gap-4">
-            <div class="group relative rounded-2xl border border-gray/20 bg-white p-5 text-center transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-lg">
-               <div class="absolute top-4 right-4"><i data-lucide="badge-check" class="size-5 text-green-500"></i></div>
-               <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-light transition-all duration-300 group-hover:bg-primary/10">
-                  <i data-lucide="star" class="size-6 text-primary"></i>
+            <div class="group relative rounded-2xl border border-gray/20 bg-white p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-lg">
+               <div class="absolute right-4 top-4">
+                  <i data-lucide="badge-check" class="size-5 text-green-500"></i>
                </div>
-               <h4 class="text-sm font-semibold leading-snug text-dark">Best Fit Recommendation</h4>
+               <div class="flex h-full flex-col items-center text-center">
+                  <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-light transition-all duration-300 group-hover:bg-primary/10">
+                        <i data-lucide="star" class="size-6 text-primary"></i>
+                  </div>
+                  <h4 class="text-sm font-semibold leading-snug text-dark break-words">Best Fit Recommendation</h4>
+               </div>
             </div>
             <div class="group relative rounded-2xl border border-gray/20 bg-white p-5 text-center transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-lg">
                <div class="absolute top-4 right-4"><i data-lucide="badge-check" class="size-5 text-green-500"></i></div>
@@ -486,15 +491,15 @@
                      </div>
                   </div>
                   <div>
-                     <label class="mb-2 block text-sm font-semibold text-dark">Instagram Handle <span class="text-red-600">*</span></label>
+                     <label class="mb-2 block text-sm font-semibold text-dark">Instagram Handle <span class="text-red-600">*</span> <span class="text-xs-9 text-dark/60">(Creator A)</span></label>
                      <input type="text" placeholder="@creatorname" class="h-12 w-full rounded-xl border border-gray/10 bg-white px-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10">
                   </div>
                   <div>
-                     <label class="mb-2 block text-sm font-semibold text-dark">Instagram Handle <span class="text-red-600">*</span></label>
+                     <label class="mb-2 block text-sm font-semibold text-dark">Instagram Handle <span class="text-red-600">*</span> <span class="text-xs-9 text-dark/60">(Creator B)</span></label>
                      <input type="text" placeholder="@creatorname" class="h-12 w-full rounded-xl border border-gray/10 bg-white px-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10">
                   </div>
                   <div>
-                     <label class="mb-2 block text-sm font-semibold text-dark">Brand Name <span class="text-red-600">*</span></label>
+                     <label class="mb-2 block text-sm font-semibold text-dark">Brand Name</label>
                      <input type="text" placeholder="Your Brand Name" class="h-12 w-full rounded-xl border border-gray/10 bg-white px-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10">
                   </div>
                   <div class="col-span-full">
@@ -525,7 +530,7 @@
                   </div>
                   <div class="mt-auto pt-6">
                      <a href="#" class="flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-primary text-base font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_30px_rgba(55,17,190,0.25)]">
-                        Continue to Payment <i data-lucide="arrow-right" class="size-5"></i>
+                        Continue To Payment <i data-lucide="arrow-right" class="size-5"></i>
                      </a>
                      <div class="mt-4 flex items-center justify-center gap-2 text-sm text-gray">
                         <i data-lucide="shield-check" class="size-4 text-green-500"></i> <span>Secure Checkout</span>
@@ -550,9 +555,7 @@
             <img src="assets/images/brand_logo2.png" alt="Dot & Key">
             <img src="assets/images/brand_logo3.png" alt="SUGAR">
             <img src="assets/images/brand_logo4.png" alt="boAt">
-            <img src="assets/images/brand_logo5.png" alt="The Man Company">
             <img src="assets/images/brand_logo6.png" alt="The Man Company">
-            <img src="assets/images/brand_logo7.png" alt="The Man Company">
          </div>
         </div>
       </div>
