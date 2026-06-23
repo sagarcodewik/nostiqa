@@ -1235,6 +1235,14 @@ video {
   height: 1px;
 }
 
+.h-auto{
+  height: auto;
+}
+
+.max-h-\[90vh\]{
+  max-height: 90vh;
+}
+
 .min-h-32{
   min-height: 8rem;
 }
@@ -1977,10 +1985,6 @@ video {
   background-color: rgb(17 17 17 / 0.2);
 }
 
-.bg-dark\/80{
-  background-color: rgb(17 17 17 / 0.8);
-}
-
 .bg-darkNavy{
   --tw-bg-opacity: 1;
   background-color: rgb(5 11 31 / var(--tw-bg-opacity, 1));
@@ -2181,6 +2185,14 @@ video {
 .bg-zinc-200{
   --tw-bg-opacity: 1;
   background-color: rgb(228 228 231 / var(--tw-bg-opacity, 1));
+}
+
+.bg-primary\/20{
+  background-color: rgb(55 17 190 / 0.2);
+}
+
+.bg-dark\/80{
+  background-color: rgb(17 17 17 / 0.8);
 }
 
 .bg-gradient-to-b{
@@ -3306,6 +3318,11 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.blur-sm{
+  --tw-blur: blur(4px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .brightness-0{
   --tw-brightness: brightness(0);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -3325,11 +3342,6 @@ video {
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
-.backdrop-blur-lg{
-  --tw-backdrop-blur: blur(16px);
-  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-}
-
 .backdrop-blur-sm{
   --tw-backdrop-blur: blur(4px);
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -3337,6 +3349,11 @@ video {
 
 .backdrop-blur-xl{
   --tw-backdrop-blur: blur(24px);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+.backdrop-blur-lg{
+  --tw-backdrop-blur: blur(16px);
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
@@ -3955,6 +3972,10 @@ select::-ms-expand {
   --tw-gradient-to: transparent var(--tw-gradient-to-position);
 }
 
+.last\:border-b-0:last-child{
+  border-bottom-width: 0px;
+}
+
 .last\:before\:hidden:last-child::before{
   content: var(--tw-content);
   display: none;
@@ -4075,16 +4096,20 @@ select::-ms-expand {
   background-color: rgb(255 255 255 / 0.15);
 }
 
-.hover\:bg-white\/50:hover{
-  background-color: rgb(255 255 255 / 0.5);
-}
-
 .hover\:bg-white\/80:hover{
   background-color: rgb(255 255 255 / 0.8);
 }
 
 .hover\:bg-white\/\[0\.04\]:hover{
   background-color: rgb(255 255 255 / 0.04);
+}
+
+.hover\:bg-primary\/10:hover{
+  background-color: rgb(55 17 190 / 0.1);
+}
+
+.hover\:bg-white\/50:hover{
+  background-color: rgb(255 255 255 / 0.5);
 }
 
 .hover\:text-light:hover{
@@ -4329,6 +4354,10 @@ select::-ms-expand {
     flex-direction: row;
   }
 
+  .sm\:flex-col{
+    flex-direction: column;
+  }
+
   .sm\:items-start{
     align-items: flex-start;
   }
@@ -4571,6 +4600,10 @@ select::-ms-expand {
 
   .md\:grid-cols-5{
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-1{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .md\:flex-row{

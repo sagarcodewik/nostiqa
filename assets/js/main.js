@@ -228,4 +228,14 @@ window.addEventListener("scroll", handleScroll);
       button.classList.remove("border", "border-gray/30", "text-dark");
     });
   });
+  document.querySelectorAll('.faq-trigger').forEach((button) => {
+    button.addEventListener('click', () => {
+    const currentItem = button.closest('.faq-item');
+    const currentContent = currentItem.querySelector('.faq-content');
+    const currentIcon = currentItem.querySelector('.faq-icon');
+    document.querySelectorAll('.faq-item').forEach((item) => {if (item !== currentItem) { item.querySelector('.faq-content').classList.add('hidden'); item.querySelector('.faq-icon').classList.remove('rotate-180');}});
+    currentContent.classList.toggle('hidden');
+    currentIcon.classList.toggle('rotate-180');
+    });
+  });
 });
