@@ -1,7 +1,14 @@
 {
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/", "destination": "/index.html" },
-    { "source": "/about", "destination": "/about.html" }
+    { "source": "/", "destination": "/index.html"},
+    { "source": "/about", "destination": "/about.html"},
+    { "source": "/ranking-shortlist", "destination": "/ranking-shortlist.html"},
+    { "source": "/creator-two", "destination": "/creator-two.html"},
+    { "source": "/deep-dive", "destination": "/deep-dive.html"},
+    { "source": "/founding-partner-program", "destination": "/founding-partner-program.html"},
+    { "source": "/pricing", "destination": "/pricing.html"},
+    { "source": "/face-off", "destination": "/face-off.html"},
+    { "source": "/submission", "destination": "/submission.html" }
   ]
 }
