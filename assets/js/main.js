@@ -84,16 +84,20 @@ window.addEventListener("scroll", handleScroll);
   window.addEventListener("scroll", handleScroll);
 
   // ===== Active Menu Highlight =====
-  const normalizePath = (path) => path.replace(/\/+$/, "") || "/";
-  const currentPath   = normalizePath(window.location.pathname);
+  const currentPath = window.location.pathname.replace(/\/$/, "") || "/";
   document.querySelectorAll("a[href]").forEach((link) => {
-    const href = link.getAttribute("href");
-    if (!href || href.startsWith("http") || href.startsWith("#")) return;
-    if (normalizePath(href) === currentPath) {
-      link.classList.remove("text-dark");
-      link.classList.add("text-primary", "font-semibold");
+    try {
+      const url = new URL(link.href);
+      const linkPath = url.pathname.replace(/\/$/, "") || "/";
+      if (linkPath === currentPath) {link.classList.add("text-primary", "font-semibold"); link.classList.remove("text-dark", "text-gray-600");}
+    } catch (err) {
+      console.error(err);
     }
   });
+  const intelligencePages = ["/face-off", "/ranking-shortlist", "/deep-dive", "/founding-partner-program",];
+  if (intelligencePages.includes(currentPath)) {
+    document .getElementById("products-dropdown-btn") ?.classList.add("text-primary", "font-semibold");
+  }
 
   // ===== Lucide =====
   if (typeof lucide !== "undefined") {
