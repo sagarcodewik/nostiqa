@@ -31,27 +31,22 @@ select::-ms-expand { display: none;}
   0%, 100% { transform: translateY(0px) rotate(0deg);} 50% {transform: translateY(-10px) rotate(0.5deg);}
 }
 @keyframes float-delayed { 
-  0%, 100% {transform: translateY(-5px) rotate(-0.5deg);}
-  50% {transform: translateY(8px) rotate(0.5deg);}
+  0%, 100% {transform: translateY(-5px) rotate(-0.5deg);} 50% {transform: translateY(8px) rotate(0.5deg);}
 }
 @keyframes pulse-glow {
-  0%, 100% { opacity: 0.12; transform: scale(1);}
-  50% { opacity: 0.18; transform: scale(1.1); }
+  0%, 100% { opacity: 0.12; transform: scale(1);} 50% { opacity: 0.18; transform: scale(1.1); }
 }
 @keyframes dash {
   to { stroke-dashoffset: 0;}
 }
 @keyframes arrowFloat {
-  0%,100% {transform: translateX(0);}
-  50% {transform: translateX(6px);}
+  0%,100% {transform: translateX(0);} 50% {transform: translateX(6px);}
 }
 @keyframes scroll-brands {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+  from { transform: translateX(0); } to   { transform: translateX(-50%); }
 }
 @keyframes float {
-  0%, 100% {transform: translateY(0);}
-  50% {transform: translateY(-8px);}
+  0%, 100% {transform: translateY(0);} 50% {transform: translateY(-8px);}
 }
 
 .animate-float {animation: float 3s ease-in-out infinite;}

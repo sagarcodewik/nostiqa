@@ -131,7 +131,7 @@ window.addEventListener("scroll", handleScroll);
     document.querySelector(".reportSwiper")
   ) {
     new Swiper(".reportSwiper", {
-      slidesPerView: 1,
+      slidesPerView: 1.2,
       spaceBetween: 15,
       navigation: {
         nextEl: ".report-next",
