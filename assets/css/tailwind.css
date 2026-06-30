@@ -1991,6 +1991,10 @@ video {
   border-color: rgb(123 97 255 / 0.3);
 }
 
+.border-white\/30{
+  border-color: rgb(255 255 255 / 0.3);
+}
+
 .border-r-primary{
   --tw-border-opacity: 1;
   border-right-color: rgb(55 17 190 / var(--tw-border-opacity, 1));
