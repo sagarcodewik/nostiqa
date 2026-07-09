@@ -1,8 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./*.html",
-    "./assets/js/**/*.js"
+    "./**/*.html",
+    "./assets/js/**/*.js",
+    "./components/**/*.html",
   ],
   theme: {
     extend: {
@@ -22,12 +23,12 @@ module.exports = {
         purpleAccent: "#5B22FF",
         midnight: "#060C18",
       },
-    
+
       fontSize: {
         "4.5": "46px",
         "xs-9": "9px",
       },
-    
+
       backgroundImage: {
         premiumCard: "radial-gradient(circle at top left, rgba(255,255,255,0.08), transparent 28%), linear-gradient(180deg,#2417A8 0%,#1A1288 45%,#12095F 100%)",
         premiumNote: "linear-gradient(180deg,#5B22FF 0%,#3D13C9 100%)",
@@ -35,10 +36,12 @@ module.exports = {
         statusCard: "radial-gradient(circle at top right, rgba(91,34,255,.25), transparent 35%), linear-gradient(135deg,#050B1F 0%,#091638 45%,#151E5E 100%)",
         foundingBanner: 'linear-gradient(90deg, rgba(21,30,94,.03) 0%, rgba(91,34,255,.08) 100%)',
       },
-    
+
       boxShadow: {
         premium: "0 8px 30px rgb(0 0 0 / 0.03)",
         glow: "0 0 40px rgba(123,97,255,.15)",
+        premium: "0 12px 40px rgba(0,0,0,.08)",
+        glass: "0 8px 32px rgba(31,38,135,.12)",
       },
     },
   },
