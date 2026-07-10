@@ -117,13 +117,3 @@ select::-ms-expand { display: none;}
   .hmcardsSwiper .swiper-slide { width: auto !important; opacity: 1; transform: none !important; margin: 0 !important;}
   .hmcardsSwiper .swiper-pagination {display: none;}
 }
-@media (max-width: 767px) {
-  .hmcardsSwiper .swiper-slide-active .group { transform: translateY(-4px);}
-  .hmcardsSwiper .swiper-slide-active .group.hover\:border-primary\/40 { border-color: rgba(55, 17, 190, 0.4); --tw-ring-color: rgba(55, 17, 190, 0.4); box-shadow: 0 0 0 1px rgba(55, 17, 190, 0.4), 0 0 30px rgba(55, 17, 190, 0.5);}
-  .hmcardsSwiper .swiper-slide-active .group.hover\:border-blue-600 { border-color: #2563eb; --tw-ring-color: #2563eb; box-shadow: 0 0 0 1px #2563eb, 0 0 30px rgba(37, 99, 235, 0.5);}
-  .hmcardsSwiper .swiper-slide-active .group.hover\:border-green-500\/40 { border-color: rgba(34, 197, 94, 0.4); --tw-ring-color: rgba(34, 197, 94, 0.4); box-shadow: 0 0 0 1px rgba(34, 197, 94, 0.4), 0 0 30px rgba(34, 197, 94, 0.5);}
-  .hmcardsSwiper .swiper-slide-active .group button {color: #fff !important;}
-  .hmcardsSwiper .swiper-slide-active .group.hover\:border-primary\/40 button {background-color: #3711be !important;border-color: #3711be !important;}
-  .hmcardsSwiper .swiper-slide-active .group.hover\:border-blue-600 button {background-color: #2563eb !important;border-color: #2563eb !important;}
-  .hmcardsSwiper .swiper-slide-active .group.hover\:border-green-500\/40 button {background-color: #16a34a !important;border-color: #16a34a !important;}
-}
