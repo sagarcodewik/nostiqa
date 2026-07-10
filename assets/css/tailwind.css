@@ -949,6 +949,10 @@ video {
   margin-top: auto;
 }
 
+.ms-0{
+  margin-inline-start: 0px;
+}
+
 .line-clamp-2{
   overflow: hidden;
   display: -webkit-box;
@@ -1171,6 +1175,11 @@ video {
 
 .h-px{
   height: 1px;
+}
+
+.h-fit{
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .max-h-40{
@@ -4188,6 +4197,10 @@ select::-ms-expand {
     margin-top: 0.25rem;
   }
 
+  .sm\:ms-5{
+    margin-inline-start: 1.25rem;
+  }
+
   .sm\:block{
     display: block;
   }
@@ -4367,6 +4380,14 @@ select::-ms-expand {
     gap: 1.5rem;
   }
 
+  .sm\:gap-12{
+    gap: 3rem;
+  }
+
+  .sm\:gap-10{
+    gap: 2.5rem;
+  }
+
   .sm\:gap-y-10{
     row-gap: 2.5rem;
   }
@@ -4440,6 +4461,11 @@ select::-ms-expand {
   .sm\:py-5{
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+
+  .sm\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .sm\:text-center{
@@ -4592,6 +4618,11 @@ select::-ms-expand {
 
   .md\:p-8{
     padding: 2rem;
+  }
+
+  .md\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .md\:pl-6{
@@ -4919,6 +4950,11 @@ select::-ms-expand {
   .lg\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
