@@ -787,12 +787,12 @@ video {
   top: 1.75rem;
 }
 
-.top-full{
-  top: 100%;
-}
-
 .top-8{
   top: 2rem;
+}
+
+.top-full{
+  top: 100%;
 }
 
 .z-10{
@@ -897,6 +897,10 @@ video {
   margin-left: 1rem;
 }
 
+.ms-0{
+  margin-inline-start: 0px;
+}
+
 .ms-auto{
   margin-inline-start: auto;
 }
@@ -941,16 +945,15 @@ video {
   margin-top: 1.5rem;
 }
 
-.mt-8{
-  margin-top: 2rem;
-}
-
 .mt-auto{
   margin-top: auto;
 }
 
-.ms-0{
-  margin-inline-start: 0px;
+.line-clamp-1{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
 
 .line-clamp-2{
@@ -965,13 +968,6 @@ video {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
-}
-
-.line-clamp-1{
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
 }
 
 .block{
@@ -1169,17 +1165,17 @@ video {
   height: auto;
 }
 
+.h-fit{
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .h-full{
   height: 100%;
 }
 
 .h-px{
   height: 1px;
-}
-
-.h-fit{
-  height: -moz-fit-content;
-  height: fit-content;
 }
 
 .max-h-40{
@@ -1293,10 +1289,6 @@ video {
 
 .w-px{
   width: 1px;
-}
-
-.w-2\/4{
-  width: 50%;
 }
 
 .min-w-0{
@@ -1450,6 +1442,10 @@ video {
 
 .grid-rows-\[0fr\]{
   grid-template-rows: 0fr;
+}
+
+.flex-row{
+  flex-direction: row;
 }
 
 .flex-col{
@@ -2758,6 +2754,10 @@ video {
   letter-spacing: 0.1em;
 }
 
+.tracking-normal{
+  letter-spacing: 0em;
+}
+
 .text-\[\#fb901c\]{
   --tw-text-opacity: 1;
   color: rgb(251 144 28 / var(--tw-text-opacity, 1));
@@ -3815,49 +3815,6 @@ select::-ms-expand {
   }
 }
 
-@media (max-width: 767px) {
-  .hmcardsSwiper .swiper-slide-active .group {
-    transform: translateY(-4px);
-  }
-
-  .hmcardsSwiper .swiper-slide-active .group.hover\:border-primary\/40 {
-    border-color: rgba(55, 17, 190, 0.4);
-    --tw-ring-color: rgba(55, 17, 190, 0.4);
-    box-shadow: 0 0 0 1px rgba(55, 17, 190, 0.4), 0 0 30px rgba(55, 17, 190, 0.5);
-  }
-
-  .hmcardsSwiper .swiper-slide-active .group.hover\:border-blue-600 {
-    border-color: #2563eb;
-    --tw-ring-color: #2563eb;
-    box-shadow: 0 0 0 1px #2563eb, 0 0 30px rgba(37, 99, 235, 0.5);
-  }
-
-  .hmcardsSwiper .swiper-slide-active .group.hover\:border-green-500\/40 {
-    border-color: rgba(34, 197, 94, 0.4);
-    --tw-ring-color: rgba(34, 197, 94, 0.4);
-    box-shadow: 0 0 0 1px rgba(34, 197, 94, 0.4), 0 0 30px rgba(34, 197, 94, 0.5);
-  }
-
-  .hmcardsSwiper .swiper-slide-active .group button {
-    color: #fff !important;
-  }
-
-  .hmcardsSwiper .swiper-slide-active .group.hover\:border-primary\/40 button {
-    background-color: #3711be !important;
-    border-color: #3711be !important;
-  }
-
-  .hmcardsSwiper .swiper-slide-active .group.hover\:border-blue-600 button {
-    background-color: #2563eb !important;
-    border-color: #2563eb !important;
-  }
-
-  .hmcardsSwiper .swiper-slide-active .group.hover\:border-green-500\/40 button {
-    background-color: #16a34a !important;
-    border-color: #16a34a !important;
-  }
-}
-
 .before\:absolute::before{
   content: var(--tw-content);
   position: absolute;
@@ -4189,6 +4146,10 @@ select::-ms-expand {
     grid-column: span 2 / span 2;
   }
 
+  .sm\:ms-5{
+    margin-inline-start: 1.25rem;
+  }
+
   .sm\:mt-0{
     margin-top: 0px;
   }
@@ -4197,8 +4158,12 @@ select::-ms-expand {
     margin-top: 0.25rem;
   }
 
-  .sm\:ms-5{
-    margin-inline-start: 1.25rem;
+  .sm\:ms-0{
+    margin-inline-start: 0px;
+  }
+
+  .sm\:mb-6{
+    margin-bottom: 1.5rem;
   }
 
   .sm\:block{
@@ -4304,6 +4269,10 @@ select::-ms-expand {
     width: fit-content;
   }
 
+  .sm\:w-full{
+    width: 100%;
+  }
+
   .sm\:min-w-\[140px\]{
     min-width: 140px;
   }
@@ -4352,6 +4321,10 @@ select::-ms-expand {
     align-items: stretch;
   }
 
+  .sm\:justify-start{
+    justify-content: flex-start;
+  }
+
   .sm\:justify-center{
     justify-content: center;
   }
@@ -4362,6 +4335,10 @@ select::-ms-expand {
 
   .sm\:gap-0{
     gap: 0px;
+  }
+
+  .sm\:gap-12{
+    gap: 3rem;
   }
 
   .sm\:gap-2{
@@ -4380,12 +4357,8 @@ select::-ms-expand {
     gap: 1.5rem;
   }
 
-  .sm\:gap-12{
-    gap: 3rem;
-  }
-
-  .sm\:gap-10{
-    gap: 2.5rem;
+  .sm\:gap-8{
+    gap: 2rem;
   }
 
   .sm\:gap-y-10{
@@ -4463,11 +4436,6 @@ select::-ms-expand {
     padding-bottom: 1.25rem;
   }
 
-  .sm\:px-8{
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
   .sm\:text-center{
     text-align: center;
   }
@@ -4533,6 +4501,11 @@ select::-ms-expand {
 
   .md\:bottom-6{
     bottom: 1.5rem;
+  }
+
+  .md\:mx-0{
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .md\:block{
@@ -4618,11 +4591,6 @@ select::-ms-expand {
 
   .md\:p-8{
     padding: 2rem;
-  }
-
-  .md\:px-8{
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 
   .md\:pl-6{
@@ -4909,12 +4877,22 @@ select::-ms-expand {
     padding-bottom: 2rem;
   }
 
+  .lg\:py-10{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
   .lg\:text-left{
     text-align: left;
   }
 
   .lg\:text-start{
     text-align: start;
+  }
+
+  .lg\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .lg\:text-3xl{
@@ -4950,11 +4928,6 @@ select::-ms-expand {
   .lg\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 }
 
@@ -5099,10 +5072,6 @@ select::-ms-expand {
 }
 
 @media (min-width: 1536px){
-  .\32xl\:bottom-24{
-    bottom: 6rem;
-  }
-
   .\32xl\:grid-cols-5{
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
