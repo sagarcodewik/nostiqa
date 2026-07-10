@@ -165,6 +165,42 @@ window.addEventListener("scroll", handleScroll);
     });
   }
 
+  // ===== Home Cards Swiper =====
+function initHmCardsSwiper() {
+  const el = document.querySelector(".hmcardsSwiper");
+  if (!el) return;
+  if (window.innerWidth < 768) {
+    if (!el.swiper) {
+      new Swiper(".hmcardsSwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        loop: true,
+        slidesPerView: 1.8,
+        spaceBetween: 0,
+        speed: 700,
+        watchOverflow: true,
+        coverflowEffect: { rotate: 0, stretch: 0, depth: 100, modifier: 1, slideShadows: false },
+        autoplay: { delay: 3000, disableOnInteraction: false, pauseOnMouseEnter: true },
+        pagination: { el: ".hmcardsSwiper .swiper-pagination", clickable: true },
+        breakpoints: {
+          0:   { slidesPerView: 1.1, coverflowEffect: { depth: 90 } },
+          480: { slidesPerView: 1.1, coverflowEffect: { depth: 100 } },
+          640: { slidesPerView: 1.6, coverflowEffect: { depth: 110 } },
+        },
+      });
+    }
+  } else if (el.swiper) {
+    el.swiper.destroy(true, true);
+  }
+}
+
+initHmCardsSwiper();
+window.addEventListener("resize", () => {
+  clearTimeout(window._hmResize);
+  window._hmResize = setTimeout(initHmCardsSwiper, 200);
+});
+
   // ===== Brands Marquee =====
   if (
     typeof Swiper !== "undefined" &&

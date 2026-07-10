@@ -80,245 +80,268 @@
                   <p class="max-w-xl text-base leading-7 text-dark sm:text-lg">Nostiqa combines audience intelligence and strategic context to show you who's most likely to deliver for your objective.</p>
                   <a href="javascript:void(0)" class="w-full sm:w-fit">
                   <button class="group flex w-full items-center justify-center gap-2 rounded-xl bg-primary px-4 py-3 text-xs font-medium text-white shadow-premium transition-all duration-300 hover:-translate-y-1 hover:shadow-glow lg:rounded-2xl lg:px-5 lg:text-sm">
-                  <span class="truncate">Book a Demo</span> <i class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1"></i>
+                    <span class="truncate">Book a Demo</span> <i class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1"></i>
                   </button>
                   </a>
                </div>
                <!-- RIGHT: laptop mockup + overlapping cards -->
-               <div class="xl:col-span-2 relative w-full max-w-6xl mx-auto select-none">
-                  <img src="assets/images/screen.png" alt="Laptop mockup" class="w-full h-auto select-none pointer-events-none block" />
-                  <div class="relative -mt-8 sm:absolute sm:inset-x-0 sm:bottom-6 xl:mt-0 2xl:bottom-10 px-4 xl:px-10">
-                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 lg:gap-3">
-                        <div class="group p-3 sm:p-4 relative flex flex-col h-full gap-3 rounded-3xl bg-white/80 backdrop-blur-2xl border border-white/30 ring-1 ring-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:ring-primary/40 shadow-[0_0_40px_rgba(55,17,190,0.30)]">
-                           <div class="flex flex-col gap-0.5">
-                              <h3 class="text-lg font-bold tracking-tight text-primary">FACE-OFF</h3>
-                              <p class="text-xs text-dark">Compare two creators side by side.</p>
-                           </div>
-                           <div class="w-full flex flex-col gap-1.5">
-                              <p class="text-xs font-semibold uppercase tracking-wide text-dark">Objective</p>
-                              <div class="flex items-center gap-1.5 text-xs font-semibold text-dark"><i data-lucide="bar-chart-2" class="h-3 w-3 text-primary"></i><span>Performance</span></div>
-                           </div>
-                           <div class="flex flex-1 flex-col gap-3 rounded-2xl bg-white/5 backdrop-blur-xl border border-dark/20 p-2 sm:p-3 2lg:p-4">
-                              <div class="grid grid-cols-3 items-start gap-2 sm:gap-4">
-                                 <div class="flex w-full sm:w-16 lg:w-20 flex-col items-center justify-center gap-2">
-                                    <img src="assets/images/profileimg.png" alt="Sarah Ahmed" class="h-8 w-8 sm:h-10 sm:w-10 2xl:h-14 2xl:w-14 rounded-full object-cover ring-2 ring-white/30 shadow-sm" />
-                                    <span class="block w-full truncate text-center text-xs font-medium text-dark"> Sarah Ahmed</span>
+                <div class="xl:col-span-2 relative w-full max-w-6xl mx-auto select-none">
+                  <div class="relative w-full hidden md:block">
+                  <img src="assets/images/screen.png" alt="Laptop mockup" class="w-full max-w-full h-auto object-contain mx-auto block pointer-events-none select-none"/>
+                  </div>
+                  <div class="relative md:absolute md:inset-x-0 md:top-6 xl:top-8 2xl:top-10 px-4 sm:px-6 lg:px-8 xl:px-14">
+                     <div class="swiper hmcardsSwiper">
+                        <div class="swiper-wrapper items-stretch">
+                        <div class="swiper-slide !h-auto flex">
+                           <div class="w-full group p-3 2lg:p-4 relative flex flex-col gap-2 2lg:gap-3 h-full rounded-3xl bg-white/80 backdrop-blur-2xl border border-white/30 ring-1 ring-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:ring-primary/40 shadow-[0_0_40px_rgba(55,17,190,0.30)]">
+                              <div class="flex flex-col gap-0.5">
+                                 <h3 class="text-lg font-bold tracking-tight text-primary">FACE-OFF</h3>
+                                 <p class="text-xs text-dark">Compare two creators side by side.</p>
+                              </div>
+                              <div class="w-full flex flex-col gap-1.5">
+                                 <p class="text-xs font-semibold uppercase tracking-wide text-dark">Objective</p>
+                                 <div class="flex items-center gap-1.5 text-xs font-semibold text-dark"><i data-lucide="bar-chart-2" class="h-3 w-3 text-primary"></i><span>Performance</span></div>
+                              </div>
+                              <div class="flex flex-1 flex-col gap-3 rounded-2xl bg-white/5 backdrop-blur-xl border border-dark/20 p-2 sm:p-3 2lg:p-4">
+                                 <div class="grid grid-cols-3 items-start gap-2 sm:gap-3 md:gap-4">
+                                    <div class="flex w-full flex-col items-center justify-center gap-1.5 sm:gap-2">
+                                    <img src="assets/images/profileimg.png" alt="Sarah Ahmed" class="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14 rounded-full object-cover ring-2 ring-white/30 shadow-sm" />
+                                    <span class="block w-full truncate text-center text-[11px] sm:text-xs font-medium text-dark">Sarah Ahmed</span>
+                                    </div>
+                                    <div class="flex h-full items-center justify-center">
+                                    <div class="flex h-6 w-6 sm:h-8 sm:w-8 md:h-9 md:w-9 items-center justify-center rounded-full bg-primary text-[10px] sm:text-xs font-bold text-white shadow-md ring-4 ring-primary/10">VS</div>
+                                    </div>
+                                    <div class="flex w-full flex-col items-center justify-center gap-1.5 sm:gap-2">
+                                    <img src="assets/images/profilesimg1.png" alt="Dr. Singh" class="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14 rounded-full object-cover ring-2 ring-white/30 shadow-sm" />
+                                    <span class="block w-full truncate text-center text-[11px] sm:text-xs font-medium text-dark">Dr. Singh</span>
+                                    </div>
                                  </div>
-                                 <div class="flex h-full items-center justify-center">
-                                    <div class="flex h-6 w-6 sm:h-8 sm:w-8 items-center justify-center rounded-full bg-primary text-xs font-bold text-white shadow-md ring-4 ring-primary/10"> VS</div>
-                                 </div>
-                                 <div class="flex w-full sm:w-16 lg:w-20 flex-col items-center justify-center gap-2">
-                                    <img src="assets/images/profilesimg1.png" alt="Dr. Singh" class="h-8 w-8 sm:h-10 sm:w-10 2xl:h-14 2xl:w-14 rounded-full object-cover ring-2 ring-white/30 shadow-sm" />
-                                    <span class="block w-full truncate text-center text-xs font-medium text-dark"> Dr. Singh</span>
+                                 <div class="grid grid-cols-2 border-t border-dark/10 pt-3">
+                                    <div class="flex flex-col items-center gap-1 text-center">
+                                       <div class="text-2xl font-bold text-green-600">86</div>
+                                       <p class="text-[10px] 2lg:text-xs font-semibold uppercase tracking-wide text-green-600 leading-tight"> Recommended</p>
+                                    </div>
+                                    <div class="flex flex-col items-center gap-1 border-l border-dark/10 text-center">
+                                       <div class="text-2xl font-bold text-primary">53</div>
+                                       <p class="text-[10px] 2lg:text-xs font-semibold uppercase tracking-wide text-primary leading-tight"> Conditional Fit</p>
+                                    </div>
                                  </div>
                               </div>
-                              <div class="grid grid-cols-2 border-t border-dark/10 pt-3">
-                                 <div class="flex flex-col gap-1 text-center">
-                                    <div class="text-2xl font-bold text-green-600">86</div>
-                                    <p class="text-xs font-semibold uppercase tracking-wide text-green-600">Recommended</p>
-                                 </div>
-                                 <div class="flex flex-col gap-1 border-l border-dark/10 text-center">
-                                    <div class="text-2xl font-bold text-primary">53</div>
-                                    <p class="text-xs font-semibold uppercase tracking-wide text-primary">Conditional Fit</p>
-                                 </div>
+                              <div class="flex items-start gap-2 border-t border-dark/20 pt-3 text-xs font-medium text-red-600">
+                                 <i data-lucide="alert-triangle" class="h-3 w-3 shrink-0"></i> <span>See evidence and audience perception</span>
                               </div>
+                              <button type="button" class="mt-auto flex w-full items-center justify-between rounded-xl bg-white/5 backdrop-blur-2xl border border-primary px-3 py-2.5 text-xs font-semibold text-primary shadow-[0_0_20px_rgba(55,17,190,0.15)] transition-all duration-300 group-hover:bg-primary group-hover:border-primary group-hover:text-white group-hover:shadow-[0_0_30px_rgba(55,17,190,0.5)] hover:bg-primary hover:border-primary hover:text-white hover:shadow-[0_0_30px_rgba(55,17,190,0.5)]">
+                                 <span>View Face-Off Report</span> <i data-lucide="arrow-right" class="h-3 w-3 transition-transform duration-300 group-hover:translate-x-1"></i>
+                              </button>
                            </div>
-                           <div class="flex items-start gap-2 border-t border-dark/20 pt-3 text-xs font-medium text-red-600">
-                              <i data-lucide="alert-triangle" class="h-3 w-3 shrink-0"></i> <span>See evidence and audience perception</span>
-                           </div>
-                           <button type="button" class="mt-auto flex w-full items-center justify-between rounded-xl bg-white/5 backdrop-blur-2xl border border-primary px-3 py-2.5 text-xs font-semibold text-primary shadow-[0_0_20px_rgba(55,17,190,0.15)] transition-all duration-300 group-hover:bg-primary group-hover:border-primary group-hover:text-white group-hover:shadow-[0_0_30px_rgba(55,17,190,0.5)] hover:bg-primary hover:border-primary hover:text-white hover:shadow-[0_0_30px_rgba(55,17,190,0.5)]">
-                              <span>View Face-Off Report</span> <i data-lucide="arrow-right" class="h-3 w-3 transition-transform duration-300 group-hover:translate-x-1"></i>
-                           </button>
                         </div>
-                        <div class="group p-3 sm:p-4 relative flex flex-col gap-3 h-full rounded-3xl bg-white/80 backdrop-blur-2xl border border-white/30 ring-1 ring-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-blue-600 hover:ring-blue-600 shadow-[0_0_40px_rgba(37,99,235,0.30)]">
-                           <div class="flex flex-col gap-0.5">
-                              <h3 class="text-lg font-bold tracking-tight text-blue-600">RANKING</h3>
-                              <p class="text-xs text-dark">Rank multiple creators and prioritise the best fit.</p>
-                           </div>
-                           <div class="w-full flex flex-col gap-1.5">
-                              <p class="text-xs font-semibold uppercase tracking-wide text-dark">Objective</p>
-                              <div class="flex items-center gap-1.5 text-xs font-semibold text-dark"><i data-lucide="eye" class="h-3 w-3 text-blue-600"></i> <span>Perspective</span></div>
-                           </div>
-                           <div class="flex flex-1 flex-col gap-3 rounded-2xl bg-white/5 backdrop-blur-xl border border-dark/20 p-2 sm:p-3 2lg:p-4">
-                              <div class="flex items-center gap-2 sm:gap-3 border-b border-black/5 pb-2 last:border-b-0 last:pb-0">
-                                 <span class="flex h-4 w-4 sm:h-5 sm:w-5 shrink-0 items-center justify-center rounded-full bg-white text-[10px] font-bold text-blue-600 ring-1 ring-blue-600"> 01</span>
-                                 <img src="https://i.pravatar.cc/80?img=5" alt="Sarah Ahmed" class="h-6 w-6 sm:h-7 sm:w-7 shrink-0 rounded-full object-cover ring-1 ring-blue-600"/>
-                                 <span class="min-w-0 flex-1 truncate text-[10px] sm:text-xs font-medium text-dark">Sarah Ahmed</span>
-                                 <span class="shrink-0 text-xs sm:text-sm font-bold text-green-600">86</span>
+                        <div class="swiper-slide !h-auto flex">
+                           <div class="w-full group p-3 2lg:p-4 relative flex flex-col gap-2 2lg:gap-3 h-full rounded-3xl bg-white/80 backdrop-blur-2xl border border-white/30 ring-1 ring-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-blue-600 hover:ring-blue-600 shadow-[0_0_40px_rgba(37,99,235,0.30)]">
+                              <div class="flex flex-col gap-0.5">
+                                 <h3 class="text-lg font-bold tracking-tight text-blue-600">RANKING</h3>
+                                 <p class="text-xs text-dark">Rank multiple creators and prioritise the best fit.</p>
                               </div>
-                              <div class="flex items-center gap-2 sm:gap-3 border-b border-black/5 pb-2 last:border-b-0 last:pb-0">
-                                 <span class="flex h-4 w-4 sm:h-5 sm:w-5 shrink-0 items-center justify-center rounded-full bg-white text-[10px] font-bold text-blue-600 ring-1 ring-blue-600"> 02</span>
-                                 <img src="https://i.pravatar.cc/80?img=6" alt="Maya Sharma" class="h-6 w-6 sm:h-7 sm:w-7 shrink-0 rounded-full object-cover ring-1 ring-blue-600"/>
-                                 <span class="min-w-0 flex-1 truncate text-[10px] sm:text-xs font-medium text-dark">Maya Sharma</span>
-                                 <span class="shrink-0 text-xs sm:text-sm font-bold text-yellow-600">68</span>
+                              <div class="w-full flex flex-col gap-1.5">
+                                 <p class="text-xs font-semibold uppercase tracking-wide text-dark">Objective</p>
+                                 <div class="flex items-center gap-1.5 text-xs font-semibold text-dark"><i data-lucide="eye" class="h-3 w-3 text-blue-600"></i> <span>Perspective</span></div>
                               </div>
-                              <div class="flex items-center gap-2 sm:gap-3 border-b border-black/5 pb-2 last:border-b-0 last:pb-0">
-                                 <span class="flex h-4 w-4 sm:h-5 sm:w-5 shrink-0 items-center justify-center rounded-full bg-white text-[10px] font-bold text-blue-600 ring-1 ring-blue-600"> 03</span>
-                                 <img src="https://i.pravatar.cc/80?img=7" alt="Kavya Nair" class="h-6 w-6 sm:h-7 sm:w-7 shrink-0 rounded-full object-cover ring-1 ring-blue-600"/>
-                                 <span class="min-w-0 flex-1 truncate text-[10px] sm:text-xs font-medium text-dark">Kavya Nair</span>
-                                 <div class="flex shrink-0 items-center gap-1 text-red-600"><i data-lucide="alert-triangle" class="h-3 w-3 sm:h-4 sm:w-4"></i> <span class="text-xs sm:text-sm font-bold">48</span></div>
+                              <div class="flex flex-1 flex-col gap-2 2lg:gap-3 rounded-2xl bg-white/5 backdrop-blur-xl border border-dark/20 p-2 sm:p-3 2lg:p-4 max-h-40 min-h-0 overflow-y-auto no-scrollbar">
+                                 <div class="flex items-center gap-2 2lg:gap-3 border-b border-black/5 pb-1 2xl:pb-2 last:border-b-0 last:pb-0">
+                                    <span class="flex h-4 w-4 sm:h-5 sm:w-5 shrink-0 items-center justify-center rounded-full bg-white text-[10px] font-bold text-blue-600 ring-1 ring-blue-600"> 01</span>
+                                    <img src="https://i.pravatar.cc/80?img=5" alt="Sarah Ahmed" class="h-6 w-6 sm:h-7 sm:w-7 shrink-0 rounded-full object-cover ring-1 ring-blue-600"/>
+                                    <span class="min-w-0 flex-1 truncate text-[10px] sm:text-xs font-medium text-dark">Sarah Ahmed</span>
+                                    <span class="shrink-0 text-xs sm:text-sm font-bold text-green-600">86</span>
+                                 </div>
+                                 <div class="flex items-center gap-2 2lg:gap-3 border-b border-black/5 pb-1 2xl:pb-2 last:border-b-0 last:pb-0">
+                                    <span class="flex h-4 w-4 sm:h-5 sm:w-5 shrink-0 items-center justify-center rounded-full bg-white text-[10px] font-bold text-blue-600 ring-1 ring-blue-600"> 02</span>
+                                    <img src="https://i.pravatar.cc/80?img=6" alt="Maya Sharma" class="h-6 w-6 sm:h-7 sm:w-7 shrink-0 rounded-full object-cover ring-1 ring-blue-600"/>
+                                    <span class="min-w-0 flex-1 truncate text-[10px] sm:text-xs font-medium text-dark">Maya Sharma</span>
+                                    <span class="shrink-0 text-xs sm:text-sm font-bold text-yellow-600">68</span>
+                                 </div>
+                                 <div class="flex items-center gap-2 2lg:gap-3 border-b border-black/5 pb-1 2xl:pb-2 last:border-b-0 last:pb-0">
+                                    <span class="flex h-4 w-4 sm:h-5 sm:w-5 shrink-0 items-center justify-center rounded-full bg-white text-[10px] font-bold text-blue-600 ring-1 ring-blue-600"> 03</span>
+                                    <img src="https://i.pravatar.cc/80?img=7" alt="Kavya Nair" class="h-6 w-6 sm:h-7 sm:w-7 shrink-0 rounded-full object-cover ring-1 ring-blue-600"/>
+                                    <span class="min-w-0 flex-1 truncate text-[10px] sm:text-xs font-medium text-dark">Kavya Nair</span>
+                                    <div class="flex shrink-0 items-center gap-1 text-red-600"><i data-lucide="alert-triangle" class="h-3 w-3 sm:h-4 sm:w-4"></i> <span class="text-xs sm:text-sm font-bold">48</span></div>
+                                 </div>
+                                 <div class="flex items-center gap-2 2lg:gap-3 border-b border-black/5 pb-1 2xl:pb-2 last:border-b-0 last:pb-0">
+                                    <span class="flex h-4 w-4 sm:h-5 sm:w-5 shrink-0 items-center justify-center rounded-full bg-white text-[10px] font-bold text-blue-600 ring-1 ring-blue-600">04</span>
+                                    <img src="https://i.pravatar.cc/80?img=12" alt="Rishi Tandon" class="h-6 w-6 sm:h-7 sm:w-7 shrink-0 rounded-full object-cover ring-1 ring-blue-600"/>
+                                    <span class="min-w-0 flex-1 truncate text-[10px] sm:text-xs font-medium text-dark">Rishi Tandon</span>
+                                    <div class="flex shrink-0 items-center gap-1 text-red-600"><i data-lucide="alert-triangle" class="h-3 w-3 sm:h-4 sm:w-4"></i> <span class="text-xs sm:text-sm font-bold">86</span></div>
+                                 </div>
                               </div>
-                              <div class="flex items-center gap-2 sm:gap-3 border-b border-black/5 pb-2 last:border-b-0 last:pb-0">
-                                 <span class="flex h-4 w-4 sm:h-5 sm:w-5 shrink-0 items-center justify-center rounded-full bg-white text-[10px] font-bold text-blue-600 ring-1 ring-blue-600">04</span>
-                                 <img src="https://i.pravatar.cc/80?img=12" alt="Rishi Tandon" class="h-6 w-6 sm:h-7 sm:w-7 shrink-0 rounded-full object-cover ring-1 ring-blue-600"/>
-                                 <span class="min-w-0 flex-1 truncate text-[10px] sm:text-xs font-medium text-dark">Rishi Tandon</span>
-                                 <div class="flex shrink-0 items-center gap-1 text-red-600"><i data-lucide="alert-triangle" class="h-3 w-3 sm:h-4 sm:w-4"></i> <span class="text-xs sm:text-sm font-bold">86</span></div>
+                              <div class="flex items-start gap-2 border-t border-dark/20 pt-3 text-xs font-medium text-dark/80">
+                                 <i data-lucide="info" class="h-3 w-3 shrink-0"></i> <span>Fit scores are unrelated to follower count.</span>
                               </div>
+                              <button type="button" class="mt-auto group/btn flex w-full items-center justify-between rounded-xl bg-white/5 backdrop-blur-xl border border-blue-600 px-3 py-2.5 text-xs font-semibold text-blue-600 shadow-[0_0_20px_rgba(37,99,235,0.15)] transition-all duration-300 hover:bg-blue-600 hover:border-blue-600 hover:text-white hover:shadow-[0_0_30px_rgba(37,99,235,0.5)]">
+                              <span>View Ranking Report</span> <i data-lucide="arrow-right" class="h-3 w-3 transition-transform duration-200 group-hover/btn:translate-x-1"></i>
+                              </button>
                            </div>
-                           <div class="flex items-start gap-2 border-t border-dark/20 pt-3 text-xs font-medium text-dark/80">
-                              <i data-lucide="info" class="h-3 w-3 shrink-0"></i> <span>Fit scores are unrelated to follower count.</span>
-                           </div>
-                           <button type="button" class="mt-auto group/btn flex w-full items-center justify-between rounded-xl bg-white/5 backdrop-blur-xl border border-blue-600 px-3 py-2.5 text-xs font-semibold text-blue-600 shadow-[0_0_20px_rgba(37,99,235,0.15)] transition-all duration-300 hover:bg-blue-600 hover:border-blue-600 hover:text-white hover:shadow-[0_0_30px_rgba(37,99,235,0.5)]">
-                           <span>View Ranking Report</span> <i data-lucide="arrow-right" class="h-3 w-3 transition-transform duration-200 group-hover/btn:translate-x-1"></i>
-                           </button>
                         </div>
-                        <div class="group p-3 sm:p-4 relative flex flex-col gap-3 h-full rounded-3xl bg-white/80 backdrop-blur-2xl border border-white/30 ring-1 ring-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-green-500/40 hover:ring-green-500/40 shadow-[0_0_40px_rgba(34,197,94,0.30)]">
-                           <div class="flex flex-col gap-0.5">
-                              <h3 class="text-lg font-bold tracking-tight text-green-600">DEEP DIVE</h3>
-                              <p class="text-xs text-dark">Understand a creator in strategic depth.</p>
+                        <div class="swiper-slide !h-auto flex">
+                           <div class="w-full group p-3 2lg:p-4 relative flex flex-col gap-2 2lg:gap-3 h-full rounded-3xl bg-white/80 backdrop-blur-2xl border border-white/30 ring-1 ring-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-green-500/40 hover:ring-green-500/40 shadow-[0_0_40px_rgba(34,197,94,0.30)]">
+                              <div class="flex flex-col gap-0.5">
+                                 <h3 class="text-lg font-bold tracking-tight text-green-600">DEEP DIVE</h3>
+                                 <p class="text-xs text-dark">Understand a creator in strategic depth.</p>
+                              </div>
+                              <div class="w-full flex flex-col gap-1.5">
+                                 <p class="text-xs font-semibold uppercase tracking-wide text-dark">Objective</p>
+                                 <div class="flex items-center gap-1.5 text-xs font-semibold text-dark"><i data-lucide="eye" class="h-3 w-3 text-green-600"></i> <span>Perspective</span></div>
+                              </div>
+                              <div class="aspect-video w-full overflow-hidden rounded-2xl bg-white/10 backdrop-blur-xl border border-white/10">
+                                 <img src="assets/images/divechart.png" alt="Report Preview" class="h-full w-full object-cover"/>
+                              </div>
+                              <ul class="w-full flex-1 space-y-1.5">
+                                 <li class="flex items-start gap-2">
+                                    <div class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/10"><i data-lucide="users" class="h-3 w-3 text-green-600"></i></div>
+                                    <p class="text-xs leading-4 text-dark line-clamp-2">Identify where influence is <span class="font-semibold text-green-600">growing</span>, <span class="font-semibold text-green-700">declining</span>, or <span class="font-semibold text-green-700">at risk</span>.</p>
+                                 </li>
+                                 <li class="flex items-start gap-2">
+                                    <div class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/10"><i data-lucide="shield-check" class="h-3 w-3 text-green-600"></i></div>
+                                    <p class="text-xs leading-4 text-dark line-clamp-2">Fix perception issues before they affect campaigns.</p>
+                                 </li>
+                                 <li class="flex items-start gap-2">
+                                    <div class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/10"><i data-lucide="target" class="h-3 w-3 text-green-600"></i></div>
+                                    <p class="text-xs leading-4 text-dark line-clamp-2">Discover creator-brand fit and growth opportunities.</p>
+                                 </li>
+                              </ul>
+                              <button type="button" class="mt-auto group/btn flex w-full items-center justify-between rounded-xl bg-white/5 backdrop-blur-xl border border-green-500 px-3 py-2.5 text-xs font-semibold text-green-500 shadow-[0_0_20px_rgba(34,197,94,0.15)] transition-all duration-300 hover:bg-green-600 hover:border-green-600 hover:text-white hover:shadow-[0_0_30px_rgba(34,197,94,0.5)]">
+                              <span>View Deep Dive Report</span> <i data-lucide="arrow-right" class="h-3 w-3 transition-transform duration-200 group-hover/btn:translate-x-1"></i>
+                              </button>
                            </div>
-                           <div class="w-full flex flex-col gap-1.5">
-                              <p class="text-xs font-semibold uppercase tracking-wide text-dark">Objective</p>
-                              <div class="flex items-center gap-1.5 text-xs font-semibold text-dark"><i data-lucide="eye" class="h-3 w-3 text-green-600"></i> <span>Perspective</span></div>
-                           </div>
-                           <div class="aspect-video w-full overflow-hidden rounded-2xl bg-white/10 backdrop-blur-xl border border-white/10">
-                              <img src="assets/images/divechart.png" alt="Report Preview" class="h-full w-full object-cover"/>
-                           </div>
-                           <ul class="w-full flex-1 space-y-1.5">
-                              <li class="flex items-start gap-2">
-                                 <div class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/10"><i data-lucide="users" class="h-3 w-3 text-green-600"></i></div>
-                                 <p class="text-xs leading-4 text-dark line-clamp-2">Identify where influence is <span class="font-semibold text-green-600">growing</span>, <span class="font-semibold text-green-700">declining</span>, or <span class="font-semibold text-green-700">at risk</span>.</p>
-                              </li>
-                              <li class="flex items-start gap-2">
-                                 <div class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/10"><i data-lucide="shield-check" class="h-3 w-3 text-green-600"></i></div>
-                                 <p class="text-xs leading-4 text-dark line-clamp-2">Fix perception issues before they affect campaigns.</p>
-                              </li>
-                              <li class="flex items-start gap-2">
-                                 <div class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/10"><i data-lucide="target" class="h-3 w-3 text-green-600"></i></div>
-                                 <p class="text-xs leading-4 text-dark line-clamp-2">Discover creator-brand fit and growth opportunities.</p>
-                              </li>
-                           </ul>
-                           <button type="button" class="mt-auto group/btn flex w-full items-center justify-between rounded-xl bg-white/5 backdrop-blur-xl border border-green-500 px-3 py-2.5 text-xs font-semibold text-green-500 shadow-[0_0_20px_rgba(34,197,94,0.15)] transition-all duration-300 hover:bg-green-600 hover:border-green-600 hover:text-white hover:shadow-[0_0_30px_rgba(34,197,94,0.5)]">
-                           <span>View Deep Dive Report</span> <i data-lucide="arrow-right" class="h-3 w-3 transition-transform duration-200 group-hover/btn:translate-x-1"></i>
-                           </button>
                         </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                      </div>
-                     <!-- Old CRetc Code -->
-                     <!-- <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 lg:gap-3">
-                        <div class="group p-3 sm:p-4 relative flex flex-col h-full gap-3 rounded-3xl bg-white/60 backdrop-blur-2xl border border-white/30 ring-1 ring-white/10 shadow-glass transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:ring-primary/40">
-                           <div class="flex flex-col gap-0.5">
-                              <h3 class="text-lg font-bold tracking-tight text-primary">FACE-OFF</h3>
-                              <p class="text-xs text-dark">Compare two creators side by side.</p>
+                  </div>
+                </div>
+               <div class="xl:col-span-2 relative w-full max-w-6xl mx-auto select-none hidden">
+                  <img src="assets/images/screen.png" alt="Laptop mockup" class="w-full max-w-full h-auto object-contain mx-auto block pointer-events-none select-none" />
+                  <div class="relative -mt-8 sm:absolute sm:inset-x-0 sm:bottom-6 xl:mt-0 2xl:bottom-10 px-4 xl:px-10">
+                     <div class="swiper hmcardsSwiper overflow-visible">
+                       <div class="swiper-wrapper items-stretch">
+                          <div class="swiper-slide !h-auto flex">
+                            <div class="w-full group p-3 2lg:p-4 relative flex flex-col gap-2 2lg:gap-3 h-full rounded-3xl bg-white/80 backdrop-blur-2xl border border-white/30 ring-1 ring-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:ring-primary/40 shadow-[0_0_40px_rgba(55,17,190,0.30)]">
+                               <div class="flex flex-col gap-0.5">
+                                  <h3 class="text-lg font-bold tracking-tight text-primary">FACE-OFF</h3>
+                                  <p class="text-xs text-dark">Compare two creators side by side.</p>
+                               </div>
+                               <div class="w-full flex flex-col gap-1.5">
+                                  <p class="text-xs font-semibold uppercase tracking-wide text-dark">Objective</p>
+                                  <div class="flex items-center gap-1.5 text-xs font-semibold text-dark"><i data-lucide="bar-chart-2" class="h-3 w-3 text-primary"></i><span>Performance</span></div>
+                               </div>
+                               <div class="flex flex-1 flex-col gap-3 rounded-2xl bg-white/5 backdrop-blur-xl border border-dark/20 p-2 sm:p-3 2lg:p-4">
+                                  <div class="grid grid-cols-3 items-start gap-2 sm:gap-3 md:gap-4">
+                                     <div class="flex w-full flex-col items-center justify-center gap-1.5 sm:gap-2">
+                                       <img src="assets/images/profileimg.png" alt="Sarah Ahmed" class="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14 rounded-full object-cover ring-2 ring-white/30 shadow-sm" />
+                                       <span class="block w-full truncate text-center text-[11px] sm:text-xs font-medium text-dark">Sarah Ahmed</span>
+                                     </div>
+                                     <div class="flex h-full items-center justify-center">
+                                       <div class="flex h-6 w-6 sm:h-8 sm:w-8 md:h-9 md:w-9 items-center justify-center rounded-full bg-primary text-[10px] sm:text-xs font-bold text-white shadow-md ring-4 ring-primary/10">VS</div>
+                                     </div>
+                                     <div class="flex w-full flex-col items-center justify-center gap-1.5 sm:gap-2">
+                                       <img src="assets/images/profilesimg1.png" alt="Dr. Singh" class="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14 rounded-full object-cover ring-2 ring-white/30 shadow-sm" />
+                                       <span class="block w-full truncate text-center text-[11px] sm:text-xs font-medium text-dark">Dr. Singh</span>
+                                     </div>
+                                  </div>
+                                  <div class="grid grid-cols-2 border-t border-dark/10 pt-3">
+                                     <div class="flex flex-col items-center gap-1 text-center">
+                                        <div class="text-2xl font-bold text-green-600">86</div>
+                                        <p class="text-[10px] 2lg:text-xs font-semibold uppercase tracking-wide text-green-600 leading-tight"> Recommended</p>
+                                     </div>
+                                     <div class="flex flex-col items-center gap-1 border-l border-dark/10 text-center">
+                                        <div class="text-2xl font-bold text-primary">53</div>
+                                        <p class="text-[10px] 2lg:text-xs font-semibold uppercase tracking-wide text-primary leading-tight"> Conditional Fit</p>
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class="flex items-start gap-2 border-t border-dark/20 pt-3 text-xs font-medium text-red-600">
+                                  <i data-lucide="alert-triangle" class="h-3 w-3 shrink-0"></i> <span>See evidence and audience perception</span>
+                               </div>
+                               <button type="button" class="mt-auto flex w-full items-center justify-between rounded-xl bg-white/5 backdrop-blur-2xl border border-primary px-3 py-2.5 text-xs font-semibold text-primary shadow-[0_0_20px_rgba(55,17,190,0.15)] transition-all duration-300 group-hover:bg-primary group-hover:border-primary group-hover:text-white group-hover:shadow-[0_0_30px_rgba(55,17,190,0.5)] hover:bg-primary hover:border-primary hover:text-white hover:shadow-[0_0_30px_rgba(55,17,190,0.5)]">
+                                  <span>View Face-Off Report</span> <i data-lucide="arrow-right" class="h-3 w-3 transition-transform duration-300 group-hover:translate-x-1"></i>
+                               </button>
+                            </div>
                            </div>
-                           <div class="w-full flex flex-col gap-1.5">
-                              <p class="text-xs font-semibold uppercase tracking-wide text-dark">Objective</p>
-                              <div class="flex items-center gap-1.5 text-xs font-semibold text-dark"><i data-lucide="bar-chart-2" class="h-3 w-3 text-primary"></i><span>Performance</span></div>
+                           <div class="swiper-slide !h-auto flex">
+                            <div class="w-full group p-3 2lg:p-4 relative flex flex-col gap-2 2lg:gap-3 h-full rounded-3xl bg-white/80 backdrop-blur-2xl border border-white/30 ring-1 ring-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-blue-600 hover:ring-blue-600 shadow-[0_0_40px_rgba(37,99,235,0.30)]">
+                               <div class="flex flex-col gap-0.5">
+                                  <h3 class="text-lg font-bold tracking-tight text-blue-600">RANKING</h3>
+                                  <p class="text-xs text-dark">Rank multiple creators and prioritise the best fit.</p>
+                               </div>
+                               <div class="w-full flex flex-col gap-1.5">
+                                  <p class="text-xs font-semibold uppercase tracking-wide text-dark">Objective</p>
+                                  <div class="flex items-center gap-1.5 text-xs font-semibold text-dark"><i data-lucide="eye" class="h-3 w-3 text-blue-600"></i> <span>Perspective</span></div>
+                               </div>
+                               <div class="flex flex-1 flex-col gap-2 2lg:gap-3 rounded-2xl bg-white/5 backdrop-blur-xl border border-dark/20 p-2 sm:p-3 2lg:p-4 max-h-40 min-h-0 overflow-y-auto no-scrollbar">
+                                  <div class="flex items-center gap-2 2lg:gap-3 border-b border-black/5 pb-1 2xl:pb-2 last:border-b-0 last:pb-0">
+                                     <span class="flex h-4 w-4 sm:h-5 sm:w-5 shrink-0 items-center justify-center rounded-full bg-white text-[10px] font-bold text-blue-600 ring-1 ring-blue-600"> 01</span>
+                                     <img src="https://i.pravatar.cc/80?img=5" alt="Sarah Ahmed" class="h-6 w-6 sm:h-7 sm:w-7 shrink-0 rounded-full object-cover ring-1 ring-blue-600"/>
+                                     <span class="min-w-0 flex-1 truncate text-[10px] sm:text-xs font-medium text-dark">Sarah Ahmed</span>
+                                     <span class="shrink-0 text-xs sm:text-sm font-bold text-green-600">86</span>
+                                  </div>
+                                  <div class="flex items-center gap-2 2lg:gap-3 border-b border-black/5 pb-1 2xl:pb-2 last:border-b-0 last:pb-0">
+                                     <span class="flex h-4 w-4 sm:h-5 sm:w-5 shrink-0 items-center justify-center rounded-full bg-white text-[10px] font-bold text-blue-600 ring-1 ring-blue-600"> 02</span>
+                                     <img src="https://i.pravatar.cc/80?img=6" alt="Maya Sharma" class="h-6 w-6 sm:h-7 sm:w-7 shrink-0 rounded-full object-cover ring-1 ring-blue-600"/>
+                                     <span class="min-w-0 flex-1 truncate text-[10px] sm:text-xs font-medium text-dark">Maya Sharma</span>
+                                     <span class="shrink-0 text-xs sm:text-sm font-bold text-yellow-600">68</span>
+                                  </div>
+                                  <div class="flex items-center gap-2 2lg:gap-3 border-b border-black/5 pb-1 2xl:pb-2 last:border-b-0 last:pb-0">
+                                     <span class="flex h-4 w-4 sm:h-5 sm:w-5 shrink-0 items-center justify-center rounded-full bg-white text-[10px] font-bold text-blue-600 ring-1 ring-blue-600"> 03</span>
+                                     <img src="https://i.pravatar.cc/80?img=7" alt="Kavya Nair" class="h-6 w-6 sm:h-7 sm:w-7 shrink-0 rounded-full object-cover ring-1 ring-blue-600"/>
+                                     <span class="min-w-0 flex-1 truncate text-[10px] sm:text-xs font-medium text-dark">Kavya Nair</span>
+                                     <div class="flex shrink-0 items-center gap-1 text-red-600"><i data-lucide="alert-triangle" class="h-3 w-3 sm:h-4 sm:w-4"></i> <span class="text-xs sm:text-sm font-bold">48</span></div>
+                                  </div>
+                                  <div class="flex items-center gap-2 2lg:gap-3 border-b border-black/5 pb-1 2xl:pb-2 last:border-b-0 last:pb-0">
+                                     <span class="flex h-4 w-4 sm:h-5 sm:w-5 shrink-0 items-center justify-center rounded-full bg-white text-[10px] font-bold text-blue-600 ring-1 ring-blue-600">04</span>
+                                     <img src="https://i.pravatar.cc/80?img=12" alt="Rishi Tandon" class="h-6 w-6 sm:h-7 sm:w-7 shrink-0 rounded-full object-cover ring-1 ring-blue-600"/>
+                                     <span class="min-w-0 flex-1 truncate text-[10px] sm:text-xs font-medium text-dark">Rishi Tandon</span>
+                                     <div class="flex shrink-0 items-center gap-1 text-red-600"><i data-lucide="alert-triangle" class="h-3 w-3 sm:h-4 sm:w-4"></i> <span class="text-xs sm:text-sm font-bold">86</span></div>
+                                  </div>
+                               </div>
+                               <div class="flex items-start gap-2 border-t border-dark/20 pt-3 text-xs font-medium text-dark/80">
+                                  <i data-lucide="info" class="h-3 w-3 shrink-0"></i> <span>Fit scores are unrelated to follower count.</span>
+                               </div>
+                               <button type="button" class="mt-auto group/btn flex w-full items-center justify-between rounded-xl bg-white/5 backdrop-blur-xl border border-blue-600 px-3 py-2.5 text-xs font-semibold text-blue-600 shadow-[0_0_20px_rgba(37,99,235,0.15)] transition-all duration-300 hover:bg-blue-600 hover:border-blue-600 hover:text-white hover:shadow-[0_0_30px_rgba(37,99,235,0.5)]">
+                                 <span>View Ranking Report</span> <i data-lucide="arrow-right" class="h-3 w-3 transition-transform duration-200 group-hover/btn:translate-x-1"></i>
+                               </button>
+                            </div>
                            </div>
-                           <div class="flex flex-1 flex-col gap-3 rounded-2xl bg-white/10 backdrop-blur-sm border border-dark/10 p-2 sm:p-3 2lg:p-4">
-                              <div class="grid grid-cols-3 items-start gap-2 sm:gap-4">
-                                 <div class="flex w-full sm:w-16 lg:w-20 flex-col items-center justify-center gap-2">
-                                    <img src="assets/images/profileimg.png" alt="Sarah Ahmed" class="h-8 w-8 sm:h-10 sm:w-10 2xl:h-14 2xl:w-14 rounded-full object-cover ring-2 ring-white/30 shadow-sm" />
-                                    <span class="block w-full truncate text-center text-xs font-medium text-dark"> Sarah Ahmed</span>
-                                 </div>
-                                 <div class="flex h-full items-center justify-center">
-                                    <div class="flex h-6 w-6 sm:h-8 sm:w-8 items-center justify-center rounded-full bg-primary text-xs font-bold text-white shadow-md ring-4 ring-primary/10"> VS</div>
-                                 </div>
-                                 <div class="flex w-full sm:w-16 lg:w-20 flex-col items-center justify-center gap-2">
-                                    <img src="assets/images/profilesimg1.png" alt="Dr. Singh" class="h-8 w-8 sm:h-10 sm:w-10 2xl:h-14 2xl:w-14 rounded-full object-cover ring-2 ring-white/30 shadow-sm" />
-                                    <span class="block w-full truncate text-center text-xs font-medium text-dark"> Dr. Singh</span>
-                                 </div>
-                              </div>
-                              <div class="grid grid-cols-2 border-t border-white/30 pt-4">
-                                 <div class="flex flex-col gap-1 text-center">
-                                    <div class="text-2xl font-bold text-green-600">86</div>
-                                    <p class="text-xs font-semibold uppercase tracking-wide text-green-600">Recommended</p>
-                                 </div>
-                                 <div class="flex flex-col gap-1 border-l border-dark/10 text-center">
-                                    <div class="text-2xl font-bold text-primary">53</div>
-                                    <p class="text-xs font-semibold uppercase tracking-wide text-primary">Conditional Fit</p>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="flex items-start gap-2 border-t border-white/80 pt-3 text-xs font-medium text-red-600">
-                              <i data-lucide="alert-triangle" class="h-3 w-3 shrink-0"></i> <span>See evidence and audience perception</span>
-                           </div>
-                           <button type="button" class="mt-auto flex w-full items-center justify-between rounded-xl bg-white/15 backdrop-blur-2xl border border-white/15 px-3 py-2.5 text-xs font-semibold text-white transition-all duration-300 group-hover:bg-primary group-hover:border-primary group-hover:text-white group-hover:shadow-glass hover:bg-primary hover:border-primary hover:text-white hover:shadow-glass">
-                              <span>View Face-Off Report</span> <i data-lucide="arrow-right" class="h-3 w-3 transition-transform duration-300 group-hover:translate-x-1"></i>
-                           </button>
-                        </div>
-                        <div class="group p-3 sm:p-4 relative flex flex-col gap-3 h-full rounded-3xl bg-white/60 backdrop-blur-2xl border border-white/30 ring-1 ring-white/10 shadow-glass transition-all duration-300 hover:-translate-y-1 hover:border-blue-600 hover:ring-blue-600">
-                           <div class="flex flex-col gap-0.5">
-                              <h3 class="text-lg font-bold tracking-tight text-blue-600">RANKING</h3>
-                              <p class="text-xs text-dark">Rank multiple creators and prioritise the best fit.</p>
-                           </div>
-                           <div class="w-full flex flex-col gap-1.5">
-                              <p class="text-xs font-semibold uppercase tracking-wide text-dark">Objective</p>
-                              <div class="flex items-center gap-1.5 text-xs font-semibold text-dark"><i data-lucide="eye" class="h-3 w-3 text-blue-600"></i> <span>Perspective</span></div>
-                           </div>
-                           <div class="flex flex-1 flex-col gap-3 rounded-2xl bg-white/10 backdrop-blur-xl border border-white/60 p-2 sm:p-3 2lg:p-4">
-                              <div class="flex items-center gap-2 sm:gap-3 border-b border-black/5 pb-2 last:border-b-0 last:pb-0">
-                                 <span class="flex h-4 w-4 sm:h-5 sm:w-5 shrink-0 items-center justify-center rounded-full bg-white text-[10px] font-bold text-blue-600 ring-1 ring-blue-600"> 01</span>
-                                 <img src="https://i.pravatar.cc/80?img=5" alt="Sarah Ahmed" class="h-6 w-6 sm:h-7 sm:w-7 shrink-0 rounded-full object-cover ring-1 ring-blue-600"/>
-                                 <span class="min-w-0 flex-1 truncate text-[10px] sm:text-xs font-medium text-dark">Sarah Ahmed</span>
-                                 <span class="shrink-0 text-xs sm:text-sm font-bold text-green-600">86</span>
-                              </div>
-                              <div class="flex items-center gap-2 sm:gap-3 border-b border-black/5 pb-2 last:border-b-0 last:pb-0">
-                                 <span class="flex h-4 w-4 sm:h-5 sm:w-5 shrink-0 items-center justify-center rounded-full bg-white text-[10px] font-bold text-blue-600 ring-1 ring-blue-600"> 02</span>
-                                 <img src="https://i.pravatar.cc/80?img=6" alt="Maya Sharma" class="h-6 w-6 sm:h-7 sm:w-7 shrink-0 rounded-full object-cover ring-1 ring-blue-600"/>
-                                 <span class="min-w-0 flex-1 truncate text-[10px] sm:text-xs font-medium text-dark">Maya Sharma</span>
-                                 <span class="shrink-0 text-xs sm:text-sm font-bold text-yellow-600">68</span>
-                              </div>
-                              <div class="flex items-center gap-2 sm:gap-3 border-b border-black/5 pb-2 last:border-b-0 last:pb-0">
-                                 <span class="flex h-4 w-4 sm:h-5 sm:w-5 shrink-0 items-center justify-center rounded-full bg-white text-[10px] font-bold text-blue-600 ring-1 ring-blue-600"> 03</span>
-                                 <img src="https://i.pravatar.cc/80?img=7" alt="Kavya Nair" class="h-6 w-6 sm:h-7 sm:w-7 shrink-0 rounded-full object-cover ring-1 ring-blue-600"/>
-                                 <span class="min-w-0 flex-1 truncate text-[10px] sm:text-xs font-medium text-dark">Kavya Nair</span>
-                                 <div class="flex shrink-0 items-center gap-1 text-red-600"><i data-lucide="alert-triangle" class="h-3 w-3 sm:h-4 sm:w-4"></i> <span class="text-xs sm:text-sm font-bold">48</span></div>
-                              </div>
-                              <div class="flex items-center gap-2 sm:gap-3 border-b border-black/5 pb-2 last:border-b-0 last:pb-0">
-                                 <span class="flex h-4 w-4 sm:h-5 sm:w-5 shrink-0 items-center justify-center rounded-full bg-white text-[10px] font-bold text-blue-600 ring-1 ring-blue-600">04</span>
-                                 <img src="https://i.pravatar.cc/80?img=12" alt="Rishi Tandon" class="h-6 w-6 sm:h-7 sm:w-7 shrink-0 rounded-full object-cover ring-1 ring-blue-600"/>
-                                 <span class="min-w-0 flex-1 truncate text-[10px] sm:text-xs font-medium text-dark">Rishi Tandon</span>
-                                 <div class="flex shrink-0 items-center gap-1 text-red-600"><i data-lucide="alert-triangle" class="h-3 w-3 sm:h-4 sm:w-4"></i> <span class="text-xs sm:text-sm font-bold">86</span></div>
-                              </div>
-                           </div>
-                           <div class="flex items-start gap-2 border-t border-white/80 pt-3 text-xs font-medium text-dark/80">
-                              <i data-lucide="info" class="h-3 w-3 shrink-0"></i> <span>Fit scores are unrelated to follower count.</span>
-                           </div>
-                           <button type="button" class="mt-auto group/btn flex w-full items-center justify-between rounded-xl bg-white/10 backdrop-blur-xl border border-white/10 px-3 py-2.5 text-xs font-semibold text-white transition-all duration-300 hover:bg-gold hover:border-gold hover:text-white hover:shadow-lg">
-                           <span>View Ranking Report</span> <i data-lucide="arrow-right" class="h-3 w-3 transition-transform duration-200 group-hover/btn:translate-x-1"></i>
-                           </button>
-                        </div>
-                        <div class="group p-3 sm:p-4 relative flex flex-col gap-3 h-full rounded-3xl bg-white/60 backdrop-blur-2xl border border-white/30 ring-1 ring-white/10 shadow-glass transition-all duration-300 hover:-translate-y-1 hover:border-green-500/40 hover:ring-green-500/40">
-                           <div class="flex flex-col gap-0.5">
-                              <h3 class="text-lg font-bold tracking-tight text-green-600">DEEP DIVE</h3>
-                              <p class="text-xs text-dark">Understand a creator in strategic depth.</p>
-                           </div>
-                           <div class="w-full flex flex-col gap-1.5">
-                              <p class="text-xs font-semibold uppercase tracking-wide text-dark">Objective</p>
-                              <div class="flex items-center gap-1.5 text-xs font-semibold text-dark"><i data-lucide="eye" class="h-3 w-3 text-green-600"></i> <span>Perspective</span></div>
-                           </div>
-                           <div class="aspect-video w-full overflow-hidden rounded-2xl bg-white/10 backdrop-blur-xl border border-white/10">
-                              <img src="assets/images/divechart.png" alt="Report Preview" class="h-full w-full object-cover"/>
-                           </div>
-                           <ul class="w-full flex-1 space-y-1.5">
-                              <li class="flex items-start gap-2">
-                                 <div class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/10"><i data-lucide="users" class="h-3 w-3 text-green-600"></i></div>
-                                 <p class="text-xs leading-4 text-dark line-clamp-2">Identify where influence is <span class="font-semibold text-green-600">growing</span>, <span class="font-semibold text-green-700">declining</span>, or <span class="font-semibold text-green-700">at risk</span>.</p>
-                              </li>
-                              <li class="flex items-start gap-2">
-                                 <div class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/10"><i data-lucide="shield-check" class="h-3 w-3 text-green-600"></i></div>
-                                 <p class="text-xs leading-4 text-dark line-clamp-2">Fix perception issues before they affect campaigns.</p>
-                              </li>
-                              <li class="flex items-start gap-2">
-                                 <div class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/10"><i data-lucide="target" class="h-3 w-3 text-green-600"></i></div>
-                                 <p class="text-xs leading-4 text-dark line-clamp-2">Discover creator-brand fit and growth opportunities.</p>
-                              </li>
-                           </ul>
-                           <button type="button" class="mt-auto group/btn flex w-full items-center justify-between rounded-xl bg-white/10 backdrop-blur-xl border border-white/10 px-3 py-2.5 text-xs font-semibold text-white transition-all duration-300 hover:bg-green-600 hover:border-green-600 hover:text-white hover:shadow-lg">
-                           <span>View Deep Dive Report</span> <i data-lucide="arrow-right" class="h-3 w-3 transition-transform duration-200 group-hover/btn:translate-x-1"></i>
-                           </button>
-                        </div>
-                     </div> -->
+                           <div class="swiper-slide !h-auto flex">
+                            <div class="w-full group p-3 2lg:p-4 relative flex flex-col gap-2 2lg:gap-3 h-full rounded-3xl bg-white/80 backdrop-blur-2xl border border-white/30 ring-1 ring-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-green-500/40 hover:ring-green-500/40 shadow-[0_0_40px_rgba(34,197,94,0.30)]">
+                               <div class="flex flex-col gap-0.5">
+                                  <h3 class="text-lg font-bold tracking-tight text-green-600">DEEP DIVE</h3>
+                                  <p class="text-xs text-dark">Understand a creator in strategic depth.</p>
+                               </div>
+                               <div class="w-full flex flex-col gap-1.5">
+                                  <p class="text-xs font-semibold uppercase tracking-wide text-dark">Objective</p>
+                                  <div class="flex items-center gap-1.5 text-xs font-semibold text-dark"><i data-lucide="eye" class="h-3 w-3 text-green-600"></i> <span>Perspective</span></div>
+                               </div>
+                               <div class="aspect-video w-full overflow-hidden rounded-2xl bg-white/10 backdrop-blur-xl border border-white/10">
+                                  <img src="assets/images/divechart.png" alt="Report Preview" class="h-full w-full object-cover"/>
+                               </div>
+                               <ul class="w-full flex-1 space-y-1.5">
+                                  <li class="flex items-start gap-2">
+                                     <div class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/10"><i data-lucide="users" class="h-3 w-3 text-green-600"></i></div>
+                                     <p class="text-xs leading-4 text-dark line-clamp-2">Identify where influence is <span class="font-semibold text-green-600">growing</span>, <span class="font-semibold text-green-700">declining</span>, or <span class="font-semibold text-green-700">at risk</span>.</p>
+                                  </li>
+                                  <li class="flex items-start gap-2">
+                                     <div class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/10"><i data-lucide="shield-check" class="h-3 w-3 text-green-600"></i></div>
+                                     <p class="text-xs leading-4 text-dark line-clamp-2">Fix perception issues before they affect campaigns.</p>
+                                  </li>
+                                  <li class="flex items-start gap-2">
+                                     <div class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/10"><i data-lucide="target" class="h-3 w-3 text-green-600"></i></div>
+                                     <p class="text-xs leading-4 text-dark line-clamp-2">Discover creator-brand fit and growth opportunities.</p>
+                                  </li>
+                               </ul>
+                               <button type="button" class="mt-auto group/btn flex w-full items-center justify-between rounded-xl bg-white/5 backdrop-blur-xl border border-green-500 px-3 py-2.5 text-xs font-semibold text-green-500 shadow-[0_0_20px_rgba(34,197,94,0.15)] transition-all duration-300 hover:bg-green-600 hover:border-green-600 hover:text-white hover:shadow-[0_0_30px_rgba(34,197,94,0.5)]">
+                                 <span>View Deep Dive Report</span> <i data-lucide="arrow-right" class="h-3 w-3 transition-transform duration-200 group-hover/btn:translate-x-1"></i>
+                               </button>
+                            </div>
+                         </div>
+                       </div>
+                     </div>
                   </div>
                </div>
                <!-- TRUST BADGES ROW -->
@@ -377,7 +400,7 @@
                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80" alt="Meeting" class="h-full w-full min-h-full object-cover">
                         </div>
                      </div>
-                     <div class="w-full">
+                     <div class="w-full flex items-center">
                         <ul class="space-y-2.5">
                            <li class="flex items-center gap-2 text-dark text-sm font-semibold leading-tight"><i data-lucide="circle-check-big" class="h-5 w-5 text-primary shrink-0"></i> <span>Good engagement</span></li>
                            <li class="flex items-center gap-2 text-dark text-sm font-semibold leading-tight"><i data-lucide="circle-check-big" class="h-5 w-5 text-primary shrink-0"></i> <span>Positive comments</span></li>
