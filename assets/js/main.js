@@ -279,3 +279,9 @@ window.addEventListener("resize", () => {
     });
   });
 });
+
+
+const slider = document.getElementById('reportSlider');
+
+slider.addEventListener('mouseenter', () => slider.stop());
+slider.addEventListener('mouseleave', () => slider.start());

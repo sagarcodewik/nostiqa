@@ -2754,10 +2754,6 @@ video {
   letter-spacing: 0.1em;
 }
 
-.tracking-normal{
-  letter-spacing: 0em;
-}
-
 .text-\[\#fb901c\]{
   --tw-text-opacity: 1;
   color: rgb(251 144 28 / var(--tw-text-opacity, 1));
@@ -4146,6 +4142,14 @@ select::-ms-expand {
     grid-column: span 2 / span 2;
   }
 
+  .sm\:mb-6{
+    margin-bottom: 1.5rem;
+  }
+
+  .sm\:ms-0{
+    margin-inline-start: 0px;
+  }
+
   .sm\:ms-5{
     margin-inline-start: 1.25rem;
   }
@@ -4158,12 +4162,8 @@ select::-ms-expand {
     margin-top: 0.25rem;
   }
 
-  .sm\:ms-0{
-    margin-inline-start: 0px;
-  }
-
-  .sm\:mb-6{
-    margin-bottom: 1.5rem;
+  .sm\:mb-2\.5{
+    margin-bottom: 0.625rem;
   }
 
   .sm\:block{
@@ -4321,10 +4321,6 @@ select::-ms-expand {
     align-items: stretch;
   }
 
-  .sm\:justify-start{
-    justify-content: flex-start;
-  }
-
   .sm\:justify-center{
     justify-content: center;
   }
@@ -4355,10 +4351,6 @@ select::-ms-expand {
 
   .sm\:gap-6{
     gap: 1.5rem;
-  }
-
-  .sm\:gap-8{
-    gap: 2rem;
   }
 
   .sm\:gap-y-10{
@@ -4857,6 +4849,11 @@ select::-ms-expand {
     padding-right: 2rem;
   }
 
+  .lg\:py-10{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
   .lg\:py-12{
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -4875,11 +4872,6 @@ select::-ms-expand {
   .lg\:py-8{
     padding-top: 2rem;
     padding-bottom: 2rem;
-  }
-
-  .lg\:py-10{
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
   }
 
   .lg\:text-left{
