@@ -869,10 +869,6 @@ video {
   margin-bottom: 0.5rem;
 }
 
-.mb-2\.5{
-  margin-bottom: 0.625rem;
-}
-
 .mb-3{
   margin-bottom: 0.75rem;
 }
@@ -2469,6 +2465,11 @@ video {
   padding-right: 0.5rem;
 }
 
+.px-2\.5{
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -2492,6 +2493,11 @@ video {
 .px-8{
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.py-0\.5{
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
 }
 
 .py-1{
@@ -4142,6 +4148,10 @@ select::-ms-expand {
     grid-column: span 2 / span 2;
   }
 
+  .sm\:mb-2\.5{
+    margin-bottom: 0.625rem;
+  }
+
   .sm\:mb-6{
     margin-bottom: 1.5rem;
   }
@@ -4160,10 +4170,6 @@ select::-ms-expand {
 
   .sm\:mt-1{
     margin-top: 0.25rem;
-  }
-
-  .sm\:mb-2\.5{
-    margin-bottom: 0.625rem;
   }
 
   .sm\:block{
@@ -4373,6 +4379,10 @@ select::-ms-expand {
     border-bottom-width: 0px;
   }
 
+  .sm\:p-0{
+    padding: 0px;
+  }
+
   .sm\:p-3{
     padding: 0.75rem;
   }
@@ -4403,6 +4413,11 @@ select::-ms-expand {
     padding-right: 0.5rem;
   }
 
+  .sm\:px-3{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
   .sm\:px-4{
     padding-left: 1rem;
     padding-right: 1rem;
@@ -4416,6 +4431,11 @@ select::-ms-expand {
   .sm\:px-6{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .sm\:py-1{
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
   }
 
   .sm\:py-2{

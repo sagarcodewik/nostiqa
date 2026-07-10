@@ -280,7 +280,7 @@ window.addEventListener("resize", () => {
   });
 });
 
-
+// marquee Stop 
 const slider = document.getElementById('reportSlider');
 
 slider.addEventListener('mouseenter', () => slider.stop());
