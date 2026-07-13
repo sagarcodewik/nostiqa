@@ -22,7 +22,6 @@
       <link rel="stylesheet" href="assets/css/custom.css" />
    </head>
    <body class="bg-light/30 text-dark overflow-x-hidden antialiased">
-
       <!-- ========== HEADER ========== -->
       <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
          <div class="container mx-auto flex items-center px-4 lg:px-8 h-16">
@@ -66,12 +65,11 @@
             </div>
          </div>
       </header>
-
       <!-- ========== Page Containt ========== -->
       <section class="relative overflow-hidden py-8 lg:py-12 mt-12">
          <div class="container mx-auto flex flex-col gap-6 px-4 lg:px-8">
             <!-- Make creator -->
-             <div class="grid grid-cols-1 xl:grid-cols-3 gap-4 sm:gap-6 items-stretch">
+            <div class="grid grid-cols-1 xl:grid-cols-3 gap-4 sm:gap-6 items-stretch">
                <div class="flex flex-col items-start justify-center gap-1.5 sm:gap-4">
                   <div>
                      <span class="inline-flex items-center rounded-full border border-primary/10 bg-primary/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-primary">Influence Intelligence</span>
@@ -80,188 +78,320 @@
                   <p class="max-w-xl text-base leading-7 text-dark sm:text-lg">Nostiqa combines audience intelligence and strategic context to show you who's most likely to deliver for your objective.</p>
                   <a href="javascript:void(0)" class="w-full sm:w-fit">
                   <button class="group flex w-fit mx-auto sm:ms-0 sm:w-full items-center justify-center gap-2 rounded-xl bg-primary px-4 py-3 text-xs font-medium text-white shadow-premium transition-all duration-300 hover:-translate-y-1 hover:shadow-glow lg:rounded-2xl lg:px-5 lg:text-sm">
-                    <span class="truncate">Book a Demo</span> <i class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1"></i>
+                  <span class="truncate">Book a Demo</span> <i class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1"></i>
                   </button>
                   </a>
                </div>
                <!-- RIGHT: laptop mockup + overlapping cards -->
-                <div class="xl:col-span-2 mt-6 sm:mt-0 relative w-full max-w-6xl mx-auto select-none">
-                  <!-- <div class="relative w-full hidden md:block">
-                    <img src="assets/images/screen.png" alt="Laptop mockup" class="w-full max-w-full h-auto object-contain mx-auto block pointer-events-none select-none"/>
-                  </div> -->
+               <div class="xl:col-span-2 mt-6 sm:mt-0 relative w-full max-w-6xl mx-auto select-none">
                   <div class="relative hidden w-full md:block">
                      <img src="assets/images/screen.png" alt="Laptop mockup" class="mx-auto block w-full h-auto object-contain">
                      <div class="absolute inset-0 top-8 2lg:top-10 flex justify-center w-9/10 mx-auto">
                         <div class="w-2/3 grid grid-cols-2 text-white">
-                              <div class="flex flex-col gap-0 2lg:gap-1.5 text-start">
-                                 <p class="text-xs font-font-medium text-white">CAMPAIGN</p>
-                                 <h3 class="text-md 2lg:text-lg font-semibold text-white">Launch Premium Skincare</h3>
-                              </div>
-                              <div class="flex flex-col gap-0 2lg:gap-1.5 text-start">
-                                 <p class="text-xs font-font-medium text-white ms-0 sm:ms-5">OBJECTIVE</p>
-                                 <h3 class="text-md 2lg:text-lg font-semibold text-white flex items-center gap-1.5"><i data-lucide="goal" class="h-5 w-5 text-white"></i> Drive Purchase Intent</h3>
-                              </div>
+                           <div class="flex flex-col gap-0 2lg:gap-1.5 text-start">
+                              <p class="text-xs font-font-medium text-white">CAMPAIGN</p>
+                              <h3 class="text-md 2lg:text-lg font-semibold text-white">Launch Premium Skincare</h3>
+                           </div>
+                           <div class="flex flex-col gap-0 2lg:gap-1.5 text-start">
+                              <p class="text-xs font-font-medium text-white ms-0 sm:ms-5">OBJECTIVE</p>
+                              <h3 class="text-md 2lg:text-lg font-semibold text-white flex items-center gap-1.5"><i data-lucide="goal" class="h-5 w-5 text-white"></i> Drive Purchase Intent</h3>
+                           </div>
                         </div>
                      </div>
                   </div>
-                  <div class="relative md:absolute md:inset-x-0 md:bottom-6 xl:bottom-8 2xl:bottom-30 px-4 sm:px-6 lg:px-8 xl:px-14">
-                     <div class="swiper hmcardsSwiper">
-                        <div class="swiper-wrapper items-stretch">
-                        <div class="swiper-slide !h-auto flex">
-                           <div class="w-full group p-3 2lg:p-4 relative flex flex-col gap-2 2lg:gap-3 h-full rounded-3xl bg-white/80 backdrop-blur-xl border border-white/30 ring-1 ring-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:ring-primary/40 shadow-[0_0_40px_rgba(55,17,190,0.30)]">
-                              <div class="flex flex-col gap-0.5">
-                                 <h3 class="text-lg font-bold tracking-tight text-primary">FACE-OFF</h3>
-                                 <p class="text-xs text-dark font-medium">Compare two creators <span class="inline sm:block">side by side.</span></p>
+                  <div class="relative md:absolute md:inset-x-0 md:bottom-6 xl:bottom-8 2xl:bottom-30 px-0 sm:px-6 lg:px-8 xl:px-14">
+                     <div class="grid grid-cols-3 gap-1.5 sm:gap-3">
+                        <div class="w-full group p-2 sm:p-3 2lg:p-4 relative overflow-hidden flex flex-col gap-1.5 sm:gap-2 2lg:gap-3 h-full rounded-2xl sm:rounded-3xl bg-gradient-to-b from-violet-100/70 via-white/80 to-violet-100/40 backdrop-blur-xl border border-violet-100 transition-all duration-300 hover:-translate-y-1 hover:border-violet-600 shadow-[0_0_40px_rgba(55,17,190,0.30)]">
+                           <div class="flex flex-col gap-0.5">
+                              <h3 class="text-xs sm:text-lg font-bold tracking-tight text-primary">FACE-OFF</h3>
+                              <p class="text-[9px] sm:text-xs text-dark font-medium leading-tight">Compare two creators <span class="inline sm:block">side by side.</span></p>
+                           </div>
+                           <div class="w-full flex flex-col gap-1 sm:gap-1.5 mt-1 sm:mt-2">
+                              <p class="text-[8px] sm:text-xs font-semibold uppercase tracking-wide text-dark">Objective</p>
+                              <div class="flex items-center gap-1 sm:gap-1.5 text-[9px] sm:text-xs font-semibold text-dark">
+                                 <i data-lucide="bar-chart-2" fill="#3711BE" class="h-3 w-3 sm:h-4 sm:w-4 text-primary"></i><span>Performance</span>
                               </div>
-                              <div class="w-full flex flex-col gap-1.5 mt-2">
-                                 <p class="text-xs font-semibold uppercase tracking-wide text-dark">Objective</p>
-                                 <div class="flex items-center gap-1.5 text-xs font-semibold text-dark"><i data-lucide="bar-chart-2" fill="#3711BE" class="h-4 w-4 text-primary"></i><span>Performance</span></div>
+                           </div>
+                           <div class="flex flex-1 flex-col gap-2 sm:gap-3 mt-1 sm:mt-2">
+                              <div class="grid grid-cols-3 items-start gap-1 sm:gap-3 md:gap-4">
+                                 <div class="flex w-full flex-col items-center justify-center gap-1 sm:gap-2">
+                                    <img src="assets/images/profileimg.png" alt="Sarah Ahmed" class="h-6 w-6 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14 rounded-full object-cover ring-2 ring-white/30 shadow-sm" />
+                                    <span class="block w-full truncate text-center text-[8px] sm:text-[11px] md:text-xs font-medium text-dark">Sarah Ahmed</span>
+                                 </div>
+                                 <div class="flex h-full items-center justify-center">
+                                    <div class="flex h-5 w-5 sm:h-8 sm:w-8 md:h-9 md:w-9 items-center justify-center rounded-full bg-primary text-[8px] sm:text-xs font-bold text-white shadow-md ring-4 ring-primary/10">VS</div>
+                                 </div>
+                                 <div class="flex w-full flex-col items-center justify-center gap-1 sm:gap-2">
+                                    <img src="assets/images/profilesimg1.png" alt="Dr. Singh" class="h-6 w-6 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14 rounded-full object-cover ring-2 ring-white/30 shadow-sm" />
+                                    <span class="block w-full truncate text-center text-[8px] sm:text-[11px] md:text-xs font-medium text-dark">Dr. Singh</span>
+                                 </div>
                               </div>
-                              <div class="flex flex-1 flex-col gap-3 mt-2">
-                                 <div class="grid grid-cols-3 items-start gap-2 sm:gap-3 md:gap-4">
-                                    <div class="flex w-full flex-col items-center justify-center gap-1.5 sm:gap-2">
-                                    <img src="assets/images/profileimg.png" alt="Sarah Ahmed" class="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14 rounded-full object-cover ring-2 ring-white/30 shadow-sm" />
-                                    <span class="block w-full truncate text-center text-[11px] sm:text-xs font-medium text-dark">Sarah Ahmed</span>
-                                    </div>
-                                    <div class="flex h-full items-center justify-center">
-                                    <div class="flex h-6 w-6 sm:h-8 sm:w-8 md:h-9 md:w-9 items-center justify-center rounded-full bg-primary text-[10px] sm:text-xs font-bold text-white shadow-md ring-4 ring-primary/10">VS</div>
-                                    </div>
-                                    <div class="flex w-full flex-col items-center justify-center gap-1.5 sm:gap-2">
-                                    <img src="assets/images/profilesimg1.png" alt="Dr. Singh" class="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14 rounded-full object-cover ring-2 ring-white/30 shadow-sm" />
-                                    <span class="block w-full truncate text-center text-[11px] sm:text-xs font-medium text-dark">Dr. Singh</span>
+                              <div class="grid grid-cols-2 border-t border-dark/10 pt-2 sm:pt-3">
+                                 <div class="flex flex-col items-center gap-0.5 sm:gap-1 text-center">
+                                    <div class="text-base sm:text-2xl font-bold text-green-600">86</div>
+                                    <p class="text-[7px] sm:text-[10px] 2lg:text-xs font-semibold uppercase tracking-wide text-green-600 leading-tight">Recommended</p>
+                                 </div>
+                                 <div class="flex flex-col items-center gap-0.5 sm:gap-1 border-l border-dark/10 text-center">
+                                    <div class="text-base sm:text-2xl font-bold text-primary">53</div>
+                                    <p class="text-[7px] sm:text-[10px] 2lg:text-xs font-semibold uppercase tracking-wide text-primary leading-tight">Conditional Fit</p>
+                                    <div class="hidden sm:flex items-start justify-start text-start gap-0.5 text-[6px] sm:text-[8px] font-medium text-red-600 px-0 sm:px-2 mt-1">
+                                       <i data-lucide="alert-triangle" class="h-2 w-2 sm:h-3 sm:w-3 shrink-0"></i>
+                                       <span class="w-full line-clamp-2">See evidence and audience perception</span>
                                     </div>
                                  </div>
-                                 <div class="grid grid-cols-2 border-t border-dark/10 pt-3">
-                                    <div class="flex flex-col items-center gap-1 text-center">
-                                       <div class="text-2xl font-bold text-green-600">86</div>
-                                       <p class="text-[10px] 2lg:text-xs font-semibold uppercase tracking-wide text-green-600 leading-tight"> Recommended</p>
+                              </div>
+                              <div class="flex sm:hidden items-start justify-start text-start gap-0.5 text-[6px] sm:text-[8px] font-medium text-red-600 px-3">
+                                 <i data-lucide="alert-triangle" class="h-2 w-2 sm:h-3 sm:w-3 shrink-0"></i>
+                                 <span class="w-full line-clamp-2">See evidence and audience perception</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="scale-x-105 scale-y-110 sm:scale-x-100 sm:scale-y-100 w-full group p-2 sm:p-3 2lg:p-4 relative flex flex-col gap-1.5 sm:gap-2 2lg:gap-3 h-full rounded-2xl sm:rounded-3xl bg-gradient-to-b from-blue-100/70 via-white/80 to-blue-100/40 backdrop-blur-xl border border-blue-200/50 transition-all duration-300 hover:-translate-y-1 hover:border-blue-500 shadow-[0_0_40px_rgba(37,99,235,0.30)]">
+                           <div class="flex flex-col gap-0.5">
+                              <h3 class="text-xs sm:text-lg font-bold tracking-tight text-blue-600">RANKING</h3>
+                              <p class="text-[9px] sm:text-xs text-dark font-medium leading-tight">Rank multiple creators <span class="inline sm:block">and prioritise the best fit.</span></p>
+                           </div>
+                           <div class="w-full flex flex-col gap-1 sm:gap-1.5">
+                              <p class="text-[8px] sm:text-xs font-semibold uppercase tracking-wide text-dark mt-1 sm:mt-2">Objective</p>
+                              <div class="flex items-center gap-1 sm:gap-1.5 text-[9px] sm:text-xs font-semibold text-dark">
+                                 <i data-lucide="eye" class="h-3 w-3 sm:h-4 sm:w-4 text-blue-600"></i> <span>Perspective</span>
+                              </div>
+                           </div>
+                           <div class="flex flex-1 flex-col gap-1.5 sm:gap-2 2lg:gap-3 max-h-32 sm:max-h-40 min-h-0 overflow-y-auto no-scrollbar">
+                              <div class="flex items-center gap-1 sm:gap-2 2lg:gap-3 border-b border-black/5 pb-1 2xl:pb-2 last:border-b-0 last:pb-0">
+                                 <span class="flex h-3.5 w-3.5 sm:h-5 sm:w-5 shrink-0 items-center justify-center rounded-full text-[8px] sm:text-[10px] font-bold text-blue-600 bg-blue-300/50">01</span>
+                                 <img src="https://i.pravatar.cc/80?img=5" alt="Sarah Ahmed" class="h-5 w-5 sm:h-7 sm:w-7 shrink-0 rounded-full object-cover"/>
+                                 <span class="min-w-0 flex-1 truncate text-[8px] sm:text-xs font-medium text-dark">Sarah Ahmed</span>
+                                 <span class="shrink-0 text-[10px] sm:text-sm font-bold text-green-600">86</span>
+                              </div>
+                              <div class="flex items-center gap-1 sm:gap-2 2lg:gap-3 border-b border-black/5 pb-1 2xl:pb-2 last:border-b-0 last:pb-0">
+                                 <span class="flex h-3.5 w-3.5 sm:h-5 sm:w-5 shrink-0 items-center justify-center rounded-full text-[8px] sm:text-[10px] font-bold text-blue-600 bg-blue-300/50">02</span>
+                                 <img src="https://i.pravatar.cc/80?img=6" alt="Maya Sharma" class="h-5 w-5 sm:h-7 sm:w-7 shrink-0 rounded-full object-cover"/>
+                                 <span class="min-w-0 flex-1 truncate text-[8px] sm:text-xs font-medium text-dark">Maya Sharma</span>
+                                 <span class="shrink-0 text-[10px] sm:text-sm font-bold text-[#fb901c]">68</span>
+                              </div>
+                              <div class="flex items-center gap-1 sm:gap-2 2lg:gap-3 border-b border-black/5 pb-1 2xl:pb-2 last:border-b-0 last:pb-0">
+                                 <span class="flex h-3.5 w-3.5 sm:h-5 sm:w-5 shrink-0 items-center justify-center rounded-full text-[8px] sm:text-[10px] font-bold text-blue-600 bg-blue-300/50">03</span>
+                                 <img src="https://i.pravatar.cc/80?img=7" alt="Kavya Nair" class="h-5 w-5 sm:h-7 sm:w-7 shrink-0 rounded-full object-cover"/>
+                                 <span class="min-w-0 flex-1 truncate text-[8px] sm:text-xs font-medium text-dark">Kavya Nair</span>
+                                 <div class="flex shrink-0 items-center gap-1 text-red-600">
+                                    <i class="fa-solid fa-triangle-exclamation text-red-600 fa-xs sm:fa-sm"></i>
+                                    <span class="text-[10px] sm:text-sm font-bold">48</span>
+                                 </div>
+                              </div>
+                              <div class="flex items-center gap-1 sm:gap-2 2lg:gap-3 border-b border-black/5 pb-1 2xl:pb-2 last:border-b-0 last:pb-0">
+                                 <span class="flex h-3.5 w-3.5 sm:h-5 sm:w-5 shrink-0 items-center justify-center rounded-full text-[8px] sm:text-[10px] font-bold text-blue-600 bg-blue-300/50">04</span>
+                                 <img src="https://i.pravatar.cc/80?img=12" alt="Rishi Tandon" class="h-5 w-5 sm:h-7 sm:w-7 shrink-0 rounded-full object-cover"/>
+                                 <span class="min-w-0 flex-1 truncate text-[8px] sm:text-xs font-medium text-dark">Rishi Tandon</span>
+                                 <div class="flex shrink-0 items-center gap-1 text-red-600">
+                                    <i class="fa-solid fa-triangle-exclamation text-red-600 fa-xs sm:fa-sm"></i>
+                                    <span class="text-[10px] sm:text-sm font-bold">86</span>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="flex items-start gap-1 sm:gap-2 border-t border-dark/20 pt-2 sm:pt-3 text-[7px] sm:text-[10px] font-medium text-dark/80">
+                              <i data-lucide="info" class="h-2.5 w-2.5 sm:h-3 sm:w-3 shrink-0"></i> <span class="w-full line-clamp-1">Fit scores are unrelated to follower count.</span>
+                           </div>
+                        </div>
+                        <div class="w-full group p-2 sm:p-3 2lg:p-4 relative flex flex-col gap-1.5 sm:gap-2 2lg:gap-3 h-full rounded-2xl sm:rounded-3xl bg-gradient-to-b from-green-100/70 via-white/80 to-green-100/40 backdrop-blur-xl border border-green-200/50 transition-all duration-300 hover:-translate-y-1 hover:border-green-500 shadow-[0_0_40px_rgba(34,197,94,0.30)]">
+                           <div class="flex flex-col gap-0.5">
+                              <h3 class="text-xs sm:text-lg font-bold tracking-tight text-green-600">DEEP DIVE</h3>
+                              <p class="text-[9px] sm:text-xs text-dark font-medium leading-tight">Understand a creator <span class="inline sm:block">in strategic depth.</span></p>
+                           </div>
+                           <div class="aspect-video w-full overflow-hidden rounded-xl sm:rounded-2xl my-1 sm:my-2">
+                              <img src="assets/images/divechart.png" alt="Report Preview" class="h-full w-full object-cover"/>
+                           </div>
+                           <ul class="w-full flex-1 space-y-1">
+                              <li class="flex items-start gap-1">
+                                 <div class="flex h-4 w-4 sm:h-6 sm:w-6 shrink-0 items-center justify-center"><i data-lucide="users" class="h-2.5 w-2.5 sm:h-3 sm:w-3 text-green-600"></i></div>
+                                 <p class="text-[8px] sm:text-[10px] leading-3 sm:leading-4 font-medium text-dark line-clamp-2">See where influence is <span class="font-semibold text-green-600">peaking</span>, <span class="font-semibold text-[#fb901c]">fading</span> and in <span class="font-semibold text-red-500">critical danger</span>.</p>
+                              </li>
+                              <li class="flex items-start gap-1">
+                                 <div class="flex h-4 w-4 sm:h-6 sm:w-6 shrink-0 items-center justify-center"><i data-lucide="shield-check" class="h-2.5 w-2.5 sm:h-3 sm:w-3 text-green-600"></i></div>
+                                 <p class="text-[8px] sm:text-[10px] leading-3 sm:leading-4 font-medium text-dark line-clamp-2">Fix perception issues</p>
+                              </li>
+                              <li class="flex items-start gap-1">
+                                 <div class="flex h-4 w-4 sm:h-6 sm:w-6 shrink-0 items-center justify-center"><i data-lucide="target" class="h-2.5 w-2.5 sm:h-3 sm:w-3 text-green-600"></i></div>
+                                 <p class="text-[8px] sm:text-[10px] leading-3 sm:leading-4 font-medium text-dark line-clamp-2">See creator brand fit and opportunities.</p>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="relative md:absolute md:inset-x-0 md:bottom-6 xl:bottom-8 2xl:bottom-30 px-4 sm:px-6 lg:px-8 xl:px-14 hidden">
+                     <div class="swiper hmcardsSwiper">
+                        <div class="swiper-wrapper items-stretch">
+                           <div class="swiper-slide !h-auto flex">
+                              <div class="w-full group p-3 2lg:p-4 relative overflow-hidden flex flex-col gap-2 2lg:gap-3 h-full rounded-3xl bg-gradient-to-b from-violet-100/70 via-white/80 to-violet-100/40 backdrop-blur-xl border border-violet-100 transition-all duration-300 hover:-translate-y-1 hover:border-violet-600 shadow-[0_0_40px_rgba(55,17,190,0.30)]">
+                                 <div class="flex flex-col gap-0.5">
+                                    <h3 class="text-lg font-bold tracking-tight text-primary">FACE-OFF</h3>
+                                    <p class="text-xs text-dark font-medium">Compare two creators <span class="inline sm:block">side by side.</span></p>
+                                 </div>
+                                 <div class="w-full flex flex-col gap-1.5 mt-2">
+                                    <p class="text-xs font-semibold uppercase tracking-wide text-dark">Objective</p>
+                                    <div class="flex items-center gap-1.5 text-xs font-semibold text-dark"><i data-lucide="bar-chart-2" fill="#3711BE" class="h-4 w-4 text-primary"></i><span>Performance</span></div>
+                                 </div>
+                                 <div class="flex flex-1 flex-col gap-3 mt-2">
+                                    <div class="grid grid-cols-3 items-start gap-2 sm:gap-3 md:gap-4">
+                                       <div class="flex w-full flex-col items-center justify-center gap-1.5 sm:gap-2">
+                                          <img src="assets/images/profileimg.png" alt="Sarah Ahmed" class="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14 rounded-full object-cover ring-2 ring-white/30 shadow-sm" />
+                                          <span class="block w-full truncate text-center text-[11px] sm:text-xs font-medium text-dark">Sarah Ahmed</span>
+                                       </div>
+                                       <div class="flex h-full items-center justify-center">
+                                          <div class="flex h-6 w-6 sm:h-8 sm:w-8 md:h-9 md:w-9 items-center justify-center rounded-full bg-primary text-[10px] sm:text-xs font-bold text-white shadow-md ring-4 ring-primary/10">VS</div>
+                                       </div>
+                                       <div class="flex w-full flex-col items-center justify-center gap-1.5 sm:gap-2">
+                                          <img src="assets/images/profilesimg1.png" alt="Dr. Singh" class="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14 rounded-full object-cover ring-2 ring-white/30 shadow-sm" />
+                                          <span class="block w-full truncate text-center text-[11px] sm:text-xs font-medium text-dark">Dr. Singh</span>
+                                       </div>
                                     </div>
-                                    <div class="flex flex-col items-center gap-1 border-l border-dark/10 text-center">
-                                       <div class="text-2xl font-bold text-primary">53</div>
-                                       <p class="text-[10px] 2lg:text-xs font-semibold uppercase tracking-wide text-primary leading-tight"> Conditional Fit</p>
-                                       <div class="flex items-start justify-start text-start gap-0.5 text-[8px] font-medium text-red-600 px-0 sm:px-2 mt-1">
-                                          <i data-lucide="alert-triangle" class="h-3 w-3 shrink-0"></i> <span class="w-full line-clamp-2">See evidence and audience perception</span>
+                                    <div class="grid grid-cols-2 border-t border-dark/10 pt-3">
+                                       <div class="flex flex-col items-center gap-1 text-center">
+                                          <div class="text-2xl font-bold text-green-600">86</div>
+                                          <p class="text-[10px] 2lg:text-xs font-semibold uppercase tracking-wide text-green-600 leading-tight"> Recommended</p>
+                                       </div>
+                                       <div class="flex flex-col items-center gap-1 border-l border-dark/10 text-center">
+                                          <div class="text-2xl font-bold text-primary">53</div>
+                                          <p class="text-[10px] 2lg:text-xs font-semibold uppercase tracking-wide text-primary leading-tight"> Conditional Fit</p>
+                                          <div class="flex items-start justify-start text-start gap-0.5 text-[8px] font-medium text-red-600 px-0 sm:px-2 mt-1">
+                                             <i data-lucide="alert-triangle" class="h-3 w-3 shrink-0"></i> <span class="w-full line-clamp-2">See evidence and audience perception</span>
+                                          </div>
                                        </div>
                                     </div>
                                  </div>
                               </div>
-                              <button type="button" class="mt-auto flex w-full items-center justify-center rounded-xl text-xs font-semibold text-primary">
-                                 <span>View Face-Off Report</span> <i data-lucide="arrow-right" class="h-3 w-3 transition-transform duration-300 group-hover:translate-x-1"></i>
-                              </button>
                            </div>
-                        </div>
-                        <div class="swiper-slide !h-auto flex">
-                           <div class="w-full group p-3 2lg:p-4 relative flex flex-col gap-2 2lg:gap-3 h-full rounded-3xl bg-white/80 backdrop-blur-xl border border-white/30 ring-1 ring-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-blue-600 hover:ring-blue-600 shadow-[0_0_40px_rgba(37,99,235,0.30)]">
-                              <div class="flex flex-col gap-0.5">
-                                 <h3 class="text-lg font-bold tracking-tight text-blue-600 ">RANKING</h3>
-                                 <p class="text-xs text-dark font-medium">Rank multiple creators <span class="inline sm:block">and prioritise the best fit.</span></p>
-                              </div>
-                              <div class="w-full flex flex-col gap-1.5">
-                                 <p class="text-xs font-semibold uppercase tracking-wide text-dark mt-2">Objective</p>
-                                 <div class="flex items-center gap-1.5 text-xs font-semibold text-dark"><i data-lucide="eye" class="h-4 w-4 text-blue-600"></i> <span>Perspective</span></div>
-                              </div>
-                              <div class="flex flex-1 flex-col gap-2 2lg:gap-3 max-h-40 min-h-0 overflow-y-auto no-scrollbar">
-                                 <div class="flex items-center gap-2 2lg:gap-3 border-b border-black/5 pb-1 2xl:pb-2 last:border-b-0 last:pb-0">
-                                    <span class="flex h-4 w-4 sm:h-5 sm:w-5 shrink-0 items-center justify-center rounded-full text-[10px] font-bold text-blue-600 bg-blue-300/50"> 01</span>
-                                    <img src="https://i.pravatar.cc/80?img=5" alt="Sarah Ahmed" class="h-6 w-6 sm:h-7 sm:w-7 shrink-0 rounded-full object-cover"/>
-                                    <span class="min-w-0 flex-1 truncate text-[10px] sm:text-xs font-medium text-dark">Sarah Ahmed</span>
-                                    <span class="shrink-0 text-xs sm:text-sm font-bold text-green-600">86</span>
+                           <div class="swiper-slide !h-auto flex">
+                              <div class="w-full group p-3 2lg:p-4 relative flex flex-col gap-2 2lg:gap-3 h-full rounded-3xl bg-gradient-to-b from-blue-100/70 via-white/80 to-blue-100/40 backdrop-blur-xl border border-blue-200/50 transition-all duration-300 hover:-translate-y-1 hover:border-blue-500 shadow-[0_0_40px_rgba(37,99,235,0.30)]">
+                                 <div class="flex flex-col gap-0.5">
+                                    <h3 class="text-lg font-bold tracking-tight text-blue-600 ">RANKING</h3>
+                                    <p class="text-xs text-dark font-medium">Rank multiple creators <span class="inline sm:block">and prioritise the best fit.</span></p>
                                  </div>
-                                 <div class="flex items-center gap-2 2lg:gap-3 border-b border-black/5 pb-1 2xl:pb-2 last:border-b-0 last:pb-0">
-                                    <span class="flex h-4 w-4 sm:h-5 sm:w-5 shrink-0 items-center justify-center rounded-full text-[10px] font-bold text-blue-600 bg-blue-300/50"> 02</span>
-                                    <img src="https://i.pravatar.cc/80?img=6" alt="Maya Sharma" class="h-6 w-6 sm:h-7 sm:w-7 shrink-0 rounded-full object-cover"/>
-                                    <span class="min-w-0 flex-1 truncate text-[10px] sm:text-xs font-medium text-dark">Maya Sharma</span>
-                                    <span class="shrink-0 text-xs sm:text-sm font-bold text-[#fb901c]">68</span>
+                                 <div class="w-full flex flex-col gap-1.5">
+                                    <p class="text-xs font-semibold uppercase tracking-wide text-dark mt-2">Objective</p>
+                                    <div class="flex items-center gap-1.5 text-xs font-semibold text-dark"><i data-lucide="eye" class="h-4 w-4 text-blue-600"></i> <span>Perspective</span></div>
                                  </div>
-                                 <div class="flex items-center gap-2 2lg:gap-3 border-b border-black/5 pb-1 2xl:pb-2 last:border-b-0 last:pb-0">
-                                    <span class="flex h-4 w-4 sm:h-5 sm:w-5 shrink-0 items-center justify-center rounded-full text-[10px] font-bold text-blue-600 bg-blue-300/50"> 03</span>
-                                    <img src="https://i.pravatar.cc/80?img=7" alt="Kavya Nair" class="h-6 w-6 sm:h-7 sm:w-7 shrink-0 rounded-full object-cover"/>
-                                    <span class="min-w-0 flex-1 truncate text-[10px] sm:text-xs font-medium text-dark">Kavya Nair</span>
-                                    <div class="flex shrink-0 items-center gap-1 text-red-600"><i data-lucide="alert-triangle" class="h-3 w-3 sm:h-4 sm:w-4"></i> <span class="text-xs sm:text-sm font-bold">48</span></div>
+                                 <div class="flex flex-1 flex-col gap-2 2lg:gap-3 max-h-40 min-h-0 overflow-y-auto no-scrollbar">
+                                    <div class="flex items-center gap-2 2lg:gap-3 border-b border-black/5 pb-1 2xl:pb-2 last:border-b-0 last:pb-0">
+                                       <span class="flex h-4 w-4 sm:h-5 sm:w-5 shrink-0 items-center justify-center rounded-full text-[10px] font-bold text-blue-600 bg-blue-300/50"> 01</span>
+                                       <img src="https://i.pravatar.cc/80?img=5" alt="Sarah Ahmed" class="h-6 w-6 sm:h-7 sm:w-7 shrink-0 rounded-full object-cover"/>
+                                       <span class="min-w-0 flex-1 truncate text-[10px] sm:text-xs font-medium text-dark">Sarah Ahmed</span>
+                                       <span class="shrink-0 text-xs sm:text-sm font-bold text-green-600">86</span>
+                                    </div>
+                                    <div class="flex items-center gap-2 2lg:gap-3 border-b border-black/5 pb-1 2xl:pb-2 last:border-b-0 last:pb-0">
+                                       <span class="flex h-4 w-4 sm:h-5 sm:w-5 shrink-0 items-center justify-center rounded-full text-[10px] font-bold text-blue-600 bg-blue-300/50"> 02</span>
+                                       <img src="https://i.pravatar.cc/80?img=6" alt="Maya Sharma" class="h-6 w-6 sm:h-7 sm:w-7 shrink-0 rounded-full object-cover"/>
+                                       <span class="min-w-0 flex-1 truncate text-[10px] sm:text-xs font-medium text-dark">Maya Sharma</span>
+                                       <span class="shrink-0 text-xs sm:text-sm font-bold text-[#fb901c]">68</span>
+                                    </div>
+                                    <div class="flex items-center gap-2 2lg:gap-3 border-b border-black/5 pb-1 2xl:pb-2 last:border-b-0 last:pb-0">
+                                       <span class="flex h-4 w-4 sm:h-5 sm:w-5 shrink-0 items-center justify-center rounded-full text-[10px] font-bold text-blue-600 bg-blue-300/50"> 03</span>
+                                       <img src="https://i.pravatar.cc/80?img=7" alt="Kavya Nair" class="h-6 w-6 sm:h-7 sm:w-7 shrink-0 rounded-full object-cover"/>
+                                       <span class="min-w-0 flex-1 truncate text-[10px] sm:text-xs font-medium text-dark">Kavya Nair</span>
+                                       <div class="flex shrink-0 items-center gap-1 text-red-600"><i class="fa-solid fa-triangle-exclamation text-red-600 h-3 w-3 sm:h-4 sm:w-4"></i> <span class="text-xs sm:text-sm font-bold">48</span></div>
+                                    </div>
+                                    <div class="flex items-center gap-2 2lg:gap-3 border-b border-black/5 pb-1 2xl:pb-2 last:border-b-0 last:pb-0">
+                                       <span class="flex h-4 w-4 sm:h-5 sm:w-5 shrink-0 items-center justify-center rounded-full text-[10px] font-bold text-blue-600 bg-blue-300/50">04</span>
+                                       <img src="https://i.pravatar.cc/80?img=12" alt="Rishi Tandon" class="h-6 w-6 sm:h-7 sm:w-7 shrink-0 rounded-full object-cover"/>
+                                       <span class="min-w-0 flex-1 truncate text-[10px] sm:text-xs font-medium text-dark">Rishi Tandon</span>
+                                       <div class="flex shrink-0 items-center gap-1 text-red-600"><i class="fa-solid fa-triangle-exclamation text-red-600 h-3 w-3 sm:h-4 sm:w-4"></i> <span class="text-xs sm:text-sm font-bold">86</span></div>
+                                    </div>
                                  </div>
-                                 <div class="flex items-center gap-2 2lg:gap-3 border-b border-black/5 pb-1 2xl:pb-2 last:border-b-0 last:pb-0">
-                                    <span class="flex h-4 w-4 sm:h-5 sm:w-5 shrink-0 items-center justify-center rounded-full text-[10px] font-bold text-blue-600 bg-blue-300/50">04</span>
-                                    <img src="https://i.pravatar.cc/80?img=12" alt="Rishi Tandon" class="h-6 w-6 sm:h-7 sm:w-7 shrink-0 rounded-full object-cover"/>
-                                    <span class="min-w-0 flex-1 truncate text-[10px] sm:text-xs font-medium text-dark">Rishi Tandon</span>
-                                    <div class="flex shrink-0 items-center gap-1 text-red-600"><i data-lucide="alert-triangle" class="h-3 w-3 sm:h-4 sm:w-4"></i> <span class="text-xs sm:text-sm font-bold">86</span></div>
+                                 <div class="flex items-start gap-2 border-t border-dark/20 pt-3 text-[10px] font-medium text-dark/80">
+                                    <i data-lucide="info" class="h-3 w-3 shrink-0"></i> <span class="w-full line-clamp-1">Fit scores are unrelated to follower count.</span>
                                  </div>
                               </div>
-                              <div class="flex items-start gap-2 border-t border-dark/20 pt-3 text-[10px] font-medium text-dark/80">
-                                 <i data-lucide="info" class="h-3 w-3 shrink-0"></i> <span class="w-full line-clamp-1">Fit scores are unrelated to follower count.</span>
-                              </div>
-                              <button type="button" class="mt-auto group/btn flex w-full items-center justify-center rounded-xl text-xs font-semibold text-blue-600">
-                                <span>View Ranking Report</span> <i data-lucide="arrow-right" class="h-3 w-3 transition-transform duration-200 group-hover/btn:translate-x-1"></i>
-                              </button>
                            </div>
-                        </div>
-                        <div class="swiper-slide !h-auto flex">
-                           <div class="w-full group p-3 2lg:p-4 relative flex flex-col gap-2 2lg:gap-3 h-full rounded-3xl bg-white/80 backdrop-blur-xl border border-white/30 ring-1 ring-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-green-500/40 hover:ring-green-500/40 shadow-[0_0_40px_rgba(34,197,94,0.30)]">
-                              <div class="flex flex-col gap-0.5">
-                                 <h3 class="text-lg font-bold tracking-tight text-green-600">DEEP DIVE</h3>
-                                 <p class="text-xs text-dark font-medium">Understand a creator <span class="inline sm:block">in strategic depth.</span></p>
+                           <div class="swiper-slide !h-auto flex">
+                              <div class="w-full group p-3 2lg:p-4 relative flex flex-col gap-2 2lg:gap-3 h-full rounded-3xl bg-gradient-to-b from-green-100/70 via-white/80 to-green-100/40 backdrop-blur-xl border border-green-200/50 transition-all duration-300 hover:-translate-y-1 hover:border-green-500 shadow-[0_0_40px_rgba(34,197,94,0.30)]">
+                                 <div class="flex flex-col gap-0.5">
+                                    <h3 class="text-lg font-bold tracking-tight text-green-600">DEEP DIVE</h3>
+                                    <p class="text-xs text-dark font-medium">Understand a creator <span class="inline sm:block">in strategic depth.</span></p>
+                                 </div>
+                                 <div class="aspect-video w-full overflow-hidden rounded-2xl my-2">
+                                    <img src="assets/images/divechart.png" alt="Report Preview" class="h-full w-full object-cover"/>
+                                 </div>
+                                 <ul class="w-full flex-1 space-y-1">
+                                    <li class="flex items-start gap-1">
+                                       <div class="flex h-6 w-6 shrink-0 items-center justify-center"><i data-lucide="users" class="h-3 w-3 text-green-600"></i></div>
+                                       <p class="text-[10px] leading-4 font-medium text-dark line-clamp-2">See where influence is <span class="font-semibold text-green-600">peaking</span>. <span class="font-semibold text-[#fb901c]">fading</span> and in <span class="font-semibold text-red-500">critical danger</span>.</p>
+                                    </li>
+                                    <li class="flex items-start gap-1">
+                                       <div class="flex h-6 w-6 shrink-0 items-center justify-center"><i data-lucide="shield-check" class="h-3 w-3 text-green-600"></i></div>
+                                       <p class="text-[10px] leading-4 font-medium text-dark line-clamp-2">Fix perception issues</p>
+                                    </li>
+                                    <li class="flex items-start gap-1">
+                                       <div class="flex h-6 w-6 shrink-0 items-center justify-center"><i data-lucide="target" class="h-3 w-3 text-green-600"></i></div>
+                                       <p class="text-[10px] leading-4 font-medium text-dark line-clamp-2">See creator brand fit and opportunities.</p>
+                                    </li>
+                                 </ul>
                               </div>
-                              <div class="aspect-video w-full overflow-hidden rounded-2xl my-2">
-                                 <img src="assets/images/divechart.png" alt="Report Preview" class="h-full w-full object-cover"/>
-                              </div>
-                              <ul class="w-full flex-1 space-y-1">
-                                 <li class="flex items-start gap-1">
-                                    <div class="flex h-6 w-6 shrink-0 items-center justify-center"><i data-lucide="users" class="h-3 w-3 text-green-600"></i></div>
-                                    <p class="text-[10px] leading-4 font-medium text-dark line-clamp-2">See where influence is <span class="font-semibold text-green-600">peaking</span>. <span class="font-semibold text-[#fb901c]">fading</span> and in <span class="font-semibold text-red-500">critical danger</span>.</p>
-                                 </li>
-                                 <li class="flex items-start gap-1">
-                                    <div class="flex h-6 w-6 shrink-0 items-center justify-center"><i data-lucide="shield-check" class="h-3 w-3 text-green-600"></i></div>
-                                    <p class="text-[10px] leading-4 font-medium text-dark line-clamp-2">Fix perception issues</p>
-                                 </li>
-                                 <li class="flex items-start gap-1">
-                                    <div class="flex h-6 w-6 shrink-0 items-center justify-center"><i data-lucide="target" class="h-3 w-3 text-green-600"></i></div>
-                                    <p class="text-[10px] leading-4 font-medium text-dark line-clamp-2">See creator brand fit and opportunities.</p>
-                                 </li>
-                              </ul>
-                              <button type="button" class="mt-auto group/btn flex w-full items-center justify-center rounded-xl text-xs font-semibold text-green-500">
-                              <span>View Deep Dive Report</span> <i data-lucide="arrow-right" class="h-3 w-3 transition-transform duration-200 group-hover/btn:translate-x-1"></i>
-                              </button>
                            </div>
-                        </div>
                         </div>
                         <div class="swiper-pagination"></div>
                      </div>
                   </div>
-                </div>
+               </div>
                <!-- TRUST BADGES ROW -->
-                <div class="xl:col-span-3 grid grid-cols-1 gap-1.5 sm:grid-cols-2 lg:grid-cols-5">
-                  <div class="flex items-center gap-2 rounded-2xl border border-primary/10 bg-white p-4 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-                     <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10"><i data-lucide="shield-check" class="h-4 w-4 text-primary"></i></div>
-                     <div class="min-w-0">
-                        <h3 class="truncate text-xs font-semibold text-dark">Patent Granted 2024</h3>
-                        <p class="truncate text-xs text-gray">Officially patented in India.</p>
+               <div class="xl:col-span-3 relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-1.5 items-stretch overflow-hidden">
+                  <div class="group relative overflow-hidden flex items-center gap-2 rounded-2xl border border-emerald-400/50 bg-gradient-to-br from-emerald-500/40 via-emerald-500/15 to-teal-600/30 backdrop-blur-xl p-4 transition-all duration-500 hover:-translate-y-1 hover:border-emerald-400/80 hover:shadow-[0_12px_30px_rgba(16,185,129,0.35)]">
+                     <div class="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent"></div>
+                     <div class="relative z-10 flex items-center gap-2 w-full">
+                        <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-emerald-400 via-green-500 to-teal-600 shadow-lg shadow-emerald-500/40">
+                           <i data-lucide="shield-check" class="h-4 w-4 text-white"></i>
+                        </div>
+                        <div class="min-w-0">
+                           <h3 class="truncate text-xs font-semibold text-dark">Patent Granted 2024</h3>
+                           <p class="truncate text-xs text-gray">Officially patented in India.</p>
+                        </div>
                      </div>
                   </div>
-                  <div class="flex items-center gap-2 rounded-2xl border border-primary/10 bg-white p-4 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-                     <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10"><i data-lucide="users" class="h-4 w-4 text-primary"></i></div>
-                     <div class="min-w-0">
-                        <h3 class="truncate text-xs font-semibold text-dark">10,000+ Creator Analyses</h3>
-                        <p class="truncate text-xs text-gray">Across categories and platforms.</p>
+                  <div class="group relative overflow-hidden flex items-center gap-2 rounded-2xl border border-yellow-400/50 bg-gradient-to-br from-yellow-500/40 via-yellow-500/15 to-amber-600/30 backdrop-blur-xl p-4 transition-all duration-500 hover:-translate-y-1 hover:border-yellow-400/80 hover:shadow-[0_12px_30px_rgba(234,179,8,0.35)]">
+                     <div class="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent"></div>
+                     <div class="relative z-10 flex items-center gap-2 w-full">
+                        <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-yellow-400 via-amber-500 to-yellow-600 shadow-lg shadow-yellow-500/40">
+                           <i data-lucide="users" class="h-4 w-4 text-white"></i>
+                        </div>
+                        <div class="min-w-0">
+                           <h3 class="truncate text-xs font-semibold text-dark">10,000+ Creator Analyses</h3>
+                           <p class="truncate text-xs text-gray">Across categories and platforms.</p>
+                        </div>
                      </div>
                   </div>
-                  <div class="flex items-center gap-2 rounded-2xl border border-primary/10 bg-white p-4 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-                     <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10"><i data-lucide="presentation" class="h-4 w-4 text-primary"></i></div>
-                     <div class="min-w-0">
-                        <h3 class="truncate text-xs font-semibold text-dark">Web Summit Lisbon</h3>
-                        <p class="truncate text-xs text-gray">Selected for the Alpha Programme.</p>
+                  <div class="group relative overflow-hidden flex items-center gap-2 rounded-2xl border border-blue-400/50 bg-gradient-to-br from-blue-500/40 via-blue-500/15 to-sky-600/30 backdrop-blur-xl p-4 transition-all duration-500 hover:-translate-y-1 hover:border-blue-400/80 hover:shadow-[0_12px_30px_rgba(59,130,246,0.35)]">
+                     <div class="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent"></div>
+                     <div class="relative z-10 flex items-center gap-2 w-full">
+                        <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-blue-400 via-blue-500 to-sky-600 shadow-lg shadow-blue-500/40">
+                           <i data-lucide="presentation" class="h-4 w-4 text-white"></i>
+                        </div>
+                        <div class="min-w-0">
+                           <h3 class="truncate text-xs font-semibold text-dark">Web Summit Lisbon</h3>
+                           <p class="truncate text-xs text-gray">Selected for the Alpha Programme.</p>
+                        </div>
                      </div>
                   </div>
-                  <div class="flex items-center gap-2 rounded-2xl border border-primary/10 bg-white p-4 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-                     <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10"><i data-lucide="sparkles" class="h-4 w-4 text-primary"></i></div>
-                     <div class="min-w-0">
-                        <h3 class="truncate text-xs font-semibold text-dark">Proprietary Methodology</h3>
-                        <p class="truncate text-xs text-gray">Built through years of audience research.</p>
+                  <div class="group relative overflow-hidden flex items-center gap-2 rounded-2xl border border-purpleAccent/50 bg-gradient-to-br from-purpleAccent/40 via-purpleAccent/15 to-secondary/30 backdrop-blur-xl p-4 transition-all duration-500 hover:-translate-y-1 hover:border-purpleAccent/80 hover:shadow-[0_12px_30px_rgba(91,34,255,0.35)]">
+                     <div class="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent"></div>
+                     <div class="relative z-10 flex items-center gap-2 w-full">
+                        <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-purpleAccent via-secondary to-indigo shadow-lg shadow-purpleAccent/40">
+                           <i data-lucide="sparkles" class="h-4 w-4 text-white"></i>
+                        </div>
+                        <div class="min-w-0">
+                           <h3 class="truncate text-xs font-semibold text-dark">Proprietary Methodology</h3>
+                           <p class="truncate text-xs text-gray">Built through years of audience research.</p>
+                        </div>
                      </div>
                   </div>
-                  <div class="flex items-center gap-2 rounded-2xl border border-primary/10 bg-white p-4 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
-                     <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10"><i data-lucide="lock" class="h-4 w-4 text-primary"></i></div>
-                     <div class="min-w-0">
-                        <h3 class="truncate text-xs font-semibold text-dark">Built for Decision Makers</h3>
-                        <p class="truncate text-xs text-gray">Trusted by leading brands and agencies.</p>
+                  <div class="group relative overflow-hidden flex items-center gap-2 rounded-2xl border border-red-400/50 bg-gradient-to-br from-red-500/40 via-red-500/15 to-rose-600/30 backdrop-blur-xl p-4 transition-all duration-500 hover:-translate-y-1 hover:border-red-400/80 hover:shadow-[0_12px_30px_rgba(239,68,68,0.35)]">
+                     <div class="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent"></div>
+                     <div class="relative z-10 flex items-center gap-2 w-full">
+                        <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-red-400 via-red-500 to-rose-600 shadow-lg shadow-red-500/40">
+                           <i data-lucide="lock" class="h-4 w-4 text-white"></i>
+                        </div>
+                        <div class="min-w-0">
+                           <h3 class="truncate text-xs font-semibold text-dark">Built for Decision Makers</h3>
+                           <p class="truncate text-xs text-gray">Trusted by leading brands and agencies.</p>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -297,7 +427,7 @@
                <div class="lg:col-span-2 relative flex flex-col gap-6 sm:gap-4">
                   <div class="flex flex-col gap-1.5">
                      <h3 class="text-xl md:text-2xl lg:text-2xl font-bold leading-tight tracking-tight text-dark">Everything looks good. </h3>
-                  <h3 class="text-xl md:text-2xl lg:text-2xl font-bold leading-tight tracking-tight text-primary italic">So why are we still debating?</h3>
+                     <h3 class="text-xl md:text-2xl lg:text-2xl font-bold leading-tight tracking-tight text-primary italic">So why are we still debating?</h3>
                   </div>
                   <div class="w-full space-y-6 p-4 md:p-6 rounded-3xl border border-gray/20 bg-gray/5">
                      <div class="flex gap-3">
@@ -326,44 +456,72 @@
                   </div>
                   <div class="border-t border-gray/20 pt-4">
                      <p class="text-base sm:text-xl font-semibold text-gray-900 mb-2">These are the questions Nostiqa was built to answer.</p>
-                     <a href="#" class="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all">Learn more about our approach <i data-lucide="arrow-right"></i></a>
-                  </div>
-               </div>
-            </div>
-            <!-- Decision Containt -->
-            <div class="grid overflow-hidden rounded-3xl border border-gray/20 bg-white lg:grid-cols-3">
-               <div class="group flex flex-col items-center text-center gap-3 border-b border-gray/20 p-6 transition-all duration-300 hover:bg-primary/5 lg:flex-row lg:items-center lg:text-left lg:gap-3 lg:border-b-0 lg:border-r">
-                  <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-primary/10">
-                     <i data-lucide="users-round" class="h-7 w-7 text-primary"></i>
-                  </div>
-                  <div class="flex-1">
-                     <h3 class="text-lg font-semibold leading-tight text-dark">You have two creators in mind.</h3>
-                     <p class="mt-1 text-sm leading-snug text-gray">Compare them side by side before committing budget.</p>
-                  </div>
-               </div>
-               <div class="group flex flex-col items-center text-center gap-3 border-b border-gray/20 p-6 transition-all duration-300 hover:bg-primary/5 lg:flex-row lg:items-center lg:text-left lg:gap-3 lg:border-b-0 lg:border-r">
-                  <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-gold/10">
-                     <i data-lucide="list-ordered" class="h-7 w-7 text-gold"></i>
-                  </div>
-                  <div class="flex-1">
-                     <h3 class="text-lg font-semibold leading-tight text-dark">You have a shortlist but no consensus.</h3>
-                     <p class="mt-1 text-sm leading-snug text-gray">Rank and evaluate creators against what matters.</p>
-                  </div>
-               </div>
-               <div class="group flex flex-col items-center text-center gap-3 p-6 transition-all duration-300 hover:bg-primary/5 lg:flex-row lg:items-center lg:text-left lg:gap-3">
-                  <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-emerald-100">
-                     <i data-lucide="shield-check" class="h-7 w-7 text-emerald-600"></i>
-                  </div>
-                  <div class="flex-1">
-                     <h3 class="text-lg font-semibold leading-tight text-dark">You're evaluating a major partnership.</h3>
-                     <p class="mt-1 text-sm leading-snug text-gray">Get deeper intelligence before making a long-term commitment.</p>
+                     <!-- <a href="#" class="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all">Learn more about our approach <i data-lucide="arrow-right"></i></a> -->
                   </div>
                </div>
             </div>
             <!-- Pricing Card Grid -->
-             <div class="grid lg:grid-cols-3 gap-6" id="quick-signal">
-               <div class="group flex h-full flex-col rounded-2xl border border-gray/20 bg-white p-5 shadow-premium transition-all duration-300 hover:border-primary/20 hover:shadow-glow">
-                   <div class="uppercase w-fit inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-100 text-green-700 text-xs font-medium border border-green-700">
+            <div class="relative grid gap-6 lg:grid-cols-3" id="quick-signal">
+               <div class="hidden lg:grid col-span-3 overflow-visible rounded-3xl border border-gray/20 bg-white lg:grid-cols-3">
+                  <div class="group relative flex flex-col items-center text-center gap-3 border-b border-gray/20 p-6 transition-all duration-300 hover:bg-primary/5 lg:flex-row lg:items-center lg:text-left lg:gap-3 lg:border-b-0 lg:border-r">
+                     <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-primary/10">
+                        <i data-lucide="users-round" class="h-7 w-7 text-primary"></i>
+                     </div>
+                     <div class="flex-1">
+                        <h3 class="text-lg font-semibold leading-tight text-dark">You have two creators in mind.</h3>
+                        <p class="mt-1 text-sm leading-snug text-gray">Compare them side by side before committing budget.</p>
+                     </div>
+                     <div class="pointer-events-none absolute left-1/2 -bottom-5 -translate-x-1/2 z-30">
+                        <div class="animate-bounce flex size-10 items-center justify-center rounded-full border border-violet-100 bg-white shadow-lg">
+                           <i data-lucide="move-down" class="size-5 text-primary"></i>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="group relative flex flex-col items-center text-center gap-3 border-b border-gray/20 p-6 transition-all duration-300 hover:bg-primary/5 lg:flex-row lg:items-center lg:text-left lg:gap-3 lg:border-b-0 lg:border-r">
+                     <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-gold/10">
+                        <i data-lucide="list-ordered" class="h-7 w-7 text-gold"></i>
+                     </div>
+                     <div class="flex-1">
+                        <h3 class="text-lg font-semibold leading-tight text-dark">You have a shortlist but no consensus.</h3>
+                        <p class="mt-1 text-sm leading-snug text-gray">Rank and evaluate creators against what matters.</p>
+                     </div>
+                     <div class="pointer-events-none absolute left-1/2 -bottom-5 -translate-x-1/2 z-30">
+                        <div class="animate-bounce flex size-10 items-center justify-center rounded-full border border-violet-100 bg-white shadow-lg">
+                           <i data-lucide="move-down" class="size-5 text-primary"></i>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="group relative flex flex-col items-center text-center gap-3 p-6 transition-all duration-300 hover:bg-primary/5 lg:flex-row lg:items-center lg:text-left lg:gap-3">
+                     <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-emerald-100">
+                        <i data-lucide="shield-check" class="h-7 w-7 text-emerald-600"></i>
+                     </div>
+                     <div class="flex-1">
+                        <h3 class="text-lg font-semibold leading-tight text-dark">You're evaluating a major partnership.</h3>
+                        <p class="mt-1 text-sm leading-snug text-gray">Get deeper intelligence before making a long-term commitment.</p>
+                     </div>
+                     <div class="pointer-events-none absolute left-1/2 -bottom-5 -translate-x-1/2 z-30">
+                        <div class="animate-bounce flex size-10 items-center justify-center rounded-full border border-violet-100 bg-white shadow-lg">
+                           <i data-lucide="move-down" class="size-5 text-primary"></i>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="lg:hidden relative overflow-visible flex flex-col items-center text-center gap-3 rounded-3xl border border-gray/20 bg-white p-6 pb-8">
+                  <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-primary/10">
+                     <i data-lucide="users-round" class="h-7 w-7 text-primary"></i>
+                  </div>
+                  <div>
+                     <h3 class="text-lg font-semibold leading-tight text-dark">You have two creators in mind.</h3>
+                     <p class="mt-1 text-sm leading-snug text-gray">Compare them side by side before committing budget.</p>
+                  </div>
+                  <div class="pointer-events-none absolute left-1/2 -bottom-5 -translate-x-1/2 z-30">
+                     <div class="animate-bounce flex size-10 items-center justify-center rounded-full border border-violet-100 bg-white shadow-lg">
+                        <i data-lucide="move-down" class="size-5 text-primary"></i>
+                     </div>
+                  </div>
+               </div>
+               <div class="group flex h-full flex-col rounded-3xl border border-gray/20 bg-white p-5 shadow-premium transition-all duration-300 hover:border-primary/20 hover:shadow-glow">
+                  <div class="uppercase w-fit inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-100 text-green-700 text-xs font-medium border border-green-700">
                      <span class="w-2 h-2 bg-green-700 rounded-full animate-pulse"></span> Live Now
                   </div>
                   <div class="mt-3">
@@ -371,22 +529,14 @@
                      <p class="mt-1 text-sm text-gray-600">Compare two creators against a single objective and receive a clear recommendation.</p>
                   </div>
                   <div class="my-4 overflow-hidden rounded-xl border border-gray/20 bg-white aspect-[16/10]">
-                     <img src="assets/images/comparisonimg.png" alt="Card Image" class="w-full h-full object-cover">
+                     <img src="assets/images/comparisonimgnew.png" alt="Card Image" class="w-full h-full object-cover">
                   </div>
                   <div class="mt-auto w-full">
                      <div class="w-full grid gap-2 text-xs text-gray-700 sm:grid-cols-2">
-                        <div class="flex items-start gap-2">
-                           <i data-lucide="circle-check" class="mt-0.5 h-4 w-4 shrink-0 text-green-600"></i> <span>Delivered in 48 hours</span>
-                        </div>
-                        <div class="flex items-start gap-2">
-                           <i data-lucide="circle-check" class="mt-0.5 h-4 w-4 shrink-0 text-green-600"></i> <span>Recommendation included</span>
-                        </div>
-                        <div class="flex items-start gap-2">
-                           <i data-lucide="circle-check" class="mt-0.5 h-4 w-4 shrink-0 text-green-600"></i> <span>One objective selected</span>
-                        </div>
-                        <div class="flex items-start gap-2">
-                           <i data-lucide="circle-check" class="mt-0.5 h-4 w-4 shrink-0 text-green-600"></i> <span>Best for immediate decisions</span>
-                        </div>
+                        <div class="flex items-start gap-2"><i data-lucide="circle-check" class="mt-0.5 h-4 w-4 shrink-0 text-green-600"></i> <span>Delivered in 48 hours</span></div>
+                        <div class="flex items-start gap-2"><i data-lucide="circle-check" class="mt-0.5 h-4 w-4 shrink-0 text-green-600"></i> <span>Recommendation included</span></div>
+                        <div class="flex items-start gap-2"><i data-lucide="circle-check" class="mt-0.5 h-4 w-4 shrink-0 text-green-600"></i> <span>One objective selected</span></div>
+                        <div class="flex items-start gap-2"><i data-lucide="circle-check" class="mt-0.5 h-4 w-4 shrink-0 text-green-600"></i> <span>Best for immediate decisions</span></div>
                      </div>
                      <div class="mx-auto my-3 h-px max-w-4xl bg-gray/30"></div>
                      <div class="flex gap-3 flex-row items-stretch justify-between">
@@ -400,55 +550,68 @@
                      </div>
                   </div>
                </div>
-               <div class="group flex h-full flex-col rounded-2xl border border-gray/20 bg-white p-5 shadow-premium transition-all duration-300 hover:border-primary/20 hover:shadow-glow">
+               <div class="lg:hidden relative overflow-visible flex flex-col items-center text-center gap-3 rounded-3xl border border-gray/20 bg-white p-6 pb-8">
+                  <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-gold/10">
+                     <i data-lucide="list-ordered" class="h-7 w-7 text-gold"></i>
+                  </div>
+                  <div>
+                     <h3 class="text-lg font-semibold leading-tight text-dark">You have a shortlist but no consensus.</h3>
+                     <p class="mt-1 text-sm leading-snug text-gray">Rank and evaluate creators against what matters.</p>
+                  </div>
+                  <div class="pointer-events-none absolute left-1/2 -bottom-5 -translate-x-1/2 z-30">
+                     <div class="animate-bounce flex size-10 items-center justify-center rounded-full border border-violet-100 bg-white shadow-lg">
+                        <i data-lucide="move-down" class="size-5 text-primary"></i>
+                     </div>
+                  </div>
+               </div>
+               <div class="group flex h-full flex-col rounded-3xl border border-gray/20 bg-white p-5 shadow-premium transition-all duration-300 hover:border-primary/20 hover:shadow-glow">
                   <div class="uppercase inline-flex w-fit items-center whitespace-nowrap rounded-full border border-primary/10 bg-primary/5 px-2 py-1 text-xs font-semibold text-primary">FOUNDING PARTNER PILOT</div>
                   <div class="mt-3">
                      <h2 class="text-2xl font-semibold text-dark">Creator Shortlist</h2>
                      <p class="mt-1 text-sm text-gray-600">Compare up to 10 creators against the same objective and receive a ranked recommendation report.</p>
                   </div>
                   <div class="my-4 overflow-hidden rounded-xl border border-gray/20 bg-white aspect-[16/10]">
-                    <img src="assets/images/report_img.png" alt="Card Image" class="w-full h-full object-cover blur-sm" >
+                     <img src="assets/images/report_img.png" alt="Card Image" class="w-full h-full object-cover">
                   </div>
-                  <!-- Footer -->
                   <div class="mt-auto w-full">
                      <div class="w-full flex flex-col gap-2">
                         <div class="grid sm:grid-cols-2 gap-2 text-xs text-gray-700">
-                           <div class="flex items-start gap-2">
-                              <i data-lucide="gift" class="h-5 w-5 shrink-0 text-primary"></i> <span>First report complimentary</span>
-                           </div>
-                           <div class="flex items-start gap-2">
-                              <i data-lucide="calendar-days" class="h-5 w-5 shrink-0 text-primary"></i> <span>30-day pilot access</span>
-                           </div>
-                           <div class="flex items-start gap-2">
-                              <i data-lucide="users" class="h-5 w-5 shrink-0 text-primary"></i> <span>Campaign planning support</span>
-                           </div>
-                           <div class="flex items-start gap-2">
-                              <i data-lucide="headphones" class="h-5 w-5 shrink-0 text-primary"></i> <span>Priority support</span>
-                           </div>
+                           <div class="flex items-start gap-2"><i data-lucide="gift" class="h-5 w-5 shrink-0 text-primary"></i> <span>First report complimentary</span></div>
+                           <div class="flex items-start gap-2"><i data-lucide="calendar-days" class="h-5 w-5 shrink-0 text-primary"></i> <span>30-day pilot access</span></div>
+                           <div class="flex items-start gap-2"><i data-lucide="users" class="h-5 w-5 shrink-0 text-primary"></i> <span>Campaign planning support</span></div>
+                           <div class="flex items-start gap-2"><i data-lucide="headphones" class="h-5 w-5 shrink-0 text-primary"></i> <span>Priority support</span></div>
                         </div>
                         <div class="w-full text-xs">
                            <span class="font-semibold text-primary">Perfect for:</span>
                            <div class="mt-1 flex flex-wrap items-center gap-1.5 text-gray-700">
-                              <span>Agencies</span>
-                              <span class="text-primary text-xs">●</span>
-                              <span>D2C Brands</span>
-                              <span class="text-primary text-xs">●</span>
+                              <span>Agencies</span> <span class="text-primary text-xs">●</span>
+                              <span>D2C Brands</span> <span class="text-primary text-xs">●</span>
                               <span>Marketing Teams</span>
                            </div>
                         </div>
                      </div>
                      <div class="mx-auto my-3 h-px max-w-4xl bg-gray/30"></div>
                      <div class="flex flex-col gap-3 sm:flex-row sm:items-stretch sm:justify-between">
-                        <!-- <div class="flex flex-col justify-center">
-                           <p class="text-2xl font-bold text-slate-900">₹4,999</p>
-                           <p class="text-xs text-gray-500">One-time payment</p>
-                           </div> -->
                         <button class="group w-full flex items-center justify-center gap-2 self-stretch whitespace-nowrap rounded-xl border border-primary px-8 py-3 text-sm font-semibold text-primary transition-all duration-300 hover:border-secondary hover:bg-secondary hover:text-white"> Apply for Pilot <i class="fa-solid fa-arrow-right text-xs"></i></button>
                      </div>
                      <p class="mt-3 text-xs text-dark/30">By application only. Limited approvals.</p>
                   </div>
                </div>
-               <div class="group flex h-full flex-col rounded-2xl border border-gray/20 bg-white p-5 shadow-premium transition-all duration-300 hover:border-primary/20 hover:shadow-glow">
+               <div class="lg:hidden relative overflow-visible flex flex-col items-center text-center gap-3 rounded-3xl border border-gray/20 bg-white p-6 pb-8">
+                  <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-emerald-100">
+                     <i data-lucide="shield-check" class="h-7 w-7 text-emerald-600"></i>
+                  </div>
+                  <div>
+                     <h3 class="text-lg font-semibold leading-tight text-dark">You're evaluating a major partnership.</h3>
+                     <p class="mt-1 text-sm leading-snug text-gray">Get deeper intelligence before making a long-term commitment.</p>
+                  </div>
+                  <div class="pointer-events-none absolute left-1/2 -bottom-5 -translate-x-1/2 z-30">
+                     <div class="animate-bounce flex size-10 items-center justify-center rounded-full border border-violet-100 bg-white shadow-lg">
+                        <i data-lucide="move-down" class="size-5 text-primary"></i>
+                     </div>
+                  </div>
+               </div>
+               <div class="group flex h-full flex-col rounded-3xl border border-gray/20 bg-white p-5 shadow-premium transition-all duration-300 hover:border-primary/20 hover:shadow-glow">
                   <div class="uppercase inline-flex w-fit items-center whitespace-nowrap rounded-full border border-gold bg-gold/10 px-2 py-1 text-xs font-semibold text-gold">EARLY ACCESS</div>
                   <div class="mt-3">
                      <h2 class="text-2xl font-semibold text-dark">Deep Dive</h2>
@@ -459,25 +622,13 @@
                   </div>
                   <div class="mt-auto w-full">
                      <div class="grid sm:grid-cols-2 gap-2 text-xs text-gray-700">
-                        <div class="flex items-start gap-2">
-                           <i data-lucide="users" class="mt-0.5 h-4 w-4 shrink-0 text-gold"></i> <span>Audience relationships mapped</span>
-                        </div>
-                        <div class="flex items-start gap-2">
-                           <i data-lucide="target" class="mt-0.5 h-4 w-4 shrink-0 text-gold"></i> <span>Influence diagnostics</span>
-                        </div>
-                        <div class="flex items-start gap-2">
-                           <i data-lucide="shield-check" class="mt-0.5 h-4 w-4 shrink-0 text-gold"></i> <span>Brand fit & risk analysis</span>
-                        </div>
-                        <div class="flex items-start gap-2">
-                           <i data-lucide="trending-up" class="mt-0.5 h-4 w-4 shrink-0 text-gold"></i> <span>Strategic guidance & fixes</span>
-                        </div>
+                        <div class="flex items-start gap-2"><i data-lucide="users" class="mt-0.5 h-4 w-4 shrink-0 text-gold"></i> <span>Audience relationships mapped</span></div>
+                        <div class="flex items-start gap-2"><i data-lucide="target" class="mt-0.5 h-4 w-4 shrink-0 text-gold"></i> <span>Influence diagnostics</span></div>
+                        <div class="flex items-start gap-2"><i data-lucide="shield-check" class="mt-0.5 h-4 w-4 shrink-0 text-gold"></i> <span>Brand fit & risk analysis</span></div>
+                        <div class="flex items-start gap-2"><i data-lucide="trending-up" class="mt-0.5 h-4 w-4 shrink-0 text-gold"></i> <span>Strategic guidance & fixes</span></div>
                      </div>
                      <div class="mx-auto my-3 h-px max-w-4xl bg-gray/30"></div>
                      <div class="flex flex-col gap-3 sm:flex-row sm:items-stretch sm:justify-between">
-                        <!-- <div class="flex flex-col justify-center">
-                           <p class="text-2xl font-bold text-slate-900">₹4,999</p>
-                           <p class="text-xs text-gray-500">One-time payment</p>
-                           </div> -->
                         <button class="group w-full flex items-center justify-center gap-2 self-stretch whitespace-nowrap rounded-xl border border-gold px-8 py-3 text-sm font-semibold text-gold transition-all duration-300 hover:border-gold hover:bg-gold hover:text-white">Request Early Access <i class="fa-solid fa-arrow-right text-xs"></i></button>
                      </div>
                      <p class="mt-3 text-xs text-dark/30">Limited availability. By invitation.</p>
@@ -518,14 +669,14 @@
                      </div>
                      <div class="grid grid-cols-2 gap-3 sm:flex sm:flex-wrap">
                         <a href="javascript:void(0)" class="w-full sm:w-auto">
-                           <button class="group flex w-full items-center justify-center gap-2 rounded-xl lg:rounded-2xl bg-secondary px-3 lg:px-6 py-3 text-xs lg:text-sm font-medium text-white shadow-premium transition-all duration-300 hover:-translate-y-1 hover:shadow-glow">
-                              <span class="truncate">Apply for Founding Partner Program</span> <i class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1"></i>
-                           </button>
+                        <button class="group flex w-full items-center justify-center gap-2 rounded-xl lg:rounded-2xl bg-secondary px-3 lg:px-6 py-3 text-xs lg:text-sm font-medium text-white shadow-premium transition-all duration-300 hover:-translate-y-1 hover:shadow-glow">
+                        <span class="truncate">Apply for Founding Partner Program</span> <i class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1"></i>
+                        </button>
                         </a>
                         <a href="javascript:void(0)" class="w-full sm:w-auto">
-                           <button class="group flex w-full items-center justify-center gap-2 rounded-xl lg:rounded-2xl border border-secondary/30 bg-white/20 px-3 lg:px-6 py-3 text-xs lg:text-sm font-medium text-secondary shadow-premium transition-all duration-300 hover:-translate-y-1 hover:shadow-glow">
-                              <span class="truncate">Limited to 20 Organisations.</span> <i class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1"></i>
-                           </button>
+                        <button class="group flex w-full items-center justify-center gap-2 rounded-xl lg:rounded-2xl border border-secondary/30 bg-white/20 px-3 lg:px-6 py-3 text-xs lg:text-sm font-medium text-secondary shadow-premium transition-all duration-300 hover:-translate-y-1 hover:shadow-glow">
+                        <span class="truncate">Limited to 20 Organisations.</span> <i class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1"></i>
+                        </button>
                         </a>
                      </div>
                   </div>
@@ -534,31 +685,36 @@
                   <div class="hidden w-full grid-cols-1 gap-4 sm:grid-cols-2 lg:grid lg:grid-cols-3 2xl:grid-cols-5">
                      <div class="group rounded-2xl border border-gray/20 bg-white p-5 shadow-premium transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-glow">
                         <button type="button" class="flex w-full items-start justify-between gap-4 border-b border-gray/10 pb-4 text-left">
-                           <h4 class="font-body text-sm font-semibold leading-snug tracking-wide text-dark">We already test creators in ads.</h4> <i data-lucide="circle-fading-plus" class="h-5 w-5 shrink-0 text-primary transition-transform duration-300 group-hover:rotate-45"></i>
+                           <h4 class="font-body text-sm font-semibold leading-snug tracking-wide text-dark">We already test creators in ads.</h4>
+                           <i data-lucide="circle-fading-plus" class="h-5 w-5 shrink-0 text-primary transition-transform duration-300 group-hover:rotate-45"></i>
                         </button>
                         <p class="mt-4 font-body text-xs leading-6 tracking-wide text-gray"> Nostiqa explains why creators perform the way they do and where they're most likely to succeed before budget is allocated.</p>
                      </div>
                      <div class="group rounded-2xl border border-gray/20 bg-white p-5 shadow-premium transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-glow">
                         <button type="button" class="flex w-full items-start justify-between gap-4 border-b border-gray/10 pb-4 text-left">
-                           <h4 class="font-body text-sm font-semibold leading-snug tracking-wide text-dark">We already have an agency.</h4> <i data-lucide="circle-fading-plus" class="h-5 w-5 shrink-0 text-primary transition-transform duration-300 group-hover:rotate-45"></i>
+                           <h4 class="font-body text-sm font-semibold leading-snug tracking-wide text-dark">We already have an agency.</h4>
+                           <i data-lucide="circle-fading-plus" class="h-5 w-5 shrink-0 text-primary transition-transform duration-300 group-hover:rotate-45"></i>
                         </button>
                         <p class="mt-4 font-body text-xs leading-6 tracking-wide text-gray">Agencies bring relationships. Nostiqa brings an additional layer of audience intelligence to strengthen recommendations.</p>
                      </div>
                      <div class="group rounded-2xl border border-gray/20 bg-white p-5 shadow-premium transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-glow">
                         <button type="button" class="flex w-full items-start justify-between gap-4 border-b border-gray/10 pb-4 text-left">
-                           <h4 class="font-body text-sm font-semibold leading-snug tracking-wide text-dark">We don't mind some wasted spend.</h4> <i data-lucide="circle-fading-plus" class="h-5 w-5 shrink-0 text-primary transition-transform duration-300 group-hover:rotate-45"></i>
+                           <h4 class="font-body text-sm font-semibold leading-snug tracking-wide text-dark">We don't mind some wasted spend.</h4>
+                           <i data-lucide="circle-fading-plus" class="h-5 w-5 shrink-0 text-primary transition-transform duration-300 group-hover:rotate-45"></i>
                         </button>
                         <p class="mt-4 font-body text-xs leading-6 tracking-wide text-gray">Nostiqa isn't about eliminating risk. It's about making better decisions and prioritising investments.</p>
                      </div>
                      <div class="group rounded-2xl border border-gray/20 bg-white p-5 shadow-premium transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-glow">
                         <button type="button" class="flex w-full items-start justify-between gap-4 border-b border-gray/10 pb-4 text-left">
-                           <h4 class="font-body text-sm font-semibold leading-snug tracking-wide text-dark">Can't I Tell This From Engagement Rates?</h4> <i data-lucide="circle-fading-plus" class="h-5 w-5 shrink-0 text-primary transition-transform duration-300 group-hover:rotate-45"></i>
+                           <h4 class="font-body text-sm font-semibold leading-snug tracking-wide text-dark">Can't I Tell This From Engagement Rates?</h4>
+                           <i data-lucide="circle-fading-plus" class="h-5 w-5 shrink-0 text-primary transition-transform duration-300 group-hover:rotate-45"></i>
                         </button>
                         <p class="mt-4 font-body text-xs leading-6 tracking-wide text-gray">Engagement shows reaction. It doesn't reveal trust, relationship strength or objective-specific Fit.</p>
                      </div>
                      <div class="group rounded-2xl border border-gray/20 bg-white p-5 shadow-premium transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-glow">
                         <button type="button" class="flex w-full items-start justify-between gap-4 border-b border-gray/10 pb-4 text-left">
-                           <h4 class="font-body text-sm font-semibold leading-snug tracking-wide text-dark">Is This Another Creator Discovery Tool?</h4> <i data-lucide="circle-fading-plus" class="h-5 w-5 shrink-0 text-primary transition-transform duration-300 group-hover:rotate-45"></i>
+                           <h4 class="font-body text-sm font-semibold leading-snug tracking-wide text-dark">Is This Another Creator Discovery Tool?</h4>
+                           <i data-lucide="circle-fading-plus" class="h-5 w-5 shrink-0 text-primary transition-transform duration-300 group-hover:rotate-45"></i>
                         </button>
                         <p class="mt-4 font-body text-xs leading-6 tracking-wide text-gray">No. Nostiqa starts where discovery ends. You know who they are. We Help you know Why.</p>
                      </div>
@@ -569,7 +725,8 @@
                            <div class="swiper-slide !h-auto flex">
                               <div class="group rounded-2xl border border-gray/20 bg-white p-5 shadow-premium transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-glow">
                                  <button type="button" class="flex w-full items-start justify-between gap-4 border-b border-gray/10 pb-4 text-left">
-                                    <h4 class="font-body text-sm font-semibold leading-snug tracking-wide text-dark">We already test creators in ads.</h4> <i data-lucide="circle-fading-plus" class="h-5 w-5 shrink-0 text-primary transition-transform duration-300 group-hover:rotate-45"></i>
+                                    <h4 class="font-body text-sm font-semibold leading-snug tracking-wide text-dark">We already test creators in ads.</h4>
+                                    <i data-lucide="circle-fading-plus" class="h-5 w-5 shrink-0 text-primary transition-transform duration-300 group-hover:rotate-45"></i>
                                  </button>
                                  <p class="mt-4 font-body text-xs leading-6 tracking-wide text-gray"> Nostiqa explains why creators perform the way they do and where they're most likely to succeed before budget is allocated.</p>
                               </div>
@@ -577,7 +734,8 @@
                            <div class="swiper-slide !h-auto flex">
                               <div class="group rounded-2xl border border-gray/20 bg-white p-5 shadow-premium transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-glow">
                                  <button type="button" class="flex w-full items-start justify-between gap-4 border-b border-gray/10 pb-4 text-left">
-                                    <h4 class="font-body text-sm font-semibold leading-snug tracking-wide text-dark">We already have an agency.</h4> <i data-lucide="circle-fading-plus" class="h-5 w-5 shrink-0 text-primary transition-transform duration-300 group-hover:rotate-45"></i>
+                                    <h4 class="font-body text-sm font-semibold leading-snug tracking-wide text-dark">We already have an agency.</h4>
+                                    <i data-lucide="circle-fading-plus" class="h-5 w-5 shrink-0 text-primary transition-transform duration-300 group-hover:rotate-45"></i>
                                  </button>
                                  <p class="mt-4 font-body text-xs leading-6 tracking-wide text-gray">Agencies bring relationships. Nostiqa brings an additional layer of audience intelligence to strengthen recommendations.</p>
                               </div>
@@ -585,7 +743,8 @@
                            <div class="swiper-slide !h-auto flex">
                               <div class="group rounded-2xl border border-gray/20 bg-white p-5 shadow-premium transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-glow">
                                  <button type="button" class="flex w-full items-start justify-between gap-4 border-b border-gray/10 pb-4 text-left">
-                                    <h4 class="font-body text-sm font-semibold leading-snug tracking-wide text-dark">We don't mind some wasted spend.</h4> <i data-lucide="circle-fading-plus" class="h-5 w-5 shrink-0 text-primary transition-transform duration-300 group-hover:rotate-45"></i>
+                                    <h4 class="font-body text-sm font-semibold leading-snug tracking-wide text-dark">We don't mind some wasted spend.</h4>
+                                    <i data-lucide="circle-fading-plus" class="h-5 w-5 shrink-0 text-primary transition-transform duration-300 group-hover:rotate-45"></i>
                                  </button>
                                  <p class="mt-4 font-body text-xs leading-6 tracking-wide text-gray">Nostiqa isn't about eliminating risk. It's about making better decisions and prioritising investments.</p>
                               </div>
@@ -593,7 +752,8 @@
                            <div class="swiper-slide !h-auto flex">
                               <div class="group rounded-2xl border border-gray/20 bg-white p-5 shadow-premium transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-glow">
                                  <button type="button" class="flex w-full items-start justify-between gap-4 border-b border-gray/10 pb-4 text-left">
-                                    <h4 class="font-body text-sm font-semibold leading-snug tracking-wide text-dark">Can't I Tell This From Engagement Rates?</h4> <i data-lucide="circle-fading-plus" class="h-5 w-5 shrink-0 text-primary transition-transform duration-300 group-hover:rotate-45"></i>
+                                    <h4 class="font-body text-sm font-semibold leading-snug tracking-wide text-dark">Can't I Tell This From Engagement Rates?</h4>
+                                    <i data-lucide="circle-fading-plus" class="h-5 w-5 shrink-0 text-primary transition-transform duration-300 group-hover:rotate-45"></i>
                                  </button>
                                  <p class="mt-4 font-body text-xs leading-6 tracking-wide text-gray">Engagement shows reaction. It doesn't reveal trust, relationship strength or objective-specific Fit.</p>
                               </div>
@@ -601,7 +761,8 @@
                            <div class="swiper-slide !h-auto flex">
                               <div class="group rounded-2xl border border-gray/20 bg-white p-5 shadow-premium transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-glow">
                                  <button type="button" class="flex w-full items-start justify-between gap-4 border-b border-gray/10 pb-4 text-left">
-                                    <h4 class="font-body text-sm font-semibold leading-snug tracking-wide text-dark">Is This Another Creator Discovery Tool?</h4> <i data-lucide="circle-fading-plus" class="h-5 w-5 shrink-0 text-primary transition-transform duration-300 group-hover:rotate-45"></i>
+                                    <h4 class="font-body text-sm font-semibold leading-snug tracking-wide text-dark">Is This Another Creator Discovery Tool?</h4>
+                                    <i data-lucide="circle-fading-plus" class="h-5 w-5 shrink-0 text-primary transition-transform duration-300 group-hover:rotate-45"></i>
                                  </button>
                                  <p class="mt-4 font-body text-xs leading-6 tracking-wide text-gray">No. Nostiqa starts where discovery ends. You know who they are. We Help you know Why.</p>
                               </div>
@@ -676,7 +837,6 @@
             </div>
          </div>
       </section>
-      
       <!-- ========== FOOTER ========== -->
       <footer class="bg-cream py-10">
          <div class="container mx-auto px-4 lg:px-8 text-center">
@@ -687,7 +847,6 @@
             <p class="text-sm leading-5 text-dark-500"> Our reports are interpretations not to be taken as legal adviceor evidence of the career potential or personal qualities of any individual or organisation.</p>
          </div>
       </footer>
-
       <script src="assets/js/swiper-bundle.min.js"></script>
       <script src="assets/js/lucide.min.js"></script>
       <script src="assets/js/main.js"></script>

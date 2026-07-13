@@ -43,6 +43,9 @@ module.exports = {
         premium: "0 12px 40px rgba(0,0,0,.08)",
         glass: "0 8px 32px rgba(31,38,135,.12)",
       },
+      animation: {
+        'bounce-slow': 'bounce 2s infinite',
+      },
     },
   },
   plugins: [],
