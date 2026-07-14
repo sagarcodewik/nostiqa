@@ -336,7 +336,7 @@
                   <p class="text-base text-white/60 leading-relaxed">Deep Dive is currently available through limited early access while we continue expanding the platform.</p>
                    <div class="flex flex-1 items-center justify-center">
                         <div class="w-full">
-                           <a href="#" class="flex w-fit mx-auto items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3 text-center text-sm lg:text-base font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"> Request Early Access<i data-lucide="arrow-right" class="size-5 shrink-0"></i></a>
+                           <a id="ddSubmitBtn" href="javascript:void(0)" onclick="submitDeepDiveForm(event)" class="flex w-fit mx-auto items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3 text-center text-sm lg:text-base font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"> Request Early Access<i data-lucide="arrow-right" class="size-5 shrink-0"></i></a>
                            <div class="mt-4 flex items-center justify-center gap-2 text-sm text-white">
                               <i data-lucide="lock" class="size-4 text-white"></i> <span>Secure & confidential</span>
                            </div>
@@ -347,31 +347,31 @@
                   <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3">
                      <div>
                         <label class="mb-2 block text-sm font-semibold text-white">Name <span class="text-red-600">*</span></label>
-                        <input type="text" placeholder="Name" class="h-12 w-full rounded-xl border border-gray/20 bg-white/10 px-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10">
+                        <input id="ddName" type="text" placeholder="Name" class="h-12 w-full rounded-xl border border-gray/20 bg-white/10 px-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10">
                      </div>
                      <div>
                         <label class="mb-2 block text-sm font-semibold text-white">Company <span class="text-red-600">*</span></label>
-                        <input type="text" placeholder="Company" class="h-12 w-full rounded-xl border border-gray/20 bg-white/10 px-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10">
+                        <input id="ddCompany" type="text" placeholder="Company" class="h-12 w-full rounded-xl border border-gray/20 bg-white/10 px-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10">
                      </div>
                      <div>
                         <label class="mb-2 block text-sm font-semibold text-white truncate">Email <span class="text-red-600">*</span></label>
-                        <input type="text" placeholder="Email" class="h-12 w-full rounded-xl border border-gray/20 bg-white/10 px-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10">
+                        <input id="ddEmail" type="text" placeholder="Email" class="h-12 w-full rounded-xl border border-gray/20 bg-white/10 px-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10">
                      </div>
                      <div>
                         <label class="mb-2 block text-sm font-semibold text-white truncate">Creator(s) being evaluated <span class="text-red-600">*</span></label>
-                        <input type="text" placeholder="Creator(s) being evaluated" class="h-12 w-full rounded-xl border border-gray/20 bg-white/10 px-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10">
+                        <input id="ddCreators" type="text" placeholder="Creator(s) being evaluated" class="h-12 w-full rounded-xl border border-gray/20 bg-white/10 px-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10">
                      </div>
                      <div>
                         <label class="mb-2 block text-sm font-semibold text-white truncate">What decision are you trying to make? <span class="text-red-600">*</span></label>
-                        <input type="text" placeholder="What decision are you trying to make?" class="h-12 w-full rounded-xl border border-gray/20 bg-white/10 px-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10">
+                        <input id="ddDecision" type="text" placeholder="What decision are you trying to make?" class="h-12 w-full rounded-xl border border-gray/20 bg-white/10 px-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10">
                      </div>
                      <div>
                         <label class="mb-2 block text-sm font-semibold text-white truncate">Estimated partnership value <span class="text-red-600">*</span></label>
-                        <input type="text" placeholder="Estimated partnership value" class="h-12 w-full rounded-xl border border-gray/20 bg-white/10 px-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10">
+                        <input id="ddPartnershipValue" type="text" placeholder="Estimated partnership value" class="h-12 w-full rounded-xl border border-gray/20 bg-white/10 px-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10">
                      </div>
                      <div class="col-span-full">
                         <label class="mb-2 block text-sm font-semibold text-white truncate">Additional context</label>
-                        <textarea rows="3" placeholder="What are you trying to achieve?" class="w-full resize-none rounded-2xl border border-gray/20 bg-white/10 p-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10"></textarea>
+                        <textarea id="ddContext" rows="3" placeholder="What are you trying to achieve?" class="w-full resize-none rounded-2xl border border-gray/20 bg-white/10 p-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10"></textarea>
                      </div>
                      <!-- <div>
                         <label class="mb-2 block text-sm font-semibold text-white truncate">Industry <span class="text-red-600">*</span></label>
@@ -411,5 +411,6 @@
       <script src="assets/js/swiper-bundle.min.js"></script>
       <script src="assets/js/lucide.min.js"></script>
       <script src="assets/js/main.js"></script>
+      <script src="assets/js/deepdive.js"></script>
    </body>
 </html>

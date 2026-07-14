@@ -2,10 +2,10 @@ const fs = require("fs");
 const path = require("path");
 const { google } = require("googleapis");
 
-const SHEET_RANGE = "Sheet1!A:G";
-const MAX_HANDLE_LENGTH = 100;
-const MAX_BRAND_LENGTH = 150;
+const SHEET_RANGE = "DeepDive!A:J";
+const MAX_SHORT_FIELD_LENGTH = 150;
 const MAX_CONTEXT_LENGTH = 2000;
+const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 // Comma-separated list of origins allowed to call this endpoint, e.g.
 // "https://nostiqa-xi.vercel.app,https://www.nostiqa.com"
@@ -85,36 +85,39 @@ module.exports = async function handler(req, res) {
         return;
     }
 
-    const creatorA = typeof body.creatorA === "string" ? body.creatorA.trim() : "";
-    const creatorB = typeof body.creatorB === "string" ? body.creatorB.trim() : "";
-    const brandName = typeof body.brandName === "string" ? body.brandName.trim() : "";
-    const campaignContext = typeof body.campaignContext === "string" ? body.campaignContext.trim() : "";
+    const name = typeof body.name === "string" ? body.name.trim() : "";
+    const company = typeof body.company === "string" ? body.company.trim() : "";
+    const email = typeof body.email === "string" ? body.email.trim() : "";
+    const creators = typeof body.creators === "string" ? body.creators.trim() : "";
+    const decision = typeof body.decision === "string" ? body.decision.trim() : "";
+    const partnershipValue = typeof body.partnershipValue === "string" ? body.partnershipValue.trim() : "";
+    const context = typeof body.context === "string" ? body.context.trim() : "";
 
-    if (!creatorA || !creatorB) {
-        res.status(422).json({ success: false, message: "Creator A and Creator B handles are required." });
+    if (!name || !company || !email || !creators || !decision || !partnershipValue) {
+        res.status(422).json({ success: false, message: "Please fill all required fields." });
         return;
     }
 
-    if (creatorA.length > MAX_HANDLE_LENGTH || creatorB.length > MAX_HANDLE_LENGTH) {
-        res.status(422).json({
-            success: false,
-            message: `Creator handles must be under ${MAX_HANDLE_LENGTH} characters.`,
-        });
+    if (!EMAIL_PATTERN.test(email)) {
+        res.status(422).json({ success: false, message: "Please enter a valid email address." });
         return;
     }
 
-    if (brandName.length > MAX_BRAND_LENGTH) {
-        res.status(422).json({
-            success: false,
-            message: `Brand name must be under ${MAX_BRAND_LENGTH} characters.`,
-        });
-        return;
+    const shortFields = { name, company, email, creators, decision, partnershipValue };
+    for (const [field, value] of Object.entries(shortFields)) {
+        if (value.length > MAX_SHORT_FIELD_LENGTH) {
+            res.status(422).json({
+                success: false,
+                message: `${field} must be under ${MAX_SHORT_FIELD_LENGTH} characters.`,
+            });
+            return;
+        }
     }
 
-    if (campaignContext.length > MAX_CONTEXT_LENGTH) {
+    if (context.length > MAX_CONTEXT_LENGTH) {
         res.status(422).json({
             success: false,
-            message: `Campaign context must be under ${MAX_CONTEXT_LENGTH} characters.`,
+            message: `Additional context must be under ${MAX_CONTEXT_LENGTH} characters.`,
         });
         return;
     }
@@ -123,7 +126,7 @@ module.exports = async function handler(req, res) {
     const serviceAccountJson = process.env.GOOGLE_SERVICE_ACCOUNT_JSON;
 
     if (!spreadsheetId || !serviceAccountJson) {
-        console.error("[api/submit] Missing GOOGLE_SHEET_ID or GOOGLE_SERVICE_ACCOUNT_JSON env var.");
+        console.error("[api/submit-deep-dive] Missing GOOGLE_SHEET_ID or GOOGLE_SERVICE_ACCOUNT_JSON env var.");
         res.status(500).json({ success: false, message: "Unable to save your submission. Please try again later." });
         return;
     }
@@ -143,10 +146,13 @@ module.exports = async function handler(req, res) {
 
         const row = [
             new Date().toISOString(),
-            creatorA,
-            creatorB,
-            brandName,
-            campaignContext,
+            name,
+            company,
+            email,
+            creators,
+            decision,
+            partnershipValue,
+            context,
             ipAddress,
             userAgent,
         ];
@@ -160,7 +166,7 @@ module.exports = async function handler(req, res) {
 
         res.status(200).json({ success: true });
     } catch (error) {
-        console.error("[api/submit]", error);
-        res.status(500).json({ success: false, message: "Unable toxxxxxx save your submission. Please try again later." });
+        console.error("[api/submit-deep-dive]", error);
+        res.status(500).json({ success: false, message: "Unable to save your submission. Please try again later." });
     }
 };
