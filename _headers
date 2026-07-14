@@ -1,3 +1,0 @@
-/*
-  X-Frame-Options: ALLOWALL
-  Content-Security-Policy: frame-ancestors 'self' https://www.nostiqa.com https://*.wix.com https://*.wixsite.com https://editor.wix.com https://manage.wix.com

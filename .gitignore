@@ -31,6 +31,12 @@ yarn-error.log*
 # vercel
 .vercel
 
+# local env / Google credentials
+.env
+.env.local
+*-service-account*.json
+nostiqa-*.json
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
