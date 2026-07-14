@@ -124,7 +124,7 @@ module.exports = async function handler(req, res) {
 
     if (!spreadsheetId || !serviceAccountJson) {
         console.error("[api/submit] Missing GOOGLE_SHEET_ID or GOOGLE_SERVICE_ACCOUNT_JSON env var.");
-        res.status(500).json({ success: false, message: "Unable to save your submission. Please try again later." });
+        res.status(500).json({ success: false, message: "Unable tssssssso save your submission. Please try again later." });
         return;
     }
 
@@ -161,6 +161,6 @@ module.exports = async function handler(req, res) {
         res.status(200).json({ success: true });
     } catch (error) {
         console.error("[api/submit]", error);
-        res.status(500).json({ success: false, message: "Unable to save your submission. Please try again later." });
+        res.status(500).json({ success: false, message: "Unable toxxxxxx save your submission. Please try again later." });
     }
 };
