@@ -64,7 +64,7 @@ select::-ms-expand { display: none;}
 .no-scrollbar::-webkit-scrollbar { display: none;}
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none;}
 
-.dotted-line { background-image: linear-gradient(to right,#6d5dfc 33%, rgba(255,255,255,0) 0% );
+.dotted-line { background-image: linear-gradient(to right,#6d5dfc 33%, rgba(255,255,255,0) 0%);
   background-position: top;
   background-size: 10px 2px;
   background-repeat: repeat-x;
@@ -81,7 +81,7 @@ select::-ms-expand { display: none;}
 .report-prev:hover, .report-next:hover { background: #3711BE; border-color: #3711BE; transform: translateY(-2px);}
 .report-prev:hover i, .report-next:hover i { color: #fff !important;}
 .report-prev.swiper-button-disabled, .report-next.swiper-button-disabled { opacity: 0.4; cursor: not-allowed;}
-.swiper .swiper-pagination{ position: relative; margin-top: 10px;}
+.swiper .swiper-pagination{ position: relative; margin-top: 15px;}
 .swiper .swiper-pagination-bullet{ width: 6px; height: 6px; background: rgba(55, 17, 190, 0.18); opacity: 1; transition: all .3s ease;}
 .swiper .swiper-pagination-bullet-active{ width: 12px; border-radius: 999px; background: #3711BE; box-shadow: 0 0 20px rgba(123, 97, 255, 0.35);}
 .swiper .swiper-pagination-bullet:hover{background: #7B61FF;}

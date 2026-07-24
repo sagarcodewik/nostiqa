@@ -166,63 +166,73 @@ window.addEventListener("scroll", handleScroll);
   }
 
   // ===== Home Cards Swiper =====
-function initHmCardsSwiper() {
-  const el = document.querySelector(".hmcardsSwiper");
-  if (!el) return;
-  if (window.innerWidth < 768) {
-    if (!el.swiper) {
-      new Swiper(".hmcardsSwiper", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        loop: true,
-        slidesPerView: 1.8,
-        spaceBetween: 0,
-        speed: 700,
-        watchOverflow: true,
-        coverflowEffect: { rotate: 0, stretch: 0, depth: 100, modifier: 1, slideShadows: false },
-        autoplay: { delay: 3000, disableOnInteraction: false, pauseOnMouseEnter: true },
-        pagination: { el: ".hmcardsSwiper .swiper-pagination", clickable: true },
-        breakpoints: {
-          0:   { slidesPerView: 1.1, coverflowEffect: { depth: 90 } },
-          480: { slidesPerView: 1.1, coverflowEffect: { depth: 100 } },
-          640: { slidesPerView: 1.6, coverflowEffect: { depth: 110 } },
-        },
-      });
+  function initHmCardsSwiper() {
+    const el = document.querySelector(".hmcardsSwiper");
+    if (!el) return;
+    if (window.innerWidth < 768) {
+      if (!el.swiper) {
+        new Swiper(".hmcardsSwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          loop: true,
+          slidesPerView: 1.8,
+          spaceBetween: 0,
+          speed: 700,
+          watchOverflow: true,
+          coverflowEffect: { rotate: 0, stretch: 0, depth: 100, modifier: 1, slideShadows: false },
+          autoplay: { delay: 3000, disableOnInteraction: false, pauseOnMouseEnter: true },
+          pagination: { el: ".hmcardsSwiper .swiper-pagination", clickable: true },
+          breakpoints: {
+            0:   { slidesPerView: 1.1, coverflowEffect: { depth: 90 } },
+            480: { slidesPerView: 1.1, coverflowEffect: { depth: 100 } },
+            640: { slidesPerView: 1.6, coverflowEffect: { depth: 110 } },
+          },
+        });
+      }
+    } else if (el.swiper) {
+      el.swiper.destroy(true, true);
     }
-  } else if (el.swiper) {
-    el.swiper.destroy(true, true);
   }
-}
 
-initHmCardsSwiper();
-window.addEventListener("resize", () => {
-  clearTimeout(window._hmResize);
-  window._hmResize = setTimeout(initHmCardsSwiper, 200);
-});
+  initHmCardsSwiper();
+  window.addEventListener("resize", () => {
+    clearTimeout(window._hmResize);
+    window._hmResize = setTimeout(initHmCardsSwiper, 200);
+  });
 
-  // ===== Brands Marquee =====
-  if (
-    typeof Swiper !== "undefined" &&
-    document.querySelector(".brandsSwiper")
-  ) {
-    new Swiper(".brandsSwiper", {
-      slidesPerView: "auto",
-      spaceBetween: 80,
-      loop: true,
-      freeMode: false,
-      allowTouchMove: false,
-      grabCursor: false,
-
-      speed: 6000,
-
-      autoplay: {
-        delay: 1,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: false,
-      },
-    });
+  // ===== Face Off Report Slider =====
+  const swiper = new Swiper(".foreportSwiper", {
+    slidesPerView: 1.5,
+    spaceBetween: 16,
+    speed: 0,
+    watchSlidesProgress: true,
+    allowTouchMove: true,
+    resistanceRatio: 0,
+    loop: false,
+    breakpoints: {
+      640: {slidesPerView: 1.8,},
+      768: {slidesPerView: 2,},
+      1024: {slidesPerView: 2.5,},
+    },
+  });
+  let direction = 1;
+  let progress = 0;
+  const SPEED = 0.005;
+  let isPaused = false;
+  const slider = document.querySelector(".foreportSwiper");
+  slider.addEventListener("mouseenter", () => {isPaused = true;});
+  slider.addEventListener("mouseleave", () => {isPaused = false;});
+  function animate() {
+    if (!isPaused) {
+      progress += SPEED * direction;
+      if (progress >= 1) {progress = 1; direction = -1;}
+      if (progress <= 0) {progress = 0; direction = 1;}
+      swiper.setProgress(progress);
+    }
+    requestAnimationFrame(animate);
   }
+  requestAnimationFrame(animate);
 
   // ===== Pricing Switcher =====
   const plans = {
@@ -282,8 +292,19 @@ window.addEventListener("resize", () => {
 
 // marquee Stop
 const slider = document.getElementById('reportSlider');
+const track = slider ? slider.querySelector('.marquee-track') : null;
 
-if (slider) {
-  slider.addEventListener('mouseenter', () => slider.stop());
-  slider.addEventListener('mouseleave', () => slider.start());
+if (slider && track) {
+  slider.addEventListener('mouseenter', () => track.style.animationPlayState = 'paused');
+  slider.addEventListener('mouseleave', () => track.style.animationPlayState = 'running');
+
+  // touch support for iOS since there's no hover
+  slider.addEventListener('touchstart', () => track.style.animationPlayState = 'paused');
+  slider.addEventListener('touchend', () => track.style.animationPlayState = 'running');
 }
+// const slider = document.getElementById('reportSlider');
+
+// if (slider) {
+//   slider.addEventListener('mouseenter', () => slider.stop());
+//   slider.addEventListener('mouseleave', () => slider.start());
+// }
