@@ -308,3 +308,12 @@ if (slider && track) {
 //   slider.addEventListener('mouseenter', () => slider.stop());
 //   slider.addEventListener('mouseleave', () => slider.start());
 // }
+
+window.addEventListener('load', function () {
+  if (window.location.hash) {
+    const el = document.querySelector(window.location.hash);
+    if (el) {
+      setTimeout(function () {el.scrollIntoView({ behavior: 'smooth' });}, 500);
+    }
+  }
+});
