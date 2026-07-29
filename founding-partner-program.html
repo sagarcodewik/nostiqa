@@ -413,25 +413,25 @@
                <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3">
                   <div>
                      <label class="mb-2 block text-sm font-semibold text-dark">Full Name <span class="text-red-600">*</span></label>
-                     <input type="text" placeholder="Your full name" class="h-12 w-full rounded-xl border border-gray/10 bg-white px-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10">
+                     <input id="fpName" type="text" placeholder="Your full name" class="h-12 w-full rounded-xl border border-gray/10 bg-white px-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10">
                   </div>
                   <div>
                      <label class="mb-2 block text-sm font-semibold text-dark">Work Email <span class="text-red-600">*</span></label>
-                     <input type="email" placeholder="you@company.com" class="h-12 w-full rounded-xl border border-gray/10 bg-white px-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10">
+                     <input id="fpEmail" type="email" placeholder="you@company.com" class="h-12 w-full rounded-xl border border-gray/10 bg-white px-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10">
                   </div>
                   <div>
                      <label class="mb-2 block text-sm font-semibold text-dark">Company / Brand <span class="text-red-600">*</span></label>
-                     <input type="text" placeholder="Your company or brand" class="h-12 w-full rounded-xl border border-gray/10 bg-white px-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10">
+                     <input id="fpCompany" type="text" placeholder="Your company or brand" class="h-12 w-full rounded-xl border border-gray/10 bg-white px-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10">
                   </div>
                   <div>
                      <label class="mb-2 block text-sm font-semibold text-dark">Website <span class="text-red-600">*</span></label>
-                     <input type="url" name="website" placeholder="https://example.com" required class="h-12 w-full rounded-xl border border-gray/10 bg-white px-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10"/>
+                     <input id="fpWebsite" type="url" placeholder="https://yourbrand.com" class="h-12 w-full rounded-xl border border-gray/10 bg-white px-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10">
                   </div>
                   <div>
                      <label class="mb-2 block text-sm font-semibold text-dark">Industry <span class="text-red-600">*</span></label>
                      <div class="relative">
-                        <select class="h-12 w-full appearance-none rounded-xl border border-gray/10 bg-white px-4 pr-10 text-sm text-dark outline-none transition-all duration-300 focus:border-primary focus:ring-4 focus:ring-primary/10">
-                           <option selected disabled>Select Industry</option>
+                        <select id="fpIndustry" class="h-12 w-full appearance-none rounded-xl border border-gray/10 bg-white px-4 pr-10 text-sm text-dark outline-none transition-all duration-300 focus:border-primary focus:ring-4 focus:ring-primary/10">
+                           <option selected disabled value="">Select Industry</option>
                            <option>Beauty</option>
                            <option>Fashion</option>
                            <option>Food & Beverage</option>
@@ -446,8 +446,8 @@
                   <div>
                      <label class="mb-2 block text-sm font-semibold text-dark">Current Creator Usage</label>
                      <div class="relative">
-                        <select class="h-12 w-full appearance-none rounded-xl border border-gray/10 bg-white px-4 pr-10 text-sm text-dark outline-none transition-all duration-300 focus:border-primary focus:ring-4 focus:ring-primary/10">
-                           <option selected disabled>Select Usage</option>
+                        <select id="fpCreatorUsage" class="h-12 w-full appearance-none rounded-xl border border-gray/10 bg-white px-4 pr-10 text-sm text-dark outline-none transition-all duration-300 focus:border-primary focus:ring-4 focus:ring-primary/10">
+                           <option selected disabled value="">Select Usage</option>
                            <option>Not currently using creators</option>
                            <option>Testing creators</option>
                            <option>Regular creator campaigns</option>
@@ -459,8 +459,8 @@
                   <div class="col-span-full">
                      <label class="mb-2 block text-sm font-semibold text-dark">Which product are you most interested in?</label>
                      <div class="relative">
-                        <select class="h-12 w-full appearance-none rounded-xl border border-gray/10 bg-white px-4 pr-10 text-sm text-dark outline-none transition-all duration-300 focus:border-primary focus:ring-4 focus:ring-primary/10">
-                           <option selected disabled>Select Product</option>
+                        <select id="fpProductInterest" class="h-12 w-full appearance-none rounded-xl border border-gray/10 bg-white px-4 pr-10 text-sm text-dark outline-none transition-all duration-300 focus:border-primary focus:ring-4 focus:ring-primary/10">
+                           <option selected disabled value="">Select Product</option>
                            <option>Face-Off</option>
                            <option>Creator Shortlist</option>
                            <option>Deep Dive</option>
@@ -471,11 +471,11 @@
                   </div>
                   <div class="col-span-full">
                      <label class="mb-2 block text-sm font-semibold text-dark">Campaign or Business Objective</label>
-                     <textarea rows="2" placeholder="What are you trying to achieve?" class="w-full resize-none rounded-2xl border border-gray/10 bg-white p-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10"></textarea>
+                     <textarea id="fpObjective" rows="2" placeholder="What are you trying to achieve?" class="w-full resize-none rounded-2xl border border-gray/10 bg-white p-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10"></textarea>
                   </div>
                   <div class="col-span-full">
                      <label class="mb-2 block text-sm font-semibold text-dark"> Anything else we should know?</label>
-                     <textarea rows="2" placeholder="Share any additional context that will help us understand your goals and creator challenges." class="w-full resize-none rounded-2xl border border-gray/10 bg-white p-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10"></textarea>
+                     <textarea id="fpNotes" rows="2" placeholder="Share any additional context that will help us understand your goals and creator challenges." class="w-full resize-none rounded-2xl border border-gray/10 bg-white p-4 text-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10"></textarea>
                   </div>
                </div>
             </div>
@@ -514,6 +514,7 @@
    <script src="assets/js/swiper-bundle.min.js"></script>
    <script src="assets/js/lucide.min.js"></script>
    <script src="assets/js/main.js"></script>
+   <script src="assets/js/foundingpartner.js"></script>
 </body>
 
 </html>
